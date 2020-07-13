@@ -14,6 +14,7 @@ function ImageCarousel(){
       className="carouselClass"
       src={iitd}
       alt="First slide"
+      
     />
     <Carousel.Caption>
       <h2>IIT DELHI</h2>
@@ -24,6 +25,8 @@ function ImageCarousel(){
       className="carouselClass"
       src={rickshaw}
       alt="Second  slide"
+      
+      
     />
 
     <Carousel.Caption>
@@ -35,6 +38,7 @@ function ImageCarousel(){
       className="carouselClass"
       src={iitd4}
       alt="Third slide"
+      
     />
 
     <Carousel.Caption>
