@@ -1,10 +1,9 @@
 import React from 'react';
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
+import ImageCarousel from './Pages/Carousel/Carousel';
+import BulletinBoard from './Pages/Bulletinboard/Bulletinboard';
 import './App.css';
-import ImageCarousel from './Pages/carousel/Carousel';
-import BulletinBoard from './Pages/bulletinboard/Bulletinboard';
-
 
 function App() {
   return (
