@@ -1,0 +1,14 @@
+
+
+
+.carouselClass { 
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: auto;
+ 
+}
+
+.carouselItemClass h2{
+  color: rgb(94, 17, 219);
+}
