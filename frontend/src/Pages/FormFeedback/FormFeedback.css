@@ -1,0 +1,19 @@
+.FormFeedback{
+  text-align: center;
+}
+
+.FormFeedback a{
+  display: inline-block;
+  max-width: 250px;
+  text-align: center;
+  background-color: green;
+  color: white;
+  padding: 7px;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.FormFeedback a:hover{
+  background-color: darkgreen;
+  transition: .5s;
+}
