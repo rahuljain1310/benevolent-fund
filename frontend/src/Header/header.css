@@ -1,44 +1,43 @@
-.color
-{
+.color{
   background-color: #b8ffce;
 }
-    .Links
-  {
+
+.Links{
   font-size: 15px;
   font-family: inherit;
   text-align: center;
   color: black;
   margin: 15px;
-  }
-.Links:active
-{
+}
+
+.Links:active{
   color:  #0f7dfa;
 }
-.Links:hover
-  {
+
+.Links:hover{
     text-decoration: underline;
     border-bottom: 1px solid  #0f7dfa;
-  }
-#head, #subhead
-{
+}
+
+#head, #subhead{
   text-align:left;
   margin-left:15px;
   color: "black";
   font-family: inherit;
 }
-#head
-{
+
+#head{
     font-size: 22px;
     font-weight: bold;
     margin-top: 15px;
 }
-#subhead
-{
+
+#subhead{
   font-size: 14px;
   font-weight: normal;
 }
-#image
-{
+
+#image{
   float: left;
   width: 50px;
   height: 40px;
