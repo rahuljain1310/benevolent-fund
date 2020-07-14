@@ -1,9 +1,10 @@
 import React from 'react'
+import './FormFeedback.css'
 
 function FormFeedback () {
   return (
-    <div>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd2SG4Rbm0kM_TxS35vexb4aEFUF37QIGzNzrwL04TgShiCJw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <div class='FormFeedback'>
+      <a href="https://forms.gle/1BB35mWU5kj4S1km7" target="_blank">Experience/feedback sharing</a>
     </div>
   )
 }
