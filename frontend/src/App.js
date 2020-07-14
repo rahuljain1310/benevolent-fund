@@ -10,10 +10,13 @@ function App() {
   return (
     <div>
       <Header/>
+<<<<<<< HEAD
       <FormFeedback/>
       <div>
         Hello World !
       </div>
+=======
+>>>>>>> 559445f135ed948d3e3c8f4fed8cbf999a1fab19
       <DisqusComments/>
       <Footer/>
     </div>
