@@ -1,57 +1,23 @@
-#image
-{
-  vertical-align: center;
-}
-@media(min-width: 761px)
-{
-    .buttons
+    .Links
   {
   font-size: 17px;
-  font-weight: bold;
   font-family: inherit;
-  padding: 8px 8px;
-  width: 15%;
   text-align: center;
-  color: #fff9e6;
-  background-color: black;
-  border-radius: 9px;
-  margin: 7px;
+  color: black;
+  margin: 15px;
   }
-  #image
-  {
-    width: 200px;
-    height: 150px;
-  }
-}
-@media(max-width: 760px)
+.Links:active
 {
-  .buttons
-  {
-    font-size: 15px;
-    font-weight: bold;
-    font-family: inherit;
-    padding: 8px 8px;
-    width: 20%;
-    text-align: center;
-    color:#fff9e6;
-    background-color: black;
-    border-radius: 9px;
-    margin: 7px;
-  }
-  #image
-  {
-    width: 100px;
-    height: 80px;
-  }
+  color:  #0f7dfa;
 }
-.buttons:hover
+.Links:hover
   {
-    color: black;
-    background-color: #fff9e6;
+    text-decoration: underline;
+    border-bottom: 1px solid  #0f7dfa;
   }
   #para
   {
-    font-size: 20px;
+    font-size: 15px;
     font-family:cursive;
     margin: 15px;
   }
@@ -63,11 +29,11 @@
 }
 #head
 {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
 }
 #subhead
 {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: normal;
 }
