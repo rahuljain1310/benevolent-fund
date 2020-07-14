@@ -5,6 +5,8 @@ import ImageCarousel from './Pages/carousel/Carousel';
 import BulletinBoard from './Pages/bulletinboard/Bulletinboard';
 import DisqusComments from './Pages/Comments/Comments';
 import './App.css';
+import FormFeedback from './Pages/FormFeedback/FormFeedback';
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <Header/>
       <ImageCarousel />
       <BulletinBoard />
+      <FormFeedback/>
       <DisqusComments/>
       <Footer/>
     </div>
