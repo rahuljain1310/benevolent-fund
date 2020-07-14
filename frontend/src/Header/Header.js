@@ -7,7 +7,7 @@ function Header () {
     <img src="D:\IIT-Delhi\AINA\Benevlent Fund\logo.jpg" alt="IITD logo" className="image"></img>
     <br/><br/><br/><br/><br/>
     <b><div id="head">IIT DELHI BENEVOLENT FUND</div></b>
-    <i><div id="subhead">Helping others is the way we help ourselves !</div></i><br/>
+    <i><div id="subhead">Helping others is the way we help ourselves!</div></i><br/>
     <form>
       <input type="button" value="HOME" className="buttons" onClick="window.location.href=''"></input>
       <input type="button" value="ABOUT" className="buttons" onClick="window.location.href=''"></input>
