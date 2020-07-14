@@ -7,9 +7,6 @@ function App() {
   return (
     <div>
       <Header/>
-      <div>
-        Hello World !
-      </div>
       <Footer/>
     </div>
   );
