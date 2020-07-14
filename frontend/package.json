@@ -10,6 +10,7 @@
     "disqus-react": "^1.0.9",
     "react": "^16.13.1",
     "react-bootstrap": "^1.2.2",
+    "react-countup": "^4.3.3",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },

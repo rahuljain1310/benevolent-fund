@@ -9,19 +9,19 @@ function ImageCarousel () {
   return(
     <Carousel >
       <Carousel.Item className="carouselItemClass">
-        <img className="carouselClass" src={iitd} />
+        <img className="carouselClass" src={iitd} alt="poster" />
         <Carousel.Caption>
           <h2>IIT DELHI</h2>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className="carouselItemClass">
-        <img className="carouselClass" src={rickshaw} />
+        <img className="carouselClass" src={rickshaw} alt="poster" />
         <Carousel.Caption>
           <h2>Rickshawpuller at IITD</h2>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className="carouselItemClass">
-        <img className="carouselClass" src={iitd4} />
+        <img className="carouselClass" src={iitd4} alt="poster" />
         <Carousel.Caption>
           <h2>IITD Again</h2>
         </Carousel.Caption>
