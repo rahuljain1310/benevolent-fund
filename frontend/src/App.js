@@ -10,12 +10,14 @@ import FormFeedback from './Pages/FormFeedback/FormFeedback';
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <ImageCarousel />
-      <BulletinBoard />
-      <FormFeedback/>
-      <DisqusComments/>
+    <div className = "page-container">
+      <div className = "content-wrap">
+        <Header/>
+        <ImageCarousel />
+        <BulletinBoard />
+        <FormFeedback/>
+        <DisqusComments/>
+      </div>
       <Footer/>
     </div>
   );
