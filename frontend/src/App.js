@@ -8,11 +8,13 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className = "page-container">
+    <div className = "content-wrap">
       <Header/>
       <ImageCarousel />
       <BulletinBoard />
       <DisqusComments/>
+      </div>
       <Footer/>
     </div>
   );
