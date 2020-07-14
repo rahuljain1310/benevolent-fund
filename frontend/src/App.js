@@ -15,6 +15,7 @@ function App() {
         <Header/>
         <ImageCarousel />
         <BulletinBoard />
+        <FormFeedback/>
         <DisqusComments/>
       </div>
       <Footer/>
