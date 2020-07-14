@@ -1,0 +1,52 @@
+.listClass {
+    width: 300px;
+    height: 600px;
+    border: solid chartreuse;
+    margin: 15px 2px 2px 15px;
+    border-style: groove;
+    border-bottom: dark darksalmon;
+    list-style-type: square;
+    border-radius: 10px;
+    vertical-align: top;
+    box-shadow: 5px 5px 3px  rgb(36, 176, 231);
+    overflow: hidden;
+    display: inline-block;
+    color: rgb(230, 77, 103);
+}
+.lgi{
+    border-bottom: dark darksalmon;
+}
+
+h3{
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(140, 31, 230);
+}
+.btn-primary{
+    align-items: center;
+    margin:60%
+}
+
+.CardClass{
+    display: inline-block;
+    margin: 15px 10px 5px 30px;
+}
+
+.counterClass{
+    font-size: 100px;
+    border:solid rgb(24, 139, 14);
+    border-radius: 50%;
+    background-color:black;
+    color: white;
+    height: 25px;
+    /* width: 25px; */
+    text-align: center;
+    /* border: solid chartreuse; */
+    margin: auto;
+
+}
+
+.CardClass h4{
+    color: rgb(55, 42, 233);
+    text-align: center;
+}
