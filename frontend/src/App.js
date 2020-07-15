@@ -7,6 +7,7 @@ import BulletinBoard from './Pages/bulletinboard/Bulletinboard';
 import './App.css';
 import FormFeedback from './Pages/FormFeedback/FormFeedback';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CommentCard from './Pages/CommentCard/CommentCard';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <div>
       <Header/>
       <ImageCarousel />
+      <CommentCard />
       <BulletinBoard />
       <FormFeedback/>
       <Footer/>
