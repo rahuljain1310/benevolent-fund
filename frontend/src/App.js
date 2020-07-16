@@ -3,9 +3,9 @@ import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import ImageCarousel from './Pages/Carousel/Carousel';
 import BulletinBoard from './Pages/Bulletinboard/Bulletinboard';
+import Beneficiaries from './Pages/Beneficiaries/Beneficiaries'
 import DisqusComments from './Pages/Comments/Comments';
 import './App.css';
-import FormFeedback from './Pages/FormFeedback/FormFeedback';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Header/>
         <ImageCarousel />
         <BulletinBoard />
-        <FormFeedback/>
+        <Beneficiaries/>
         <DisqusComments/>
       </div>
       <Footer/>
