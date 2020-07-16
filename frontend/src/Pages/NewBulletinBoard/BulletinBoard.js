@@ -57,7 +57,7 @@ function NewBulletinBoard(){
 
 
     return(
-        <Container style={{height:'575px'}}>
+        <Container style={{height:'575px',backgroundColor: 'rgb(245, 244, 201)'}}>
             <Row >
                 <Col md={3}>
                     <Card border="info"  >
