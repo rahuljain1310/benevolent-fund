@@ -1,4 +1,4 @@
-/* .listClass {
+ .listClass {
     width: 300px;
     height: 600px;
     border: solid chartreuse;
@@ -39,14 +39,14 @@ h3{
     background-color:black;
     color: white;
     height: 25px;
-    /* width: 25px; */
-    /* text-align: center; */
-    /* border: solid chartreuse; */
-    /* margin: auto;
+    width: 25px;
+     text-align: center; 
+    border: solid chartreuse;
+     margin: auto;
 
 }
 
 .CardClass h4{
     color: rgb(55, 42, 233);
     text-align: center;
-} */ 
+}

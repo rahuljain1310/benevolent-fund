@@ -57,14 +57,14 @@ function NewBulletinBoard(){
 
 
     return(
-        <Container style={{height:'500px'}}>
+        <Container style={{height:'575px'}}>
             <Row >
                 <Col md={3}>
                     <Card border="info"  >
                         <Card.Header className="text-center" style={{color:'rgb(65, 6, 80)'}}>Total Contributors</Card.Header>
                         <Card.Body>
                         <p className="text">
-                        <CountUp  end={contributorsCount} className="counterClass" />
+                        <CountUp  end={contributorsCount} />
                         </p>
                         </Card.Body>
                     </Card>
@@ -82,7 +82,7 @@ function NewBulletinBoard(){
                     <hr />
                 </Col>
                 
-                <Col md={6} bsPrefix="cold"  style={{overflowY:'scroll', height:'500px', alignItems:'centre', margin:'auto'}}>
+                <Col md={6} bsPrefix="cold"  style={{overflowY:'scroll', height:'575px', alignItems:'centre', margin:'auto'}}>
                     <h3 style={{textAlign:'centre', color:'rgb(65, 6, 80)', margin:'auto'}}>Contributors</h3>
                     <ListGroup>
                         {listOfContributors}

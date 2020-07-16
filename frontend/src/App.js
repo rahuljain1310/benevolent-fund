@@ -14,7 +14,7 @@ function App() {
       <div className = "content-wrap">
         <Header/>
         <ImageCarousel />
-        {/* <BulletinBoard /> */}
+        <BulletinBoard />
         <hr style={{width: '80%', backgroundColor:'orange'}}/>
         <NewBulletinBoard />
         <FormFeedback/>
