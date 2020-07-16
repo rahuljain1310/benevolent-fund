@@ -20,11 +20,11 @@ function Footer () {
       <Container>
         <Row>
           <Col>
-            <h3>Got a Feedback ?</h3>
+            <h4>Got a Feedback ?</h4>
             <FormFeedback/>
           </Col>
           <Col>
-            <h3>Links</h3>
+            <h4>Links</h4>
             <ul class="list-unstyled">
               <li> &#8594; <a href="#">Home</a></li>
               <li> &#8594; <a href="#about-section">About</a></li>
@@ -34,7 +34,7 @@ function Footer () {
             </ul>
           </Col>
           <Col>
-            <h3>Have a Questions?</h3>
+            <h4>Have a Questions?</h4>
             <ul class="list-unstyled">
               <li> &#8594; <span>SC-02 Vindhyachal Hostel, IIT Delhi</span> </li>
               <li> &#8594; <span>+91-8770915084</span> </li>
