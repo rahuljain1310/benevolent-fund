@@ -23,7 +23,7 @@ function BulletinBoard(){
     return(
         <div>
             <div className="listClass">
-                <h3>Beneficiaries </h3>
+                <h3 style={{textAlign:'center'}}>Beneficiaries </h3>
                 <hr />
                 <ul>
                     {listOfBeneficiary}

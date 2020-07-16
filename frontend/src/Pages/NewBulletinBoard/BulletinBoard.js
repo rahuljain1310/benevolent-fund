@@ -83,7 +83,7 @@ function NewBulletinBoard(){
                 </Col>
                 
                 <Col md={6} bsPrefix="cold"  style={{overflowY:'scroll', height:'575px', alignItems:'centre', margin:'auto'}}>
-                    <h3 style={{textAlign:'centre', color:'rgb(65, 6, 80)', margin:'auto'}}>Contributors</h3>
+                    <h3 style={{color:'rgb(65, 6, 80)', textAlign:'center'}}>Contributors</h3>
                     <ListGroup>
                         {listOfContributors}
                     </ListGroup>
