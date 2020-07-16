@@ -1,0 +1,21 @@
+.ContributeButton{
+  margin : 16px 25%;
+}
+
+.ContributeButton a {
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  background-color: red;
+  text-align: center;
+  padding: 10px 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+.ContributeButton a:hover {
+  transition: 1s;
+  background-color: darkred;
+  color: white;
+  text-decoration: none;
+}
