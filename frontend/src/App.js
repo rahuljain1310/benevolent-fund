@@ -6,7 +6,7 @@ import BulletinBoard from './Pages/bulletinboard/Bulletinboard';
 import DisqusComments from './Pages/Comments/Comments';
 import './App.css';
 import FormFeedback from './Pages/FormFeedback/FormFeedback';
-
+import NewBulletinBoard from './Pages/NewBulletinBoard/BulletinBoard';
 
 function App() {
   return (
@@ -14,7 +14,9 @@ function App() {
       <div className = "content-wrap">
         <Header/>
         <ImageCarousel />
-        <BulletinBoard />
+        {/* <BulletinBoard /> */}
+        <hr style={{width: '80%', backgroundColor:'orange'}}/>
+        <NewBulletinBoard />
         <FormFeedback/>
         <DisqusComments/>
       </div>
