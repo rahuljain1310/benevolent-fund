@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.css';
 import iitdLogo from '../Assets/iitdLogo.jpg';
+import SmallContributeButton from '../Pages/SmallContributeButton/SmallContributeButton';
 
 function Header () {
   return(
