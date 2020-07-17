@@ -43,10 +43,6 @@
 .cardDiv{
     display: inline;
 }
-
 .chartclass{
-    padding-left: 40px;
-    margin-left: 20px;
-    /* background-color: red; */
-
+    width:100%;
 }

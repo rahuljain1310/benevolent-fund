@@ -82,9 +82,9 @@ function NewBulletinBoard(){
                     </Card>
                     <hr />
                 </Col> */}
-                <Col md={6} style={{alignItems:'center'}}>
+                <Col md={6}>
                     <CardGroup>
-                    <Card border="info"  >
+                    <Card border="info" style={{width:'50%',boxSizing:"border-box",margin:'auto',marginTop:'15px'}}>
                         <Card.Header className="text-center" style={{color:'rgb(65, 6, 80)'}}>Total Contributors</Card.Header>
                         <Card.Body>
                         <p className="text">
@@ -92,7 +92,7 @@ function NewBulletinBoard(){
                         </p>
                         </Card.Body>
                     </Card>
-                    <Card border="info" >
+                    <Card border="info"  style={{width:'50%',boxSizing:"border-box",margin:'auto',marginTop:'15px'}}>
                     <Card.Header className="text-center" style={{color:'rgb(65, 6, 80)'}}>Total Contribution</Card.Header>
                     <Card.Body>
                     <p className="text">
@@ -103,7 +103,7 @@ function NewBulletinBoard(){
                     </CardGroup>
                     <hr style={{color:'orange'}}/>
                    
-                    <ChartFigure className="chartclass" />
+                    <ChartFigure className="chartclass" style={{minHeight:'300px',position:'static'}} />
                 </Col>
                 
                 <Col md={6} bsPrefix="cold"  style={{overflowY:'scroll', height:'575px', alignItems:'centre', margin:'auto'}}>

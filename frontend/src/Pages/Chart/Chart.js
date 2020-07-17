@@ -4,8 +4,7 @@ import Chart from "react-google-charts";
 function ChartFigure(){
     return(
         <Chart
-        width={'500px'}
-        height={'300px'}
+        width={'100%'}
         chartType="PieChart"
         loader={<div>Loading Chart</div>}
         data={[
