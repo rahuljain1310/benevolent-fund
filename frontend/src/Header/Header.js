@@ -7,15 +7,18 @@ function Header () {
   return(
   <header className="header">
     <img src={iitdLogo} alt="IIT-D Logo" id="image"></img>
-    <b><div id="head">IIT DELHI BENEVOLENT FUND</div></b>
-    <i><div id="subhead">Helping others is the way we help ourselves!</div></i>
-    <SmallContributeButton/>
+    <b>
+      <div id="head">IIT DELHI BENEVOLENT FUND</div>
+    </b>
+    <i>
+      <div id="subhead">
+        Helping others is the way we help ourselves!
+      </div>
+    </i>
     <div className="color">
-    <hr/>
-    <a style={{textDecoration:'none'}} href="" className="Links">Home</a>
-    <a style={{textDecoration:'none'}} href="" className="Links">About</a>
-    <a style={{textDecoration:'none'}} href="" className="Links">Contribute</a>
-    <hr/>
+        <a style={{textDecoration:'none'}} href="" className="Links">Home</a>
+        <a style={{textDecoration:'none'}} href="" className="Links">About</a>
+        <a style={{textDecoration:'none'}} href="" className="Links">Contribute</a>
     </div>
   </header>
   )
