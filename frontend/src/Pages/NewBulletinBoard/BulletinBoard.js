@@ -8,7 +8,8 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import ListGroup from 'react-bootstrap/ListGroup';
-import Badge from 'react-bootstrap/Badge';
+import CardGroup from 'react-bootstrap/CardGroup';
+import ChartFigure from '../Chart/Chart';
 
 function NewBulletinBoard(){
     const [beneficiary, setBeneficiary] = useState([
@@ -59,7 +60,7 @@ function NewBulletinBoard(){
     return(
         <Container style={{height:'575px',backgroundColor: 'rgb(245, 244, 201)'}}>
             <Row >
-                <Col md={3}>
+                {/* <Col md={3}>
                     <Card border="info"  >
                         <Card.Header className="text-center" style={{color:'rgb(65, 6, 80)'}}>Total Contributors</Card.Header>
                         <Card.Body>
@@ -80,6 +81,29 @@ function NewBulletinBoard(){
                     </Card.Body>
                     </Card>
                     <hr />
+                </Col> */}
+                <Col md={6} style={{alignItems:'center'}}>
+                    <CardGroup>
+                    <Card border="info"  >
+                        <Card.Header className="text-center" style={{color:'rgb(65, 6, 80)'}}>Total Contributors</Card.Header>
+                        <Card.Body>
+                        <p className="text">
+                        <CountUp  end={contributorsCount} />
+                        </p>
+                        </Card.Body>
+                    </Card>
+                    <Card border="info" >
+                    <Card.Header className="text-center" style={{color:'rgb(65, 6, 80)'}}>Total Contribution</Card.Header>
+                    <Card.Body>
+                    <p className="text">
+                    <CountUp  end={totalAmount} />
+                    </p>
+                    </Card.Body>
+                    </Card>
+                    </CardGroup>
+                    <hr style={{color:'orange'}}/>
+                   
+                    <ChartFigure className="chartclass" />
                 </Col>
                 
                 <Col md={6} bsPrefix="cold"  style={{overflowY:'scroll', height:'575px', alignItems:'centre', margin:'auto'}}>
