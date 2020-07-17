@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.css';
 import iitdLogo from '../Assets/iitdLogo.jpg';
+import '../Pages/ContributeButton/ContributeButton.css';
 
 function Header () {
   return(
@@ -12,7 +13,9 @@ function Header () {
     <hr/>
     <a style={{textDecoration:'none'}} href="" className="Links">Home</a>
     <a style={{textDecoration:'none'}} href="" className="Links">About</a>
+    <div class='ContributeButton'>
     <a style={{textDecoration:'none'}} href="" className="Links">Contribute</a>
+    </div>
     <hr/>
     </div>
   </header>

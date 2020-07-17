@@ -7,6 +7,7 @@ import DisqusComments from './Pages/Comments/Comments';
 import './App.css';
 import FormFeedback from './Pages/FormFeedback/FormFeedback';
 import ContributeButton from './Pages/ContributeButton/ContributeButton.js'
+import ContributionCard from './Pages/ContributionCard/ContributionCard.js'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <ImageCarousel />
         <BulletinBoard />
         <FormFeedback/>
+        <ContributionCard/>
         <DisqusComments/>
         <ContributeButton />
       </div>
