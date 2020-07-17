@@ -23,13 +23,15 @@ function Beneficiaries () {
         <Row>
           <Col>
             <h3>Beneficiaries </h3>
+            <hr/>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Curabitur scelerisque semper sem, eu condimentum leo luctus eu.
             Phasellus eleifend accumsan purus, nec blandit lectus finibus vitae.
             Vivamus faucibus pharetra venenatis. Vivamus a massa lorem.
             Aenean nec enim id orci porta dictum et pretium mi. 
-            <hr/>
+            <br/>
+            <br/>
             <Button>Load more</Button>
             </p>
           </Col>
