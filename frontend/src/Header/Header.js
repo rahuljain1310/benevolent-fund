@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 import iitdLogo from '../Assets/iitdLogo.jpg';
-import '../Pages/ContributeButton/ContributeButton.css';
+import SmallContributeButton from '../Pages/SmallContributeButton/SmallContributeButton';
 
 function Header () {
   return(
@@ -9,13 +9,12 @@ function Header () {
     <img src={iitdLogo} alt="IIT-D Logo" id="image"></img>
     <b><div id="head">IIT DELHI BENEVOLENT FUND</div></b>
     <i><div id="subhead">Helping others is the way we help ourselves!</div></i>
+    <SmallContributeButton/>
     <div className="color">
     <hr/>
     <a style={{textDecoration:'none'}} href="" className="Links">Home</a>
     <a style={{textDecoration:'none'}} href="" className="Links">About</a>
-    <div class='ContributeButton'>
     <a style={{textDecoration:'none'}} href="" className="Links">Contribute</a>
-    </div>
     <hr/>
     </div>
   </header>

@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
-import ContributeButton from '../ContributeButton/ContributeButton.js'
 
 function ContributionCard () {
   return(
@@ -26,7 +25,7 @@ function ContributionCard () {
       </div>
 
       <div class='btn'>
-       <ContributeButton/>
+       
       </div>
 
     </div>
