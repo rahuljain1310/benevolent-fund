@@ -1,4 +1,4 @@
-.listClass {
+ .listClass {
     width: 300px;
     height: 600px;
     border: solid chartreuse;
@@ -16,11 +16,16 @@
 .lgi{
     border-bottom: dark darksalmon;
 }
-
-.listClass h3{
+/* 
+h3{
     text-align: center;
     padding-top: 10px;
     color: rgb(140, 31, 230);
+<<<<<<< HEAD
+} */
+.btn-primary{
+    align-items: center;
+    margin:60%;
 }
 
 .CardClass{
@@ -35,10 +40,10 @@
     background-color:black;
     color: white;
     height: 25px;
-    /* width: 25px; */
-    text-align: center;
-    /* border: solid chartreuse; */
-    margin: auto;
+    width: 25px;
+     text-align: center; 
+    border: solid chartreuse;
+     margin: auto;
 
 }
 
