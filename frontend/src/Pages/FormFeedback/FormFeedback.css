@@ -1,5 +1,5 @@
 .FormFeedback{
-  text-align: center;
+  margin: 16px 8px;
 }
 
 .FormFeedback a{
@@ -8,12 +8,14 @@
   text-align: center;
   background-color: green;
   color: white;
-  padding: 7px;
-  border-radius: 100px;
+  padding: 16px;
+  border-radius: 4px;
   text-decoration: none;
 }
 
 .FormFeedback a:hover{
   background-color: darkgreen;
   transition: .5s;
+  color: white;
+  text-decoration: none;
 }

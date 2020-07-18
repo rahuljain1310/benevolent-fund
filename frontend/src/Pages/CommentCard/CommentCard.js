@@ -5,7 +5,7 @@ import './CommentCard.css'
 function CommentCard () {
     return(
         <Card className="CommentCard">
-            <Card.Img variant="top" src="" alt="My Profile Picture" className="image" />
+            <Card.Img variant="top" src={rahul} alt="My Profile Picture" className="image" />
             <Card.Body className="body">
                 <Card.Text className="title">
                 <b>RAHUL JAIN</b><br/>

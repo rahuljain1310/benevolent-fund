@@ -1,7 +1,30 @@
-.footer{
-    color: black;
-    background-color: rgb(69, 219, 199);
+footer{
+    color:white;
+    background-color: #000;
     position: relative;
-    bottom: 0;
-    width: 100%
+    width: 100%;
+}
+
+.Quoterow {
+    font-size: 1.3em;
+    line-height: 2em;
+    text-align: center;
+    margin: 32px ;
+}
+
+.copyright {
+    text-align: center;
+    margin: 32px;
+    font-size: 1.2em;
+}
+
+footer li {
+    line-height: 1.8em;
+    color: white;
+    margin-left: 16px;
+}
+
+footer a {
+    text-decoration: none !important;
+    color: white;
 }

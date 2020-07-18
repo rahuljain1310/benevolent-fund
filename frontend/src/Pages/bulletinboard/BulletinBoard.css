@@ -17,14 +17,10 @@
     border-bottom: dark darksalmon;
 }
 
-h3{
+.listClass h3{
     text-align: center;
     padding-top: 10px;
     color: rgb(140, 31, 230);
-}
-.btn-primary{
-    align-items: center;
-    margin:60%
 }
 
 .CardClass{
