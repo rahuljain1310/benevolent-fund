@@ -31,8 +31,6 @@ function BeneficiariesList ({beneficiary}) {
 
   useEffect(() => {
     const interval = setInterval( () => {
-      // var tmp = segmentList.slice()
-      // tmp.push(tmp.shift())
       setSegmentList(segmentList => {
         var tmp = segmentList.slice()
         tmp.push(tmp.shift())
@@ -68,7 +66,6 @@ function Beneficiaries () {
 
   return (
     <section id='sc-bene' className="beneficiary">
-      {/* <span className='target' id='sc-bene'/> */}
       <Container> 
         <Row>
           <Col sm={6}> <BeneficiariesText/> </Col>

@@ -32,10 +32,10 @@ function Header () {
       </Col>
       <Col>
         <nav className="color">
-          <a className="Links" href = ""> Home  </a>
           <a className="Links" href = ""> About </a>
-          <a className="Links" href = "#sc-bene" >Beneficiaries</a>
-          <a className="Links" href = "">Comments</a>
+          <a className="Links" href = "#sc-bulletin">Contributors</a>
+          <a className="Links" href = "#sc-beneficiary" >Beneficiaries</a>
+          <a className="Links" href = "#sc-comments">Comments</a>
           <SmallContributeButton/>
         </nav>
       </Col>
