@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import About from './Pages/About/About'
-import BulletinBoard from './Pages/bulletinboard/Bulletinboard';
+//import BulletinBoard from './Pages/bulletinboard/Bulletinboard';
 import DisqusComments from './Pages/Comments/Comments';
 import './App.css';
 import FormFeedback from './Pages/FormFeedback/FormFeedback';
@@ -19,7 +19,6 @@ function App() {
       <Header/>
       <About/>
       <Carousel />
-      <BulletinBoard />
       <FormFeedback/>
       <DisqusComments/>
       <Beneficiaries/>
