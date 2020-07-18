@@ -3,25 +3,35 @@ import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import About from './Pages/About/About'
 import BulletinBoard from './Pages/bulletinboard/Bulletinboard';
-<<<<<<< HEAD
-/*import DisqusComments from './Pages/Comments/Comments';*/
+import DisqusComments from './Pages/Comments/Comments';
 import './App.css';
 import FormFeedback from './Pages/FormFeedback/FormFeedback';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Carousel from './Pages/Carousel/Carousel';
+import Beneficiaries from './Pages/Beneficiaries/Beneficiaries';
 import CommentCard from './Pages/CommentCard/CommentCard';
+import CommentPage from './Pages/CommentCard/CommentPage';
 
 
 function App() {
   return (
     <div>
       <Header/>
-      <ImageCarousel />
-      <CommentCard />
+      <About/>
+      <Carousel />
       <BulletinBoard />
       <FormFeedback/>
+      <DisqusComments/>
+      <Beneficiaries/>
+      <CommentCard/>
+      <CommentPage/>
       <Footer/>
-=======
-import Beneficiaries from './Pages/Beneficiaries/Beneficiaries'
+    </div>
+  )
+}
+  export default App;
+
+/*
 import DisqusComments from './Pages/Comments/Comments';
 import './App.css';
 
@@ -39,6 +49,7 @@ function App() {
 >>>>>>> da2d363315172d117be2a51ea3bbe73dc7bf15af
     </div>
   );
-}
-//    <DisqusComments/> 
+}*
+//    <DisqusComments/>
 export default App;
+*/

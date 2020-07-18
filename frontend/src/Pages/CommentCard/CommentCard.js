@@ -1,23 +1,21 @@
-import React from 'react';
-import {Card} from 'react-bootstrap';
+import React, {Component} from 'react';
+import{Card} from 'react-bootstrap';
 import './CommentCard.css'
 
-function CommentCard (Name , About , Comments) {
-    return(
-        <Card className="CommentCard">
-            <Card.Img variant="top" src={rahul} alt="My Profile Picture" className="image" />
-            <Card.Body className="body">
-                <Card.Text className="title">
-                <b>Name </b><br/>
-                About
-                </Card.Text>
-                <Card.Text className="para">
-                Comments<br/>
-                <a style={{textDecoration:'none'}} href="" className="More">See More...</a>
-                </Card.Text>
-            </Card.Body>
+class CommentCard extends Component{
+  constructor(props) {
+    super(props);
+  }
+render () {
+  return(
+      <Card className="CommentCard">
+          <Card.Img variant="top" src="" alt="My Profile Picture" className="image" />
+            <Card.Title>{this.props.person.name}</Card.Title>
+            <Card.Subtitle>{this.props.person.year}</Card.Subtitle>
+            <Card.Text>{this.props.person.description}</Card.Text>
         </Card>
-        )
+      )
     }
+}
 
     export default CommentCard;
