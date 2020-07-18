@@ -1,4 +1,4 @@
-.listClass {
+ .listClass {
     width: 300px;
     height: 600px;
     border: solid chartreuse;
@@ -35,10 +35,10 @@
     background-color:black;
     color: white;
     height: 25px;
-    /* width: 25px; */
-    text-align: center;
-    /* border: solid chartreuse; */
-    margin: auto;
+    width: 25px;
+     text-align: center; 
+    border: solid chartreuse;
+     margin: auto;
 
 }
 
