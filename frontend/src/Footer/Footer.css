@@ -2,12 +2,11 @@ footer{
     color:white;
     background-color: #000;
     position: relative;
-    bottom: 0;
     width: 100%;
 }
 
 .Quoterow {
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 2em;
     text-align: center;
     margin: 32px ;
@@ -21,7 +20,6 @@ footer{
 
 footer li {
     line-height: 1.8em;
-    font-size: 1.2em;
     color: white;
     margin-left: 16px;
 }

@@ -8,20 +8,22 @@ import './App.css';
 import FormFeedback from './Pages/FormFeedback/FormFeedback';
 import NewBulletinBoard from './Pages/NewBulletinBoard/BulletinBoard';
 import Beneficiaries from './Pages/NewBeneficiaries/Beneficiaries';
+
 function App() {
   return (
     <div className = "page-container">
       <div className = "content-wrap">
         <Header/>
         <ImageCarousel />
-        <BulletinBoard />
+        {/* <BulletinBoard /> */}
         <hr style={{width: '80%', backgroundColor:'orange'}}/>
         <NewBulletinBoard />
         <Beneficiaries />
         <FormFeedback/>
+        {/* <About/> */}
         <DisqusComments/>
+        <Footer/>
       </div>
-      <Footer/>
     </div>
   );
 }
