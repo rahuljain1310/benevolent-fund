@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Button,
   Container,
@@ -7,6 +7,52 @@ import {
 } from 'react-bootstrap';
 import './Beneficiaries.css';
 
+function BeneficiariesText () {
+  return (
+    <div>
+      <h3>Beneficiaries</h3>
+      <hr/>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Curabitur scelerisque semper sem, eu condimentum leo luctus eu.
+        Phasellus eleifend accumsan purus, nec blandit lectus finibus vitae.
+        Vivamus faucibus pharetra venenatis. Vivamus a massa lorem.
+        Aenean nec enim id orci porta dictum et pretium mi. 
+        <br/> <br/>
+        <Button className='btn-danger'>Load more</Button>
+      </p>
+    </div>
+  )
+}
+
+function BeneficiariesList ({beneficiary}) {
+  
+  const [segmentList, setSegmentList] = useState(beneficiary.slice())
+
+  useEffect(() => {
+    const interval = setInterval( () => {
+      // var tmp = segmentList.slice()
+      // tmp.push(tmp.shift())
+      setSegmentList(segmentList => {
+        var tmp = segmentList.slice()
+        tmp.push(tmp.shift())
+        return tmp
+      })
+    }, 4000);
+    return () => clearInterval(interval)
+  }, []);
+
+  return (
+    <div className='list-div'>
+      <ul> 
+        {segmentList.slice(0,5).map((person, idx) => (
+          <li> {person[0]} : {person[1]} </li>
+          ))}
+      </ul>
+    </div>
+  )
+}
+
 function Beneficiaries () {
 
   const beneficiary = [
@@ -14,36 +60,22 @@ function Beneficiaries () {
     ["Aashish", "Vindy Washerman"],
     ["Om","Shivalik gardner"],
     ["Vinay","Himadri shop"],
-    ["Vasant","Kailash juice shop"]
+    ["Vasant","Kailash juice shop"],
+    ["Om","Shivalik gardner"],
+    ["Vinay","Himadri shop"],
+    ["Vasant","Kailash juice shop"]    
   ] 
 
   return (
-    <section className="beneficiary">
-      <Container>
+    <section id='sc-bene' className="beneficiary">
+      {/* <span className='target' id='sc-bene'/> */}
+      <Container> 
         <Row>
-          <Col>
-            <h3>Beneficiaries </h3>
-            <hr/>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Curabitur scelerisque semper sem, eu condimentum leo luctus eu.
-            Phasellus eleifend accumsan purus, nec blandit lectus finibus vitae.
-            Vivamus faucibus pharetra venenatis. Vivamus a massa lorem.
-            Aenean nec enim id orci porta dictum et pretium mi. 
-            <br/>
-            <br/>
-            <Button>Load more</Button>
-            </p>
-          </Col>
-          <Col>
-            <ul> 
-                {beneficiary.map((person, idx) => (
-                  <li> {person[0]} : {person[1]} <hr style={{color:"black"}} /> </li>
-                  ))}
-            </ul>
-          </Col>
+          <Col sm={6}> <BeneficiariesText/> </Col>
+          <Col sm={2}> </Col>
+          <Col sm={4}> <BeneficiariesList {...{beneficiary}}/> </Col>
         </Row>
-    </Container>
+      </Container>
     </section>
   )
 }

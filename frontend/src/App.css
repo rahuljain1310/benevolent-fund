@@ -13,6 +13,17 @@
   }
 }
 
+/* For Linking Header Navbar to Sections */
+.target {
+  display: block; 
+  content: " "; 
+  margin-top: -140px; 
+  height: 140px; 
+  visibility: hidden; 
+  pointer-events: none;
+  scroll-behavior: smooth; 
+}
+
 .page-container{
   display: flex;
   flex-direction: column;
