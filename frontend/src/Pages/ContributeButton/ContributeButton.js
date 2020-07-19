@@ -3,7 +3,7 @@ import './ContributeButton.css'
 
 function SmallContributeButton () {
   return(
-    <span class='SmallContributeButton'>
+    <span className='SmallContributeButton'>
       <a href="#" target="blank">Contribute</a>
     </span>
   )
