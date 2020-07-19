@@ -1,10 +1,14 @@
-.CommentCard{
-  border-radius: 7px;
-  border-color:#787575;
-  border-width:medium;
-  width:280px;
-  height: 300px;
+#sc-testimonials h3 {
+  text-align: center;
+}
+
+div.CommentCard{
+  border-radius: 8px;
+  border-width: medium;
   margin: 17px;
+  padding: 8px;
+  /* border-color:#787575; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .image{
