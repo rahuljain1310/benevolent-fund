@@ -11,12 +11,9 @@ header {
 
 .color{
   /* background-color: #b8ffce; */
-  float: right;
   padding: 8px;
   margin-top: 12px;
-  margin-right: 5%;
   border: 1px 0px solid black;
-
 }
 
 .Links{
@@ -31,22 +28,27 @@ header {
 }
 
 .Links:hover{
-    text-decoration: none;
-    color:  #EF4F5E;
-    border-bottom: 1px solid  #EF4F5E;
+  text-decoration: none;
+  color:  #EF4F5E;
+  border-bottom: 1px solid  #EF4F5E;
+}
+
+#header-image{
+  width: 50px;
+  height: 50px;
 }
 
 @media(min-width: 601px){
+  .color{
+    float: right;
+    margin-right: 5%;
+  }
   #head{
     font-size: 22px;
     font-weight: bold;
   }
   #subhead{
     font-size: 14px;
-  }
-  #header-image{
-    width: 50px;
-    height: 50px;
   }
   .Links{
     font-size: 15px;
@@ -55,6 +57,10 @@ header {
 }
 
 @media(max-width: 600px){
+  .color{
+    width: 370px;
+    margin: auto;
+  }
   #head{
       font-size: 17px;
       font-weight: bold;
@@ -62,10 +68,6 @@ header {
   }
   #subhead{
     font-size: 10px;
-  }
-  #header-image{
-    width: 33px;
-    height: 27px;
   }
   .Links{
     font-size: 12px;

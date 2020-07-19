@@ -1,9 +1,10 @@
 #sc-about {
   margin-top: 5%;
+  padding: 10px;
 }
 
 .aboutcard {
-  padding: 16px;
+  padding: 10px;
   margin: 0px 10px;
   height: 600px;
 }
