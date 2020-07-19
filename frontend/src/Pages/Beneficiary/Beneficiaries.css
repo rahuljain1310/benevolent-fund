@@ -1,17 +1,6 @@
-.target {
-  display: block; 
-  content: " "; 
-  margin-top: -140px; 
-  height: 140px; 
-  visibility: hidden; 
-  pointer-events: none;
-}
-
-.beneficiary {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 8px;
-  padding: 48px 0px;
-  margin: 5% 3%;
+.beneficiary-list {
+  overflow-y: scroll;
+  height:  35em;
 }
 
 .list-div {

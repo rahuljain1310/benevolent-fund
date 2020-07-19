@@ -1,11 +1,9 @@
 import React from 'react';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
-import BulletinBoard from './Pages/bulletinboard/Bulletinboard';
+import BulletinBoard from './Pages/Bulletin/BulletinBoard';
 import DisqusComments from './Pages/Comments/Comments';
-import FormFeedback from './Pages/FormFeedback/FormFeedback';
-import NewBulletinBoard from './Pages/NewBulletinBoard/BulletinBoard';
-import Beneficiaries from './Pages/NewBeneficiaries/Beneficiaries';
+import Beneficiaries from './Pages/Beneficiary/Beneficiaries';
 import About from './Pages/About/About';
 import './App.css';
 
@@ -14,7 +12,7 @@ function App() {
     <div className="page-container">
       <Header />
       <About />
-      <NewBulletinBoard />
+      <BulletinBoard />
       <Beneficiaries />
       <DisqusComments />
       <Footer />
