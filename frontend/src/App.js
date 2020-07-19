@@ -9,7 +9,7 @@ import FormFeedback from './Pages/FormFeedback/FormFeedback';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from './Pages/Carousel/Carousel';
 import Beneficiaries from './Pages/Beneficiaries/Beneficiaries';
-import CommentCard from './Pages/CommentCard/CommentCard';
+/*import CommentCard from './Pages/CommentCard/CommentCard';*/
 import CommentPage from './Pages/CommentCard/CommentPage';
 
 
@@ -23,7 +23,6 @@ function App() {
       <FormFeedback/>
       <DisqusComments/>
       <Beneficiaries/>
-      <CommentCard/>
       <CommentPage/>
       <Footer/>
     </div>

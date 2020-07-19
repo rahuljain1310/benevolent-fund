@@ -1,32 +1,31 @@
 .CommentCard{
-  border-radius: 7px;
-  border-color:#787575;
-  border-width:medium;
-  width:280px;
-  height: 300px;
-  margin: 17px;
+  border-radius: 10px;
+  border-color:black;
+  height: 380px;
+  margin: 1px;
+  border-width: thin;
 }
 
 .image{
-  width: 280px;
+  width: 200px;
   height: 130px;
-}
-
-.body{
-  background-color: #b8ffce;
 }
 
 .title{
   font-family: inherit;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 9px;
+}
+
+.subtitle{
+  font-family:inherit;
+  font-size: 13px;
+  margin-left: 9px;
 }
 
 .para{
   font-family:cursive;
   font-size: 13px;
-}
-
-.More{
-  font-family:inherit;
-  font-size: 11px;
+  margin: 9px;
 }
