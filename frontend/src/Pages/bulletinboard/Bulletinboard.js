@@ -23,12 +23,22 @@ function BulletinBoard () {
     return(
         <div>
             <div className="listClass">
+<<<<<<< HEAD
                 <h3>Beneficiaries </h3>
                 <hr/>
                 <ul> 
                     {beneficiary.map((person, idx) => (
                         <li> {person[0]} : {person[1]} <hr style={{color:"black"}} /> </li>
                     ))}
+=======
+                <h3 style={{textAlign:'center'}}>Beneficiaries </h3>
+                <hr />
+                <ul>
+                    {beneficiary.map((person, idx) => (
+                            <li> {person[0]} : {person[1]} <hr style={{color:"black"}} /> </li>
+                        ))}
+
+>>>>>>> 48b6c4359c86a7fbeaa6d0af4e2c9481f3eacfa6
                 </ul>
                 <Buttton className="btn-primary">Load more</Buttton>
             </div>

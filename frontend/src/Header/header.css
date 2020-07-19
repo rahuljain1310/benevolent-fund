@@ -11,6 +11,7 @@ header {
 
 .color{
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #b8ffce;
 =======
   /* background-color: #b8ffce; */
@@ -18,6 +19,15 @@ header {
   padding: 8px;
   margin-top: 12px;
   border: 1px 0px solid black;
+=======
+  /* background-color: #b8ffce; */
+  float: right;
+  padding: 8px;
+  margin-top: 12px;
+  margin-right: 5%;
+  border: 1px 0px solid black;
+
+>>>>>>> 48b6c4359c86a7fbeaa6d0af4e2c9481f3eacfa6
 }
 
 .Links{
@@ -93,11 +103,15 @@ header {
   font-family: inherit;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 #image{
 =======
 #header-image{
 >>>>>>> 0526f900e0af1ef3f1b1f2eeb5798ad576e8ee9d
+=======
+#header-image{
+>>>>>>> 48b6c4359c86a7fbeaa6d0af4e2c9481f3eacfa6
   float: left;
   margin-left: 15px;
   margin-top: 7px;
