@@ -1,0 +1,25 @@
+import React from 'react';
+import './ContributeButton.css'
+
+function SmallContributeButton () {
+  return(
+    <span class='SmallContributeButton'>
+      <a href="#" target="blank">Contribute</a>
+    </span>
+  )
+}
+
+function BigContributeButton () {
+  return(
+    <div class='ContributeButton'>
+      <a href="#" target="blank">
+        &hearts; Donate HERE
+      </a>
+    </div>
+  )
+}
+
+export {
+  BigContributeButton,
+  SmallContributeButton
+};

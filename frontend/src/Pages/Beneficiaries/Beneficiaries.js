@@ -1,4 +1,4 @@
- import React from 'react';
+import React from 'react';
 import {
   Button,
   Container,
@@ -23,18 +23,20 @@ function Beneficiaries () {
         <Row>
           <Col>
             <h3>Beneficiaries </h3>
+            <hr/>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Curabitur scelerisque semper sem, eu condimentum leo luctus eu.
             Phasellus eleifend accumsan purus, nec blandit lectus finibus vitae.
             Vivamus faucibus pharetra venenatis. Vivamus a massa lorem.
-            Aenean nec enim id orci porta dictum et pretium mi.
-            <hr/>
+            Aenean nec enim id orci porta dictum et pretium mi. 
+            <br/>
+            <br/>
             <Button>Load more</Button>
             </p>
           </Col>
           <Col>
-            <ul>
+            <ul> 
                 {beneficiary.map((person, idx) => (
                   <li> {person[0]} : {person[1]} <hr style={{color:"black"}} /> </li>
                   ))}

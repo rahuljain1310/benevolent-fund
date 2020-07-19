@@ -1,10 +1,9 @@
 import React from 'react';
-import Header from './Header/Header'
-import Footer from './Footer/Footer'
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
 import About from './Pages/About/About'
-import BulletinBoard from './Pages/bulletinboard/Bulletinboard';
+import ImageCarousel from './Pages/Carousel/Carousel';
 import DisqusComments from './Pages/Comments/Comments';
-import './App.css';
 import FormFeedback from './Pages/FormFeedback/FormFeedback';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from './Pages/Carousel/Carousel';
@@ -40,15 +39,17 @@ function App() {
       <div className = "content-wrap">
         <Header/>
         <About/>
-        <BulletinBoard/>
-        <Beneficiaries/>
+        <ImageCarousel />
+        <hr style={{width: '80%', backgroundColor:'orange'}}/>
+        <NewBulletinBoard />
+        <Beneficiaries />
+        <FormFeedback/>
+        <CommentPage/>
         <DisqusComments/>
         <Footer/>
       </div>
->>>>>>> da2d363315172d117be2a51ea3bbe73dc7bf15af
     </div>
-  );
-}*
-//    <DisqusComments/>
+  )
+}*/
+
 export default App;
-*/

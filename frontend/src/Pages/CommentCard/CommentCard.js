@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import{Card} from 'react-bootstrap';
+import {Card} from 'react-bootstrap';
 import './CommentCard.css'
 
 class CommentCard extends Component{
@@ -7,7 +7,8 @@ class CommentCard extends Component{
     super(props);
   }
 render () {
-  return(
+    console.log(this.props)
+    return(
       <Card className="CommentCard">
           <Card.Img variant="top" src="" alt="My Profile Picture" className="image" />
             <Card.Title className="title">{this.props.person?.name}</Card.Title>
