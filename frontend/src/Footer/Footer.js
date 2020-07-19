@@ -19,11 +19,19 @@ function Footer () {
       </p>
       <Container>
         <Row>
+<<<<<<< HEAD
           <Col>
             <h4>Got a Feedback ?</h4>
             <FormFeedback/>
           </Col>
           <Col>
+=======
+          <Col md={4} sm={6}>
+            <h4>Got a Feedback ?</h4>
+            <FormFeedback/>
+          </Col>
+          <Col md={4} sm={6}>
+>>>>>>> 0526f900e0af1ef3f1b1f2eeb5798ad576e8ee9d
             <h4>Links</h4>
             <ul class="list-unstyled">
               <li> &#8594; <a href="#">Home</a></li>
@@ -33,7 +41,11 @@ function Footer () {
               <li> &#8594; <a href="#contact-section">Contact</a></li>
             </ul>
           </Col>
+<<<<<<< HEAD
           <Col>
+=======
+          <Col md={4}>
+>>>>>>> 0526f900e0af1ef3f1b1f2eeb5798ad576e8ee9d
             <h4>Have a Questions?</h4>
             <ul class="list-unstyled">
               <li> &#8594; <span>SC-02 Vindhyachal Hostel, IIT Delhi</span> </li>

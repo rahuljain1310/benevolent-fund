@@ -1,10 +1,19 @@
 import React from 'react';
+<<<<<<< HEAD
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import About from './Pages/About/About'
 //import BulletinBoard from './Pages/bulletinboard/Bulletinboard';
+=======
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
+import BulletinBoard from './Pages/Bulletin/BulletinBoard';
+>>>>>>> 0526f900e0af1ef3f1b1f2eeb5798ad576e8ee9d
 import DisqusComments from './Pages/Comments/Comments';
+import Beneficiaries from './Pages/Beneficiary/Beneficiaries';
+import About from './Pages/About/About';
 import './App.css';
+<<<<<<< HEAD
 import FormFeedback from './Pages/FormFeedback/FormFeedback';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from './Pages/Carousel/Carousel';
@@ -25,6 +34,18 @@ function App() {
       <CommentCard/>
       <CommentPage/>
       <Footer/>
+=======
+
+function App() {
+  return (
+    <div className="page-container">
+      <Header />
+      <About />
+      <BulletinBoard />
+      <Beneficiaries />
+      <DisqusComments />
+      <Footer />
+>>>>>>> 0526f900e0af1ef3f1b1f2eeb5798ad576e8ee9d
     </div>
   )
 }
