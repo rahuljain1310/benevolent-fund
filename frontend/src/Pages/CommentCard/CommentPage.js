@@ -18,6 +18,17 @@ function CommentCard ({person}) {
   )
 }
 
+function  ShareYourStoryButton () {
+  return(
+    <div class='ShareYourStoryButton'>
+      <a href="#" target="blank">
+        &hearts; Share YOUR Experience here
+      </a>
+    </div>
+  )
+}
+
+
 function CommentPage() {
   const people = [
     {
@@ -46,6 +57,11 @@ function CommentPage() {
             <CommentCard person={person} />
           </Col>
         ))}
+      </Row>
+      <Row>
+        <Col>
+          <ShareYourStoryButton/>
+        </Col>
       </Row>
     </section>
   )

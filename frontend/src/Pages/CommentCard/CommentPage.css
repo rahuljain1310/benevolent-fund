@@ -1,6 +1,10 @@
-#sc-testimonials h3 {
+#sc-testimonials {
   text-align: center;
 }
+
+#sc-testimonials h3{
+  margin-bottom: 2em;
+} 
 
 div.CommentCard{
   border-radius: 8px;
@@ -8,8 +12,6 @@ div.CommentCard{
   border-color:black;
   margin: 1px;
   padding: 8px;
-  /* border-color:#787575; */
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .image{
@@ -34,4 +36,37 @@ div.CommentCard{
   font-family:cursive;
   font-size: 13px;
   margin: 9px;
+}
+
+.ShareYourStoryButton {
+  font-size: 1.3em;
+}
+
+.ShareYourStoryButton a {
+  width: 400px;
+  color: #e93973;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;  
+  font-family: cursive;
+  border-radius: 8px;
+  border: 2px solid #fff;
+}
+
+.ShareYourStoryButton a:hover {
+  transition: .3s;
+  border: 2px solid #e93973;
+  color: #e93973;
+  text-decoration: none;
+}
+
+.ShareYourStoryButton a .icon-favourite:before{
+  content: "\e87d";
+  color: black;
+}
+
+.padding-right-14{
+  padding-right: 20px;
 }
