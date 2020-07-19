@@ -18,8 +18,6 @@ function CommentCard ({person}) {
   )
 }
 
-
-
 function CommentPage() {
   const people = [
     {
@@ -44,7 +42,7 @@ function CommentPage() {
       <h3>What People Say </h3>
       <Row>
         {people.map((person, idx) => (
-          <Col lg="4" ms='2'>
+          <Col lg="4" sm='3'>
             <CommentCard person={person} />
           </Col>
         ))}

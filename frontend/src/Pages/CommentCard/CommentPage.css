@@ -4,33 +4,34 @@
 
 div.CommentCard{
   border-radius: 8px;
-  border-width: medium;
-  margin: 17px;
+  border-width: thin;
+  border-color:black;
+  margin: 1px;
   padding: 8px;
   /* border-color:#787575; */
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .image{
-  width: 280px;
+  width: 200px;
   height: 130px;
-}
-
-.body{
-  background-color: #b8ffce;
 }
 
 .title{
   font-family: inherit;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 9px;
+}
+
+.subtitle{
+  font-family:inherit;
+  font-size: 13px;
+  margin-left: 9px;
 }
 
 .para{
   font-family:cursive;
   font-size: 13px;
-}
-
-.More{
-  font-family:inherit;
-  font-size: 11px;
+  margin: 9px;
 }
