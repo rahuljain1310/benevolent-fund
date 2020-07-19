@@ -43,3 +43,7 @@ h5{
   color: blueviolet;
   text-align: center;
 }
+
+.carouselContainer{
+  margin-top: 80px;
+}
