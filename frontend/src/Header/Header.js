@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   Row,
   Col,
@@ -9,6 +9,14 @@ import {SmallContributeButton} from '../Pages/ContributeButton/ContributeButton'
 import './header.css';
 
 function Header () {
+
+  useEffect (() => {
+    var shiftWindow = function() { window.scrollBy(0, -120) };
+    if (window.location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
+    return () => window.removeEventListener("hashchange", shiftWindow)
+  }, [])
+
   return (
   <header>
     <Row>
@@ -25,9 +33,9 @@ function Header () {
       </Col>
       <Col md={6}>
         <nav className="color">
-          <a style={{textDecoration:'none'}} href="" className="Links">About</a>
-          <a style={{textDecoration:'none'}} href="" className="Links">Beneficiaries</a>
-          <a style={{textDecoration:'none'}} href="" className="Links">Comments</a>
+          <a className="Links" href = "#sc-bulletin">Contributors</a>
+          <a className="Links" href = "#sc-beneficiary" >Beneficiaries</a>
+          <a className="Links" href = "#sc-comments">Comments</a>
           <SmallContributeButton/>
         </nav>
       </Col>
