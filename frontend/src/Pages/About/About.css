@@ -1,5 +1,26 @@
-.about {
-  background-color: #f9f9f9;
-  padding: 32px 0px;
-  margin-top: 100px;
+#sc-about {
+  margin-top: 5%;
+}
+
+.aboutcard {
+  padding: 16px;
+  margin: 0px 10px;
+  height: 600px;
+}
+
+.aboutheading {
+  font-weight: 400;
+  color: orange;
+  font-size: 2em;
+  font-stretch: wider;
+}
+
+.aboutcontent {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3em;
+}
+
+.aboutcard h4 {
+  color: blueviolet;
+  text-align: center;
 }
