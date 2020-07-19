@@ -5,32 +5,9 @@ import About from './Pages/About/About'
 import ImageCarousel from './Pages/Carousel/Carousel';
 import DisqusComments from './Pages/Comments/Comments';
 import FormFeedback from './Pages/FormFeedback/FormFeedback';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from './Pages/Carousel/Carousel';
-import Beneficiaries from './Pages/Beneficiaries/Beneficiaries';
-/*import CommentCard from './Pages/CommentCard/CommentCard';*/
+import NewBulletinBoard from './Pages/NewBulletinBoard/BulletinBoard';
+import Beneficiaries from './Pages/NewBeneficiaries/Beneficiaries';
 import CommentPage from './Pages/CommentCard/CommentPage';
-
-
-function App() {
-  return (
-    <div>
-      <Header/>
-      <About/>
-      <Carousel />
-      <BulletinBoard />
-      <FormFeedback/>
-      <DisqusComments/>
-      <Beneficiaries/>
-      <CommentPage/>
-      <Footer/>
-    </div>
-  )
-}
-  export default App;
-
-/*
-import DisqusComments from './Pages/Comments/Comments';
 import './App.css';
 
 function App() {
@@ -50,6 +27,6 @@ function App() {
       </div>
     </div>
   )
-}*/
+}
 
 export default App;
