@@ -23,15 +23,17 @@ header {
   font-family: inherit;
   text-align: center;
   color: black;
+  text-decoration: none;
 }
 
 .Links:active{
-  color:  #0f7dfa;
+  color:  #EF4F5E;
 }
 
 .Links:hover{
-    text-decoration: underline;
-    border-bottom: 1px solid  #0f7dfa;
+    text-decoration: none;
+    color:  #EF4F5E;
+    border-bottom: 1px solid  #EF4F5E;
 }
 
 @media(min-width: 601px){
