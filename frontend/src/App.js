@@ -7,7 +7,7 @@ import DisqusComments from './Pages/Comments/Comments';
 import FormFeedback from './Pages/FormFeedback/FormFeedback';
 import NewBulletinBoard from './Pages/NewBulletinBoard/BulletinBoard';
 import Beneficiaries from './Pages/NewBeneficiaries/Beneficiaries';
-import CommentPage from './Pages/CommentCard/CommentPage';
+import Grid from './Pages/CommentCard/CommentGrid';
 import './App.css';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
         <NewBulletinBoard />
         <Beneficiaries />
         <FormFeedback/>
-        <CommentPage/>
+        <Grid/>
         <DisqusComments/>
         <Footer/>
       </div>

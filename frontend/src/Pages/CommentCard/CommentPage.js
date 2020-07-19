@@ -51,7 +51,7 @@ class CommentPage extends Component{
     }
   }
   
-  function  ShareYourStoryButton () {
+function ShareYourStoryButton () {
     return(
       <div class='ShareYourStoryButton'>
         <a href="#" target="blank">
@@ -61,12 +61,21 @@ class CommentPage extends Component{
     )
   }
 
+function ButtonHeader() {
+    return(
+        <div className='button'>
+            <ShareYourStoryButton/>
+        </div>
+    )
+}
+
   function Webpage() {
     return (
       <div className = "page-container">
         <div className = "content-wrap">
           <Header/>
-
+          <ButtonHeader/>
+          <CommentPage/>
           <Footer/>
         </div>
       </div>

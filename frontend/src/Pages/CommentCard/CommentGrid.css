@@ -1,0 +1,17 @@
+.ViweAll a {
+    font-family: "DroidArabicKufi","Roboto","Helvetica", "Arial", sans-serif !important;
+    background-color: #ef4f5e;
+    color: white;
+    border-radius: 4px;
+    padding: 8px;
+    text-align: center;
+    display: inline;
+    text-decoration: none;
+  }
+  
+  .ViewAll a:hover {
+    transition: .5s;
+    color: white;
+    text-decoration: none;
+    background-color: #e03646;
+  }
