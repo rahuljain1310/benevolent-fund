@@ -5,6 +5,7 @@ import BulletinBoard from './Pages/Bulletin/BulletinBoard';
 import DisqusComments from './Pages/Comments/Comments';
 import Beneficiaries from './Pages/Beneficiary/Beneficiaries';
 import About from './Pages/About/About';
+import MediaCard from './Pages/Media/Media';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <About />
       <BulletinBoard />
       <Beneficiaries />
+      <MediaCard />
       <DisqusComments />
       <Footer />
     </div>
