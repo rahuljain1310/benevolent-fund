@@ -4,6 +4,7 @@ import Footer from './Footer/Footer';
 import BulletinBoard from './Pages/Bulletin/BulletinBoard';
 import DisqusComments from './Pages/Comments/Comments';
 import Beneficiaries from './Pages/Beneficiary/Beneficiaries';
+import CommentPage from './Pages/CommentCard/CommentPage';
 import About from './Pages/About/About';
 import './App.css';
 
@@ -14,10 +15,11 @@ function App() {
       <About />
       <BulletinBoard />
       <Beneficiaries />
+      <CommentPage/>
       <DisqusComments />
       <Footer />
     </div>
-  );
+  )
 }
 
 export default App;
