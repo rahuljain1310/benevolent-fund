@@ -7,6 +7,7 @@ import {
 } from 'react-bootstrap';
 import './CommentPage.css';
 
+
 function CommentCard ({person}) {
   return (
     <Card className='CommentCard'>
