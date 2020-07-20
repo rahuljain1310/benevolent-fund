@@ -1,6 +1,5 @@
 import React from "react"
 import Disqus from "disqus-react"
-import './Comments.css'
 
 function DisqusComments () {
   const disqusShortname = "benevolent-fund"
@@ -10,12 +9,12 @@ function DisqusComments () {
     title: "Students for IITD Community"
   }
   return (
-    <div className='comment-section'>
+    <section id='sc-comments'>
       <Disqus.DiscussionEmbed
         shortname={disqusShortname}
         config={disqusConfig}
       />
-    </div>
+    </section>
   )
 }
 

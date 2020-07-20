@@ -1,0 +1,27 @@
+.beneficiary-list {
+  overflow-y: scroll;
+  height:  35em;
+}
+
+.list-div {
+  margin: auto;
+  padding: 12px 0px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.list-div ul {
+  padding: 12px;
+}
+
+.list-div li {
+  list-style-type: none;
+  font-size: 1.2em;
+  font-style: italic;
+  color: #DC3545;
+  padding: 8px;
+  margin: 2px;
+  border-radius: 4px;
+  transition: transform .50s ease-in;
+}

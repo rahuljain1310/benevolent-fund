@@ -19,11 +19,11 @@ function Footer () {
       </p>
       <Container>
         <Row>
-          <Col>
+          <Col md={4} sm={6}>
             <h4>Got a Feedback ?</h4>
             <FormFeedback/>
           </Col>
-          <Col>
+          <Col md={4} sm={6}>
             <h4>Links</h4>
             <ul class="list-unstyled">
               <li> &#8594; <a href="#">Home</a></li>
@@ -33,7 +33,7 @@ function Footer () {
               <li> &#8594; <a href="#contact-section">Contact</a></li>
             </ul>
           </Col>
-          <Col>
+          <Col md={4}>
             <h4>Have a Questions?</h4>
             <ul class="list-unstyled">
               <li> &#8594; <span>SC-02 Vindhyachal Hostel, IIT Delhi</span> </li>
