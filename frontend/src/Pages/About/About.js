@@ -31,8 +31,8 @@ function About () {
   return (
     <section id="sc-about">
       <Row>
-        <Col> <ImageCarousal/> </Col>
-        <Col> <CarousalText/>  </Col>
+        <Col md={6}> <ImageCarousal/> </Col>
+        <Col md={6}> <CarousalText/>  </Col>
       </Row>    
     </section>
   )
