@@ -9,25 +9,6 @@ import {SmallContributeButton} from '../Pages/ContributeButton/ContributeButton'
 import './header.css';
 
 function Header () {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  return(
-  <header className="header">
-    <img src={iitdLogo} alt="IIT-D Logo" id="image"></img>
-    <b>
-      <div id="head">IIT DELHI BENEVOLENT FUND</div>
-    </b>
-    <i>
-      <div id="subhead">
-        Helping others is the way we help ourselves!
-      </div>
-    </i>
-    <div className="color">
-        <a style={{textDecoration:'none'}} href="" className="Links">Home</a>
-        <a style={{textDecoration:'none'}} href="" className="Links">About</a>
-        <a style={{textDecoration:'none'}} href="" className="Links">Contribute</a>
-    </div>
-=======
 
   useEffect (() => {
     var shiftWindow = function() { window.scrollBy(0, -120) };
@@ -55,36 +36,10 @@ function Header () {
           <a className="Links" href = "#sc-bulletin">Contributors</a>
           <a className="Links" href = "#sc-beneficiary" >Beneficiaries</a>
           <a className="Links" href = "#sc-comments">Comments</a>
-=======
-  return (
-  <header>
-    <Row>
-      <Col>
-        <img src={iitdLogo} alt="IIT-D Logo" id="header-image"/>
-        <b> 
-          <div id="head">IIT DELHI BENEVOLENT FUND</div>
-        </b>
-        <i>
-          <div id="subhead">
-            Helping others is the way we help ourselves!
-          </div>
-        </i>
-      </Col>
-      <Col>
-        <nav className="color">
-          <a style={{textDecoration:'none'}} href="" className="Links">Home</a>
-          <a style={{textDecoration:'none'}} href="" className="Links">About</a>
-          <a style={{textDecoration:'none'}} href="" className="Links">Beneficiaries</a>
-          <a style={{textDecoration:'none'}} href="" className="Links">Comments</a>
->>>>>>> 48b6c4359c86a7fbeaa6d0af4e2c9481f3eacfa6
           <SmallContributeButton/>
         </nav>
       </Col>
     </Row>
-<<<<<<< HEAD
->>>>>>> 0526f900e0af1ef3f1b1f2eeb5798ad576e8ee9d
-=======
->>>>>>> 48b6c4359c86a7fbeaa6d0af4e2c9481f3eacfa6
   </header>
   )
 }
