@@ -38,7 +38,7 @@ class CommentPage extends Component{
         <Col sm="4">
           <CommentCard person={person}/>
         </Col>
-      )  
+      )
     })
     return(
       <Container fluid>

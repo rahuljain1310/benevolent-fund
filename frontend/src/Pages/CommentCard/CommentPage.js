@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 import React, {Component} from 'react';
 import {
   Container,
@@ -57,4 +55,3 @@ class CommentPage extends Component{
 }
 
 export default CommentPage;
->>>>>>> 239e916738575c87cb00583e897afd19b01339ed
