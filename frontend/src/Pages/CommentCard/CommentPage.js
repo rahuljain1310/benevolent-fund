@@ -58,30 +58,7 @@ function ShareYourStoryButton () {
     )
   }
 
-function ButtonHeader() {
-    return(
-        <div className='button'>
-            <ShareYourStoryButton/>
-        </div>
-    )
-}
-
-  function Webpage() {
-    return (
-      <div className = "page-container">
-        <div className = "content-wrap">
-          <Header/>
-          <ButtonHeader/>
-          <CommentPage/>
-          <Footer/>
-        </div>
-      </div>
-    )
-  }
-  
-  export default Webpage;
-  
-  ]
+]
 
   return (
     <section id='sc-testimonials'>
@@ -102,4 +79,17 @@ function ButtonHeader() {
   )
 }
 
-export default CommentPage;
+function Webpage() {
+  return (
+    <div className = "page-container">
+      <div className = "content-wrap">
+        <Header/>
+        <CommentPage/>
+        <Footer/>
+      </div>
+    </div>
+  )
+}
+
+export default Webpage;
+
