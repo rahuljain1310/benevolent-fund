@@ -22,19 +22,17 @@ function Header () {
     <Row>
       <Col md={6}>
         <img src={iitdLogo} alt="IIT-D Logo" id="header-image"/>
-        {/* <b>  */}
-          <div id="head">IIT DELHI BENEVOLENT FUND</div>
-        {/* </b> */}
-        {/* <i> */}
-          <div id="subhead">
-            Helping others is the way we help ourselves!
-          </div>
-        {/* </i> */}
+        <div id="head">IIT DELHI BENEVOLENT FUND</div>
+        <div id="subhead">
+          Helping others is the way we help ourselves!
+        </div>
       </Col>
       <Col md={6}>
         <nav className="color">
+          <a className="Links" href = "#sc-about">About</a>
           <a className="Links" href = "#sc-bulletin">Contributors</a>
           <a className="Links" href = "#sc-beneficiary" >Beneficiaries</a>
+          <a className="Links" href = "#sc-media" >News</a>
           <a className="Links" href = "#sc-comments">Comments</a>
           <SmallContributeButton/>
         </nav>
