@@ -19,4 +19,13 @@ render () {
     }
 }
 
-    export default CommentCard;
+export default CommentCard;
+
+function ViewAllButton () {
+    return(
+      <span className='ViewAll'>
+        <a href="#" target="blank">View All</a>
+      </span>
+    )
+  }
+

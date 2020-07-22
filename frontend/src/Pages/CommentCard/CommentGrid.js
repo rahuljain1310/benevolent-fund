@@ -9,7 +9,7 @@ import './CommentCard.css'
 import CommentCard from './CommentCard';
 
 
-class CommentPage extends Component{
+class CommentGrid extends Component{
   constructor() {
     super();
     this.state = {
@@ -50,4 +50,13 @@ class CommentPage extends Component{
   }
 }
 
-export default CommentPage;
+function Grid() {
+  return (
+    <div className = "Grid">
+        <CommentGrid/>
+        <ButtonHeader/>
+    </div>
+  )
+}
+
+export default Grid;
