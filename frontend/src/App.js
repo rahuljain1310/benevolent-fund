@@ -6,6 +6,7 @@ import DisqusComments from './Pages/Comments/Comments';
 import Beneficiaries from './Pages/Beneficiary/Beneficiaries';
 import CommentPage from './Pages/CommentCard/CommentPage';
 import About from './Pages/About/About';
+import MediaCard from './Pages/Media/Media';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <About />
       <BulletinBoard />
       <Beneficiaries />
+      <MediaCard />
       <CommentPage/>
       <DisqusComments />
       <Footer />
