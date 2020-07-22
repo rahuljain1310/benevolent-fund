@@ -1,0 +1,15 @@
+#sc-media hr {
+  background-color: orange;
+  width: 100%;
+}
+
+#sc-media .date {
+  color: purple;
+  margin-bottom: 4px;
+}
+
+#sc-media .newsIcon {
+  width: 30px;
+  height: 25px;
+  margin: 0px 4px;
+}
