@@ -38,20 +38,16 @@
   margin: 9px;
 }
 
-.ShareYourStoryButton {
-  font-size: 1.3em;
-}
-
 .ShareYourStoryButton a {
-  width: 400px;
   color: #e93973;
   display: inline-block;
+  padding: 10px;
+  margin-top: 2%;  
+  border-radius: 8px;
   text-decoration: none;
   text-align: center;
-  padding: 10px;
-  margin-top: 30px;  
   font-family: cursive;
-  border-radius: 8px;
+  font-size: 1.2em;
   border: 2px solid #fff;
 }
 
@@ -60,13 +56,4 @@
   border: 2px solid #e93973;
   color: #e93973;
   text-decoration: none;
-}
-
-.ShareYourStoryButton a .icon-favourite:before{
-  content: "\e87d";
-  color: black;
-}
-
-.padding-right-14{
-  padding-right: 20px;
 }

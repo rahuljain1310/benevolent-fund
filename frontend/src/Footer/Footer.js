@@ -25,8 +25,8 @@ function Footer () {
           </Col>
           <Col md={4} sm={6}>
             <h4>Links</h4>
-            <ul class="list-unstyled">
-              <li> &#8594; <a href="#">Home</a></li>
+            <ul className="list-unstyled">
+              <li> &#8594; <a href="">Home</a></li>
               <li> &#8594; <a href="#about-section">About</a></li>
               <li> &#8594; <a href="#timeline-section">Education</a></li>
               <li> &#8594; <a href="#projects-section">Projects</a></li>
@@ -34,8 +34,8 @@ function Footer () {
             </ul>
           </Col>
           <Col md={4}>
-            <h4>Have a Questions?</h4>
-            <ul class="list-unstyled">
+            <h4>Have a Question?</h4>
+            <ul className="list-unstyled">
               <li> &#8594; <span>SC-02 Vindhyachal Hostel, IIT Delhi</span> </li>
               <li> &#8594; <span>+91-8770915084</span> </li>
               <li> &#8594; <span>Rahul.Jain.ee117@ee.iitd.ac.in</span> </li>

@@ -31,10 +31,13 @@ function ChartFigure () {
 function ContributorList ({ list }) {
 	return (
 		<div >
-			<h4 style={{textAlign: 'center'}}>Contributors</h4>
-			<br />
 			<div style={{ overflowY: 'scroll', height: '100%'}}>
 				<ListGroup style={{ height: '400px' }}>
+					<ListGroup>
+						<ListGroup.Item as='h5'>
+							Contributors
+						</ListGroup.Item>
+					</ListGroup>
 					{list.map((person, idx) => (
 						<ListGroup horizontal key={idx} style={{ height: '4rem' }}>
 							<ListGroup.Item style={{ width: '75%' }}>
@@ -78,7 +81,7 @@ function ContributionStats() {
 	)
 }
 
-function BulletinBoard() {
+function BulletinBoard () {
 
 	const contributors = [
 		["Mukesh", 500],
