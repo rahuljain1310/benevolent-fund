@@ -3,6 +3,7 @@ footer{
     background-color: #000;
     position: relative;
     width: 100%;
+    padding: 16px;
 }
 
 .Quoterow {
@@ -15,7 +16,6 @@ footer{
 .copyright {
     text-align: center;
     margin: 32px;
-    font-size: 1.2em;
 }
 
 footer li {

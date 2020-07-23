@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import BulletinBoard from './Pages/Bulletin/BulletinBoard';
@@ -36,8 +36,10 @@ function App() {
     <div className="page-container">
       <Header />
       <Router>
-        <Route exact path='/' component={MainPage}/>
-        <Route exact path='/testimonial/:id' component={TestimonialPage}/>
+        <Switch>
+          <Route exact path='/testimonial/:id' component={TestimonialPage}/>
+          <Route path='*' component={MainPage}/>
+        </Switch>
       </Router>
       <Footer />
     </div>

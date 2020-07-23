@@ -8,7 +8,7 @@ import imageSrc3 from '../../Assets/nature2.jpg';
 
 function ImageCarousel () {
   return(
-    <Carousel >
+    <Carousel>
       <Carousel.Item className="carouselItemClass">
         <img className="carouselmgClass" src={imageSrc1} alt="poster"/>
         <Carousel.Caption>
