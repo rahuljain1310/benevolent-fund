@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  Container,
   Row,
   Col,
 } from 'react-bootstrap'
@@ -31,7 +30,7 @@ function About () {
   return (
     <section id="sc-about">
       <Row>
-        <Col md={6}> <ImageCarousal/> </Col>
+        <Col md={6} className='iitd-carousal'> <ImageCarousal/> </Col>
         <Col md={6}> <CarousalText/>  </Col>
       </Row>    
     </section>

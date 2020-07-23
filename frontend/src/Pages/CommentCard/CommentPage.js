@@ -21,7 +21,7 @@ function CommentCard ({person}) {
 
 function  ShareYourStoryButton () {
   return(
-    <div class='ShareYourStoryButton'>
+    <div className='ShareYourStoryButton'>
       <a href="#" target="blank">
         &hearts; Share YOUR Experience here
       </a>
@@ -57,7 +57,7 @@ function CommentPage() {
       <h3>What People Say </h3>
       <Row>
         {people.map((person, idx) => (
-          <Col lg="4" sm='3'>
+          <Col key={idx} lg="4" sm='3'>
             <CommentCard person={person} />
           </Col>
         ))}
