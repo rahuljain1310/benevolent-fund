@@ -81,8 +81,10 @@
 
 
 .image{
-  width: 200px;
-  height: 230px;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 75px;
 }
 
 .title{
@@ -100,8 +102,10 @@
 }
 
 .para{
-  font-family:cursive;
-  font-size: 13px;
+  /* font-family:cursive; */
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+  font-style: italic;
   margin: 9px;
 }
 
@@ -111,5 +115,6 @@
   font-size: 2.2em;
   text-align: center;
   font-stretch: wider;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-family: 'Grenze Gotisch', cursive;
 }

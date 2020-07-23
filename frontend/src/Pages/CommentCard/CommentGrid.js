@@ -9,7 +9,7 @@ import './CommentGrid.css';
 function CommentCard({person}) {
   return(
     <Card className="CommentCard">
-      <Card.Img variant='top' src={person?.imgPath} alt="My profile picture" className="image"></Card.Img>
+      <img variant='top' src={person?.imgPath} alt="My profile picture" className="image"/>
       <br/>
       <Card.Title className="title">
         <b>{person?.name}</b>
@@ -62,7 +62,7 @@ function CommentGrid() {
   ]
   return(
     <section id='sc-testimonials'>
-      <div className="heading"> WHAT PEOPLE SAY...</div>
+      <div className="heading"> What people say ...</div>
       <br/>
       <Row>
         { people.map((person,idx)=>(

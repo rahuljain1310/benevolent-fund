@@ -10,7 +10,7 @@ function CarousalText() {
   return (
     <div className="aboutcard">
       <div className="aboutheading">
-        ABOUT
+        About
       </div>
       <hr/>
       <p className="aboutcontent" >
