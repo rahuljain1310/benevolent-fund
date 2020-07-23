@@ -6,33 +6,30 @@ import BulletinBoard from './Pages/Bulletin/BulletinBoard';
 import DisqusComments from './Pages/Comments/Comments';
 import Beneficiaries from './Pages/Beneficiary/Beneficiaries';
 import CommentGrid from './Pages/CommentCard/CommentGrid';
-import CommentPage from './Pages/CommentCard/CommentPage';
 import About from './Pages/About/About';
 import MediaCard from './Pages/Media/Media';
 import './App.css';
 
 function MainPage () {
   return (
-    <div className="page-container">
-      <Header />
-    <div>
-      <About />
-      <BulletinBoard />
-      <Beneficiaries />
-      <MediaCard />
-      <CommentGrid/>
-      <DisqusComments />
-    </div>
-    </div>
+    <div className = "page-container">
+      <div className = "content-wrap">
+        <Header/>
+        <About/>
+        <Beneficiaries />
+        <BulletinBoard />
+        <MediaCard />
+        <CommentGrid/>
+        <DisqusComments/>
+        </div>
+      </div>
   )
 }
-  
-
 
 function TestimonialPage () {
   return (
     <div>
-      <CommentPage/>
+      <CommentGrid/>
     </div>
   )
 }

@@ -11,7 +11,7 @@ function SmallContributeButton () {
 
 function BigContributeButton () {
   return(
-    <div class='ContributeButton'>
+    <div class='BigContributeButton'>
       <a href="#" target="blank">
         &hearts; Donate HERE
       </a>

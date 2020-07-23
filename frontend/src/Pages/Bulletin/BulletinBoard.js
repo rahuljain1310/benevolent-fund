@@ -31,6 +31,8 @@ function ChartFigure () {
 function ContributorList ({ list }) {
 	return (
 		<div >
+			<div className="table-head" >CONTRIBUTORS</div>
+			<br />
 			<div style={{ overflowY: 'scroll', height: '100%'}}>
 				<ListGroup style={{ height: '400px' }}>
 					<ListGroup>
@@ -41,10 +43,10 @@ function ContributorList ({ list }) {
 					{list.map((person, idx) => (
 						<ListGroup horizontal key={idx} style={{ height: '4rem' }}>
 							<ListGroup.Item style={{ width: '75%' }}>
-								{person[0]}, <span style={{fontSize: "0.8em"}}>Undergraduate</span>
+								{person[0]} <br/> <span style={{fontSize: "0.8em"}}>Undergraduate</span>
 							</ListGroup.Item>
 							<ListGroup.Item style={{width: '25%'}}>
-								<span style={{fontSize: "1.1em"}}>{person[1]}</span>
+								<span style={{fontSize: "1em"}}>{person[1]}</span>
 							</ListGroup.Item>
 						</ListGroup>
 					))}
@@ -62,20 +64,22 @@ function ContributionStats() {
 	return (
 		<div className='stats'>
 			<CardGroup>
-				<Card border="danger" className='card'>
+				<Card className='card'>
 					<Card.Header className="header"> Total Contributors </Card.Header>
 					<Card.Body>
 						<div className="text"> <CountUp end={contributorsCount} /> </div>
 					</Card.Body>
 				</Card>
-				<Card border="danger" className='card'>
+				<Card className='card'>
 					<Card.Header className="header"> Total Contribution </Card.Header>
 					<Card.Body>
 						<div className="text"> <CountUp end={totalAmount} /> </div>
 					</Card.Body>
 				</Card>
 			</CardGroup>
+			<br/>
 			<hr />
+			<br/>
 			<ChartFigure className="chartclass" style={{ minHeight: '300px', position: 'static' }} />
 		</div>
 	)

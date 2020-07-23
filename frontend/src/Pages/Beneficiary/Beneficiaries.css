@@ -1,6 +1,6 @@
 .beneficiary-list {
   overflow-y: scroll;
-  height:  35em;
+  height:  30em;
 }
 
 .list-div {
@@ -19,9 +19,46 @@
   list-style-type: none;
   font-size: 1.2em;
   font-style: italic;
-  color: #DC3545;
+  color: "black";
   padding: 8px;
   margin: 2px;
   border-radius: 4px;
   transition: transform .50s ease-in;
+}
+
+#header_b{
+  font-weight: bold;
+  color: #FF9F1C;
+  font-size: 1.9em;
+  font-stretch: ultra-expanded;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#subhead_b{
+  color: #2EC4B6;
+  font-size: 1.3em ;
+  margin-left: 2px;
+  font-weight: 555;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#content{
+  color: black;
+  font-size: 1.1em;
+  margin-left: 2px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card_b{
+  margin-top: 15px;;
+}
+
+#list-head{
+  color: #2EC4B6;
+  font-size: 1.5em ;
+  margin-left: 2px;
+  font-weight: 555;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 1px;
+  text-align: center;
 }

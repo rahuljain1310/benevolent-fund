@@ -62,3 +62,38 @@
   background-color: #e03646;
 }
 
+.BigContributeButton{
+  margin: auto;
+  width: 350px;
+  max-width: 80%;
+
+}
+
+.BigContributeButton a {
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #e93973;
+  text-align: center;
+  padding: 10px 10px;
+  font-family: 'aileronbold';
+  font-size: 20px;
+  color: black;
+  border-radius: 10px;
+}
+
+.BigContributeButton a:hover {
+  transition: .5s;
+  background-color: #e93973;
+  color: black;
+  text-decoration: none;
+}
+
+.BigContributeButton a .icon-favourite:before{
+  content: "\e87d";
+  color: black;
+}
+
+.padding-right-14{
+  padding-right: 20px;
+}
