@@ -4,24 +4,21 @@
 }
 
 .aboutcard {
-  padding: 10px;
+  padding: 12px;
   margin: 0px 10px;
   height: 600px;
 }
 
 .aboutheading {
-  font-weight: 400;
-  color: orange;
-  font-size: 2em;
+  font-weight: bold;
+  color: #FF9F1C;
+  font-size: 1.8em;
   font-stretch: wider;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .aboutcontent {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.3em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2em;
 }
 
-.aboutcard h4 {
-  color: blueviolet;
-  text-align: center;
-}

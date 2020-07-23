@@ -7,7 +7,9 @@ footer{
 
 .Quoterow {
     font-size: 1.3em;
-    line-height: 2em;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.8em;
     text-align: center;
     margin: 32px ;
 }
@@ -15,11 +17,13 @@ footer{
 .copyright {
     text-align: center;
     margin: 32px;
-    font-size: 1.2em;
+    font-size: 0.8em;
+    font-style:initial;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 footer li {
-    line-height: 1.8em;
+    line-height: 1.5em;
     color: white;
     margin-left: 16px;
 }

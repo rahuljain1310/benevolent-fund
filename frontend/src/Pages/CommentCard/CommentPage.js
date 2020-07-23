@@ -18,7 +18,7 @@ function CommentCard ({person}) {
   )
 }
 
-function  ShareYourStoryButton () {
+/*function  ShareYourStoryButton () {
   return(
     <div class='ShareYourStoryButton'>
       <a href="#" target="blank">
@@ -26,7 +26,7 @@ function  ShareYourStoryButton () {
       </a>
     </div>
   )
-}
+}*/
 
 
 function CommentPage() {
@@ -49,7 +49,8 @@ function CommentPage() {
       imgPath: require('../../Assets/opindia.png'),
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     }
-  }
+  ]
+}
 
 function ShareYourStoryButton () {
     return(
@@ -61,11 +62,9 @@ function ShareYourStoryButton () {
     )
   }
 
-]
-
   return (
     <section id='sc-testimonials'>
-      <h3>What People Say </h3>
+      <h3>What People Say... </h3>
       <Row>
         {people.map((person, idx) => (
           <Col lg="4" sm='3'>

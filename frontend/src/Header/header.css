@@ -24,13 +24,13 @@ header {
 }
 
 .Links:active{
-  color:  #EF4F5E;
+  color: #E71D36;
 }
 
 .Links:hover{
   text-decoration: none;
-  color:  #EF4F5E;
-  border-bottom: 1px solid  #EF4F5E;
+  color: #E71D36;
+  border-bottom: 1px solid #E71D36;
 }
 
 #header-image{
@@ -48,7 +48,7 @@ header {
     font-weight: bold;
   }
   #subhead{
-    font-size: 14px;
+    font-size: 15px;
   }
   .Links{
     font-size: 15px;
@@ -62,7 +62,7 @@ header {
     margin: auto;
   }
   #head{
-      font-size: 17px;
+      font-size: 18px;
       font-weight: bold;
       margin-top: 15px;
   }
@@ -79,7 +79,7 @@ header {
   text-align:left;
   margin-left:15px;
   color: "black";
-  font-family: inherit;
+  font-family:Segoe UI, Tahoma, Geneva, 'Verdana', sans-serif;
 }
 #header-image{
   float: left;
