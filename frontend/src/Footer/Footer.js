@@ -37,9 +37,11 @@ function Footer () {
           <Col md={4}>
             <h4>Have a Question ?</h4>
             <ul class="list-unstyled">
-              <li><span>SC-02 Vindhyachal Hostel, IIT Delhi</span> </li>
-              <li><span>+91-8770915084</span> </li>
-              <li><span>Rahul.Jain.ee117@ee.iitd.ac.in</span> </li>
+              <li><span>Divyanshu Saxena</span> </li>
+              <li><span>8826080933 | cs1160316@iitd.ac.in</span> </li>
+              <br/>
+              <li><span>Rahul Jain</span> </li>
+              <li><span>8770915084 | ee1170476@iitd.ac.in</span> </li>
             </ul>
           </Col>
         </Row>
