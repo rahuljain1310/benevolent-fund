@@ -1,0 +1,32 @@
+.CommentCard{
+  border-radius: 10px;
+  border-color:black;
+  height: 380px;
+  width: 300px;
+  margin: 1px;
+  border-width: thin;
+}
+
+.image{
+  width: 200px;
+  height: 130px;
+}
+
+.title{
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 9px;
+}
+
+.subtitle{
+  font-family:inherit;
+  font-size: 13px;
+  margin-left: 9px;
+}
+
+.para{
+  font-family:cursive;
+  font-size: 13px;
+  margin: 9px;
+}
