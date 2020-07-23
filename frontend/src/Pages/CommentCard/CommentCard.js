@@ -9,7 +9,7 @@ class CommentCard extends Component{
 render () {
     console.log(this.props)
     return(
-      <Card className="CommentCard">
+      <Card className='card'>
           <Card.Img variant="top" src="" alt="My Profile Picture" className="image" />
             <Card.Title className="title">{this.props.person?.name}</Card.Title>
             <Card.Subtitle className="subtitle">{this.props.person?.year}</Card.Subtitle>
@@ -20,12 +20,4 @@ render () {
 }
 
 export default CommentCard;
-
-function ViewAllButton () {
-    return(
-      <span className='ViewAll'>
-        <a href="#" target="blank">View All</a>
-      </span>
-    )
-  }
 

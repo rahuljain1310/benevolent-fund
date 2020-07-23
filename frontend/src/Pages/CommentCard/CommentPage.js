@@ -6,6 +6,17 @@ import {
   Card
 } from 'react-bootstrap';
 import './CommentPage.css';
+import _default from 'react-bootstrap/esm/ModalFooter';
+
+function ShareYourStoryButton () {
+  return(
+    <div class='ShareYourStoryButton'>
+      <a href="#" target="blank">
+        &hearts; Share YOUR Experience here
+      </a>
+    </div>
+  )
+}
 
 function CommentCard ({person}) {
   return (
@@ -17,17 +28,6 @@ function CommentCard ({person}) {
     </Card>
   )
 }
-
-function  ShareYourStoryButton () {
-  return(
-    <div class='ShareYourStoryButton'>
-      <a href="#" target="blank">
-        &hearts; Share YOUR Experience here
-      </a>
-    </div>
-  )
-}
-
 
 function CommentPage() {
   const people = [
@@ -49,19 +49,7 @@ function CommentPage() {
       imgPath: require('../../Assets/opindia.png'),
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     }
-  }
-  
-function ShareYourStoryButton () {
-    return(
-      <div class='ShareYourStoryButton'>
-        <a href="#" target="blank">
-          &hearts; Share YOUR Experience here
-        </a>
-      </div>
-    )
-  }
-
-]
+  ]
 
   return (
     <section id='sc-testimonials'>
@@ -82,4 +70,5 @@ function ShareYourStoryButton () {
   )
 }
 
+export default CommentPage;
 
