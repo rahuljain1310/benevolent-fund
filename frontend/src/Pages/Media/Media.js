@@ -17,11 +17,11 @@ function MediaCard() {
 			<hr style={{ backgroundColor: 'orange', width: '80%' }} />
 			<Row>
 				<Col sm={6} style={{ paddingTop: '10px', paddingLeft: '30px' }} >
-					<img src={rickshaw} style={{ width: '100%', height: '420px' }} />
+					<img alt='img-iitd' src={rickshaw} style={{ width: '100%', height: '420px' }} />
 				</Col>
 				<Col sm={6} >
 					{/* First Article */}
-					<img className='newsIcon' src={ndtv} />
+					<img alt='media_icon' className='newsIcon' src={ndtv} />
 					<span className='date'>31st March 2020</span>
 					<p>
 						IIT Delhi institutes 'BENEVOLENT FUND' to help people of the lower economic strata within campus,
@@ -31,7 +31,7 @@ function MediaCard() {
 					<a href="https://www.ndtv.com/education/covid-19-iit-delhi-institutes-benevolent-fund-to-help-people-of-the-lower-economic-strata-within-cam-2203640" >Complete Article</a>
 					<hr/>
 					{/* Second Article */}
-					<img className='newsIcon' src={indianexpress} />
+					<img alt='media_icon' className='newsIcon' src={indianexpress} />
 					<span className='date'>31st March 2020</span>
 					<p>
 						IIT's Benevolent Fund Campaign collects over 9.20 lakh within a week,
@@ -41,7 +41,7 @@ function MediaCard() {
 					<a href="https://indianexpress.com/article/education/iit-launches-fund-to-support-daily-wagers-during-lockdown-collects-over-rs-9-20-lakh-6340600/" >Complete Article</a>
 					<hr/>
 					{/* Third Article */}
-					<img className='newsIcon' src={opindia} />
+					<img alt='media_icon' className='newsIcon' src={opindia} />
 					<span className='date'>30th March 2020</span>
 					<p>
 						IIT-D students initiative, to help on-campus rickshaw pullers, inspired the
