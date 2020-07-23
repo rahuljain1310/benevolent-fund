@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
-  Container,
   Row,
   Col,
   Card
 } from 'react-bootstrap';
 import './CommentPage.css';
 
-function CommentCard ({person}) {
+function CommentCard({ person }) {
   return (
     <Card className='CommentCard'>
       <Card.Img variant="top" src="" alt="My Profile Picture" className="image" />
@@ -18,8 +17,8 @@ function CommentCard ({person}) {
   )
 }
 
-function  ShareYourStoryButton () {
-  return(
+function ShareYourStoryButton() {
+  return (
     <div class='ShareYourStoryButton'>
       <a href="#" target="blank">
         &hearts; Share YOUR Experience here
@@ -46,19 +45,7 @@ function CommentPage() {
       year: "First Year, IITD",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
-  }
-  
-function ShareYourStoryButton () {
-    return(
-      <div class='ShareYourStoryButton'>
-        <a href="#" target="blank">
-          &hearts; Share YOUR Experience here
-        </a>
-      </div>
-    )
-  }
-
-]
+  ]
 
   return (
     <section id='sc-testimonials'>
@@ -72,24 +59,11 @@ function ShareYourStoryButton () {
       </Row>
       <Row>
         <Col>
-          <ShareYourStoryButton/>
+          <ShareYourStoryButton />
         </Col>
       </Row>
     </section>
   )
 }
 
-function Webpage() {
-  return (
-    <div className = "page-container">
-      <div className = "content-wrap">
-        <Header/>
-        <CommentPage/>
-        <Footer/>
-      </div>
-    </div>
-  )
-}
-
-export default Webpage;
-
+export default CommentPage;
