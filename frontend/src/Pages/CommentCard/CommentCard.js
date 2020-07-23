@@ -9,7 +9,7 @@ class CommentCard extends Component{
 render () {
     console.log(this.props)
     return(
-      <Card className="CommentCard">
+      <Card className='card'>
           <Card.Img variant="top" src="" alt="My Profile Picture" className="image" />
             <Card.Title className="title">{this.props.person?.name}</Card.Title>
             <Card.Subtitle className="subtitle">{this.props.person?.year}</Card.Subtitle>
@@ -19,3 +19,8 @@ render () {
     }
 }
 
+<<<<<<< HEAD
+=======
+export default CommentCard;
+
+>>>>>>> c05a2ba3f60b232f1f55e2cef2d6b796d7015ef1

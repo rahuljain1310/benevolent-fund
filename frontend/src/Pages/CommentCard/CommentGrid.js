@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Card,
   Row,
-  Col
+  Col,
 } from 'react-bootstrap';
 import './CommentGrid.css';
 /*import {Card} from 'react-bootstrap';*/

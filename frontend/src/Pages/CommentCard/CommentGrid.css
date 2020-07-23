@@ -5,15 +5,13 @@
     padding-right: 18px;
     padding-top: 6px;
     padding-bottom: 6px;
+    border-radius: 6px;
     color: white;
-    border-radius: 4px;
-    text-align: center;
-    display: inline;
-    text-decoration: none;
     font-size: 1.1em;
-    margin-left: 350px;
+    text-decoration: none;
+    margin-left: 380px ;
 }
-  
+
   .ViewAll:hover{
     transition: .5s;
     color:white;
@@ -29,7 +27,7 @@
     padding-top: 6px;
     padding-bottom: 6px;
     color: white;
-    border-radius: 4px;
+    border-radius: 6px;
     text-align: center;
     display: inline;
     text-decoration: none;
