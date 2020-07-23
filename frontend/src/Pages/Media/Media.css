@@ -1,8 +1,15 @@
-.mediacard{
-    margin: auto;
-  padding: 12px 0px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  text-align: left;
-  width: 90%;
+#sc-media hr {
+  background-color: orange;
+  width: 100%;
+}
+
+#sc-media .date {
+  color: purple;
+  margin-bottom: 4px;
+}
+
+#sc-media .newsIcon {
+  width: 30px;
+  height: 25px;
+  margin: 0px 4px;
 }
