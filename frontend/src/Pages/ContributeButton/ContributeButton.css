@@ -19,7 +19,7 @@
   width: 100%;
   display: inline-block;
   text-decoration: none;
-  background-color: #e93973;
+  background-color: #EF4F5E;
   text-align: center;
   padding: 10px 10px;
   font-family: 'aileronbold';
@@ -30,7 +30,7 @@
 
 .ContributeButton a:hover {
   transition: .5s;
-  background-color: #e93973;
+  background-color: #EF4F5E;
   color: black;
   text-decoration: none;
 }
@@ -62,3 +62,41 @@
   background-color: #e03646;
 }
 
+.BigContributeButton{
+  margin: auto;
+  width: 350px;
+  max-width: 80%;
+
+}
+
+.BigContributeButton a {
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #EF4F5E;
+  text-align: center;
+  padding: 10px;
+  font-family: 'aileronbold';
+  font-size: 20px;
+  color: white;
+  border-radius: 8px;
+  border: 2px solid white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.BigContributeButton a:hover {
+  transition: .s;
+  background-color: white;
+  color: #EF4F5E;
+  border: 2px solid #EF4F5E;
+  text-decoration: none;
+}
+
+.BigContributeButton a .icon-favourite:before{
+  content: "\e87d";
+  color: black;
+}
+
+.padding-right-14{
+  padding-right: 20px;
+}

@@ -32,7 +32,7 @@ function Header () {
           <a className="Links" href = "#sc-bulletin">Contributors</a>
           <a className="Links" href = "#sc-beneficiary" >Beneficiaries</a>
           <a className="Links" href = "#sc-media" >News</a>
-          <a className="Links" href = "#sc-testimonials" >Testimonials</a>
+          <a className="Links" href = "#sc-testimonies">Testimonies</a>
           <a className="Links" href = "#sc-comments">Comments</a>
           <SmallContributeButton/>
         </nav>
