@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CountUp from 'react-countup';
 import Chart from "react-google-charts";
+import {BigContributeButton} from '../ContributeButton/ContributeButton'
 import {
 	Row,
 	Col,
@@ -30,20 +31,20 @@ function ChartFigure () {
 
 function ContributorList ({ list }) {
 	return (
-		<div >
-			<div className="table-head" >CONTRIBUTORS</div>
+		<div className='contributor-list'>
+			{/* <div className="table-head" >CONTRIBUTORS</div> */}
 			<br />
 			<div style={{ overflowY: 'scroll', height: '100%'}}>
-				<ListGroup style={{ height: '400px' }}>
+				<ListGroup style={{ height: '500px' }}>
 					<ListGroup>
-						<ListGroup.Item as='h5'>
-							Contributors
+						<ListGroup.Item as='h5' className='table-head'>
+							Recent Contributions
 						</ListGroup.Item>
 					</ListGroup>
 					{list.map((person, idx) => (
 						<ListGroup horizontal key={idx} style={{ height: '4rem' }}>
 							<ListGroup.Item style={{ width: '75%' }}>
-								{person[0]} <br/> <span style={{fontSize: "0.8em"}}>Undergraduate</span>
+								{person[0]} <br/> <span className='designation'>Undergraduate</span>
 							</ListGroup.Item>
 							<ListGroup.Item style={{width: '25%'}}>
 								<span style={{fontSize: "1em"}}>{person[1]}</span>
@@ -81,6 +82,7 @@ function ContributionStats() {
 			<hr />
 			<br/>
 			<ChartFigure className="chartclass" style={{ minHeight: '300px', position: 'static' }} />
+			<BigContributeButton/>
 		</div>
 	)
 }

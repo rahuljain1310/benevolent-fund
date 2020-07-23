@@ -12,10 +12,10 @@
 .aboutcard {
   padding: 12px;
   margin: 0px 10px;
+  text-align: center;
 }
 
 .aboutheading {
-  /* font-weight: bold; */
   color: #EF4F5E;
   font-size: 2.2em;
   font-stretch: wider;
@@ -24,7 +24,6 @@
 }
 
 .aboutcontent {
-  /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
 }
