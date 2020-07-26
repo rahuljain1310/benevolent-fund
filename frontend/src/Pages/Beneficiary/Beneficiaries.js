@@ -6,11 +6,17 @@ import {
   ListGroup,
 } from 'react-bootstrap';
 import './Beneficiaries.css';
+// import beneficiariespdf from '../../Assets/BeneficiariesList.pdf';
+// import beneficiariespdf from '../../Assets/BeneficiariesList.pdf';
 
 function BeneficiariesText() {
   return (
+    <div>
+     <h2 style={{ textAlign: 'center', color: 'green', fontWeight: 'lighter' }}>Know About Beneficiaries</h2>
+     <hr style={{backgroundColor:'orange'}} />
     <Card style={{ width: '100%' }}>
-      <Card.Header as="h5">Beneficiaries</Card.Header>
+      {/* <h2 style={{ textAlign: 'center', color: 'green', fontWeight: 'lighter' }}>Know About Beneficiaries</h2>
+      <hr style={{backgroundColor:'orange'}} /> */}
       <Card.Body>
         <Card.Title>About Beneficiaries</Card.Title>
         <Card.Text>
@@ -24,27 +30,30 @@ function BeneficiariesText() {
         <Card.Text>
           Without these workers, our life hadn't been so smooth and our college hadn't been so well maintained. So now, it is on us, the students' community, to assist our campus community in their times of crisis. Let us contribute to this noble cause. We will look forward to hearing from you.
               </Card.Text>
+        {/* <embed src='../../Assets/BeneficiariesList.pdf' type="application/pdf" style={{width:'100%'}} /> */}
+        <a href="https://drive.google.com/file/d/1IhBop3VFa2QAy5v8c64JT6hJaXmXMWjr/view?usp=sharing" download>click here</a>
       </Card.Body>
     </Card>
+    </div>
   )
 }
 
 function BeneficiariesList({ list }) {
   return (
-    <div style={{ overflowY: 'scroll', height: '100%', marginTop: '10px' }}>
-      <ListGroup style={{ height: '1rem' }}>
+    <div style={{overflowY: 'scroll',height: '100%', marginTop: '15px'}}>
+      <ListGroup style={{height: '1rem'}}>
         <ListGroup>
-          <ListGroup.Item as='h5'>
+          <ListGroup.Item className="list-head">
             List of beneficiaries
           </ListGroup.Item>
         </ListGroup>
-        {list.map((person, idx) =>
-          <ListGroup horizontal key={idx} style={{ height: '4rem' }}>
-            <ListGroup.Item style={{ width: '100%' }}>
-              {person[0]}, <span style={{ color: "gray", fontSize: "0.8em" }}>{person[1]}</span>
-            </ListGroup.Item>
-          </ListGroup>
-        )}
+          {list.map((person, idx) =>
+            <ListGroup horizontal key={idx} style={{ height: '4rem' }}>
+              <ListGroup.Item style={{ width: '100%' }}>
+                {person[0]} <br/> <span style={{ color: "gray", fontSize: "0.9em" }}>{person[1]}</span>
+              </ListGroup.Item>
+            </ListGroup>
+          )}
       </ListGroup>
     </div>
   )

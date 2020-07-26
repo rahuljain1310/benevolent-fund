@@ -5,28 +5,33 @@ import Footer from './Footer/Footer';
 import BulletinBoard from './Pages/Bulletin/BulletinBoard';
 import DisqusComments from './Pages/Comments/Comments';
 import Beneficiaries from './Pages/Beneficiary/Beneficiaries';
-import CommentPage from './Pages/CommentCard/CommentPage';
+import CommentGrid from './Pages/CommentCard/CommentGrid';
 import About from './Pages/About/About';
 import MediaCard from './Pages/Media/Media';
+import Starter from'./Pages/Starter/Starter';
 import './App.css';
 
 function MainPage () {
   return (
-    <div>
-      <About />
-      <BulletinBoard />
-      <Beneficiaries />
-      <MediaCard />
-      <CommentPage/>
-      <DisqusComments />
-    </div>
+    <div className = "page-container">
+      <div className = "content-wrap">
+        <Header/>
+        <Starter />
+        <About/>
+        <Beneficiaries />
+        <BulletinBoard />
+        <MediaCard />
+        <CommentGrid/>
+        <DisqusComments/>
+        </div>
+      </div>
   )
 }
 
 function TestimonialPage () {
   return (
     <div>
-      <CommentPage/>
+      <CommentGrid/>
     </div>
   )
 }

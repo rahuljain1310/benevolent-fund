@@ -1,7 +1,8 @@
 .text{
     text-align: center;
-    font-size: 2.5em;
-    color: rgb(230, 77, 103);
+    font-size: 2.8em;
+    color:#2EC4B6;
+    font-weight: bold;
 }
 
 .list-group{
@@ -13,14 +14,32 @@
 }
 
 .stats .header {
-    color: rgb(65, 6, 80);
+    color: black;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 
 .stats .card {
     width: 50%;
     box-sizing: "border-box";
     margin: 'auto';
-    margin-top: '15px';
+    margin-top: 15px;
+}
+
+.table-head{
+    /* font-weight: bold; */
+    color: #EF4F5E;
+    font-size: 1.4em;
+    /* font-stretch: wider; */
+    /* text-align: center; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.contributor-list .designation {
+    color: gray;
+    font-size: 0.8em;
 }
