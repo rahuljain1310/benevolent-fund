@@ -11,12 +11,12 @@ import './Beneficiaries.css';
 
 function BeneficiariesText() {
   return (
-    <div>
+    <div className="aboutbeneficiaries">
      <h2 style={{ textAlign: 'center', color: 'green', fontWeight: 'lighter' }}>Know About Beneficiaries</h2>
      <hr style={{backgroundColor:'orange'}} />
     <Card style={{ width: '100%' }}>
-      {/* <h2 style={{ textAlign: 'center', color: 'green', fontWeight: 'lighter' }}>Know About Beneficiaries</h2>
-      <hr style={{backgroundColor:'orange'}} /> */}
+        {/* <h2 style={{ textAlign: 'center', color: 'green', fontWeight: 'lighter' }}>Know About Beneficiaries</h2>
+        <hr style={{backgroundColor:'orange'}} /> */}
       <Card.Body>
         <Card.Title>About Beneficiaries</Card.Title>
         <Card.Text>
@@ -49,7 +49,7 @@ function BeneficiariesList({ list }) {
         </ListGroup>
           {list.map((person, idx) =>
             <ListGroup horizontal key={idx} style={{ height: '4rem' }}>
-              <ListGroup.Item style={{ width: '100%' }}>
+              <ListGroup.Item style={{ width: '100%', backgroundColor:'white' }}>
                 {person[0]} <br/> <span style={{ color: "gray", fontSize: "0.9em" }}>{person[1]}</span>
               </ListGroup.Item>
             </ListGroup>
