@@ -1,20 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   Row,
   Col,
   Card,
   ListGroup,
+  Button
 } from 'react-bootstrap';
 import './Beneficiaries.css';
-// import beneficiariespdf from '../../Assets/BeneficiariesList.pdf';
-// import beneficiariespdf from '../../Assets/BeneficiariesList.pdf';
 
 function BeneficiariesText() {
   return (
     <div className="aboutbeneficiaries">
-     <h2 style={{ textAlign: 'center', color: 'green', fontWeight: 'lighter' }}>Know About Beneficiaries</h2>
+     <h2 style={{ textAlign: 'center', color: 'green', fontWeight: 'lighter' }}> ~Know About Beneficiaries~</h2>
      <hr style={{backgroundColor:'orange'}} />
-    <Card style={{ width: '100%' }}>
+    <Card style={{ width: '100%', borderColor:'white' }}>
         {/* <h2 style={{ textAlign: 'center', color: 'green', fontWeight: 'lighter' }}>Know About Beneficiaries</h2>
         <hr style={{backgroundColor:'orange'}} /> */}
       <Card.Body>
@@ -38,28 +37,99 @@ function BeneficiariesText() {
   )
 }
 
-function BeneficiariesList({ list }) {
-  return (
-    <div style={{overflowY: 'scroll',height: '100%', marginTop: '15px'}}>
-      <ListGroup style={{height: '1rem'}}>
-        <ListGroup>
-          <ListGroup.Item className="list-head">
-            List of beneficiaries
-          </ListGroup.Item>
-        </ListGroup>
-          {list.map((person, idx) =>
-            <ListGroup horizontal key={idx} style={{ height: '4rem' }}>
-              <ListGroup.Item style={{ width: '100%', backgroundColor:'white' }}>
-                {person[0]} <br/> <span style={{ color: "gray", fontSize: "0.9em" }}>{person[1]}</span>
-              </ListGroup.Item>
-            </ListGroup>
-          )}
-      </ListGroup>
-    </div>
-  )
-}
+// function HandelOnClick(list){
+//   return(
+//     <div style={{overflowY: 'scroll',height: '100%', marginTop: '15px'}}>
+//       <ListGroup style={{height: '1rem'}}>
+//         <ListGroup>
+//           <ListGroup.Item className="list-head">
+//             List of beneficiaries
+//           </ListGroup.Item>
+//         </ListGroup>
+//           {list.map((person, idx) =>
+//             <ListGroup horizontal key={idx} style={{ height: '4rem' }}>
+//               <ListGroup.Item style={{ width: '100%', backgroundColor:'white' }}>
+//                 {person[0]} <br/> <span style={{ color: "gray", fontSize: "0.9em" }}>{person[1]}</span>
+//               </ListGroup.Item>
+//             </ListGroup>
+//           )}
+//       </ListGroup>
+//       </div>
+//   )
+// }
 
-function Beneficiaries() {
+// function BeneficiariesList({ list }) {
+
+  // HandelOnClick(){
+  //   return(
+  //     <div style={{overflowY: 'scroll',height: '100%', marginTop: '15px'}}>
+  //     <ListGroup style={{height: '1rem'}}>
+  //       <ListGroup>
+  //         <ListGroup.Item className="list-head">
+  //           List of beneficiaries
+  //         </ListGroup.Item>
+  //       </ListGroup>
+  //         {list.map((person, idx) =>
+  //           <ListGroup horizontal key={idx} style={{ height: '4rem' }}>
+  //             <ListGroup.Item style={{ width: '100%', backgroundColor:'white' }}>
+  //               {person[0]} <br/> <span style={{ color: "gray", fontSize: "0.9em" }}>{person[1]}</span>
+  //             </ListGroup.Item>
+  //           </ListGroup>
+  //         )}
+  //     </ListGroup>
+  //     </div>
+  //   )
+  // }
+
+//   const show1 = (
+//     <div style={{height: '100%', marginTop: '15px'}}>
+//     <ListGroup style={{height: '1rem'}}>
+//       <ListGroup>
+//         <ListGroup.Item className="list-head">
+//           List of beneficiaries
+//         </ListGroup.Item>
+//       </ListGroup>
+//         {list.map((person, idx) =>
+//           <ListGroup horizontal key={idx} style={{ height: '4rem' }}>
+//             <ListGroup.Item style={{ width: '100%', backgroundColor:'white' }}>
+//               {person[0]} <br/> <span style={{ color: "gray", fontSize: "0.9em" }}>{person[1]}</span>
+//             </ListGroup.Item>
+//           </ListGroup>
+//         )}
+//     </ListGroup>
+//     </div>
+//   )
+
+//   const show2 = (
+//     <div style={{overflowY: 'scroll',height: '100%', marginTop: '15px'}}>
+//       <ListGroup style={{height: '1rem'}}>
+//         <ListGroup>
+//           <ListGroup.Item className="list-head">
+//             List of beneficiaries
+//           </ListGroup.Item>
+//         </ListGroup>
+//           {list.map((person, idx) =>
+//             <ListGroup horizontal key={idx} style={{ height: '4rem' }}>
+//               <ListGroup.Item style={{ width: '100%', backgroundColor:'white' }}>
+//                 {person[0]} <br/> <span style={{ color: "gray", fontSize: "0.9em" }}>{person[1]}</span>
+//               </ListGroup.Item>
+//             </ListGroup>
+//           )}
+//       </ListGroup>
+//       </div>
+//   )
+
+//   return (
+//     <div>
+//       {show1}
+//       <br />
+//       <button >View All</button>
+//     </div>
+
+//   )
+// }
+
+function BeneficiariesList(){
 
   const beneficiary = [
     ["Mukesh", "Karakoram shop"],
@@ -71,13 +141,76 @@ function Beneficiaries() {
     ["Aashish", "Vindy Washerman"],
     ["Om", "Shivalik gardner"],
     ["Vinay", "Himadri shop"],
+    ["Vasant", "Kailash juice shop"],
+    ["Mukesh", "Karakoram shop"],
+    ["Aashish", "Vindy Washerman"],
+    ["Om", "Shivalik gardner"],
+    ["Vinay", "Himadri shop"],
   ]
 
+  const beneficiary1 = [
+    ["Mukesh", "Karakoram shop"],
+    ["Aashish", "Vindy Washerman"],
+    ["Om", "Shivalik gardner"],
+    ["Vinay", "Himadri shop"],
+  ]
+
+  
+  const handelClick = () => setList(
+    <div style={{overflowY: 'scroll',height: '100%', marginTop: '0px'}} className="listclass">
+    <ListGroup style={{height: '1rem'}}>
+      <ListGroup>
+        <ListGroup.Item className="list-head">
+          List of beneficiaries
+        </ListGroup.Item>
+      </ListGroup>
+        {beneficiary.map((person, idx) =>
+          <ListGroup horizontal key={idx} style={{ height: '4rem' }}>
+            <ListGroup.Item style={{ width: '100%', backgroundColor:'white' }}>
+              {person[0]} <br/> <span style={{ color: "#9e1c66", fontSize: "0.9em" }}>{person[1]}</span>
+            </ListGroup.Item>
+          </ListGroup>
+        )}
+    </ListGroup>
+    </div>)
+
+  const [list, setList] = useState(
+    <div style={{height: '100%', marginTop: '10px'}}>
+    <ListGroup style={{height: '1rem'}}>
+      <ListGroup>
+        <ListGroup.Item className="list-head">
+          List of beneficiaries
+        </ListGroup.Item>
+      </ListGroup>
+     
+        {beneficiary1.map((person, idx) =>
+            <ListGroup horizontal key={idx} style={{ height: '4rem',width:'100%' }}>
+              <ListGroup.Item style={{ width: '100%', backgroundColor:'white' }}>
+                {person[0]} <br/> <span style={{ color: "#9e1c66", fontSize: "0.9em" }}>{person[1]}</span>
+              </ListGroup.Item>
+            </ListGroup>
+        )}
+        <ListGroup>
+        <Button onClick={handelClick} style={{}}>View All</Button>
+        </ListGroup>
+
+        </ListGroup>
+
+    </div>
+  )
+      return(
+        <div  style={{height:'100%'}}>{list}</div>
+     
+      )
+    
+}
+
+function Beneficiaries() {
   return (
     <section id="sc-beneficiary">
-      <Row>
-        <Col md={8}> <BeneficiariesText /> </Col>
-        <Col md={4}> <BeneficiariesList list={beneficiary} /> </Col>
+      <Row style={{height:'auto'}}>
+        <Col sm={8}> <BeneficiariesText /> </Col>
+        <Col sm={4}> <BeneficiariesList /> </Col>
       </Row>
     </section>
   )
