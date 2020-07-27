@@ -14,17 +14,17 @@ function CarousalText() {
       <div className="aboutheading"> About </div>
       <hr/>
       <p className="aboutcontent" >
-        The IIT Delhi <b> Benevolent Fund</b> is an institutional setup to financially
-        support the campus workers (hostel shop workers, night mess workers, washerman etc) who are
-        not employed under contract. With the campus shut during the unprecendented pandemic, they are stuggling to make their both
-        ends meet since the past four months and yet, are left without any reliable and stable means
-        of livelihood.
+        The IIT Delhi <b> Benevolent Fund</b> is an arrangement initiated by the institution to financially 
+        support workers around the campus - in our hostel shops, in our night mess and laundry services- who are
+        not employed under contract.
+        With the campus being shut during this unprecendented pandemic, they are stuggling to make their ends meet 
+        since they are left without any reliable and stable means of income. 
+        <br/><br/>
+        These workers made our lives easier everyday and now we need to make theirs. 
+        It is upon us,the <b>Student Community</b> to support them now,
+        when they need us the most!
         <br/> <br/>
-        These workers, who had helped us sustain in the campus and made our lives easier by providing
-        their services for our daily needs- it is, now upon the <b>Student Community</b> to support them,
-        when they most need us!
-        <br /> <br />
-        <i>Let's take a moment and think about what "we can do for our workers" !</i>
+      <i>Let's take a moment and think about what can <b>we</b> do for <b>our workers</b> ! </i>
       </p>
     </div>
   )
