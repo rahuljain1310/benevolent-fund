@@ -39,20 +39,6 @@ function ShareYourStoryButton () {
   )
 }
 
-<<<<<<< HEAD
-function CommentCard ({person}) {
-  return (
-    <Card className='CommentCard' style={{backgroundColor:"white"}}>
-      <Card.Img variant="top" src={person?.imgPath} alt="My Profile Picture" className="image" />
-      <Card.Title>{person?.name}</Card.Title>
-      <Card.Text>{person?.year}</Card.Text>
-      <Card.Text>{person?.description}</Card.Text>
-    </Card>
-  )
-}
-
-=======
->>>>>>> 8128b92a1a609be27e038fb9316b21fd65de9ad7
 function CommentGrid() {
   const people =[
     {
@@ -76,20 +62,6 @@ function CommentGrid() {
   ]
   return(
     <section id='sc-testimonials'>
-<<<<<<< HEAD
-      <div class = 'Heading'>
-        <h3 >What People Say </h3>
-      </div>
-        <Row class='card'>
-          {people.map((person, idx) => (
-            <Col lg="4" sm='3' >
-              <CommentCard person={person} />
-            </Col>
-          ))}
-        </Row>
-             <ViewAll/>  
-             <ShareYourStoryButton/>
-=======
       <div className="heading"> What people say ...</div>
       <br/>
       <Row>
@@ -109,7 +81,6 @@ function CommentGrid() {
           <ShareYourStoryButton/>
         </Col>
       </Row>
->>>>>>> 8128b92a1a609be27e038fb9316b21fd65de9ad7
     </section>
   )
 }
