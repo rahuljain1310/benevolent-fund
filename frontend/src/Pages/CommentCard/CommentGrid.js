@@ -29,7 +29,7 @@ function ViewAll () {
 
 function CommentCard ({person}) {
   return (
-    <Card className='CommentCard'>
+    <Card className='CommentCard' style={{backgroundColor:"white"}}>
       <Card.Img variant="top" src={person?.imgPath} alt="My Profile Picture" className="image" />
       <Card.Title>{person?.name}</Card.Title>
       <Card.Text>{person?.year}</Card.Text>
@@ -72,13 +72,9 @@ function CommentGrid() {
             </Col>
           ))}
         </Row>
-        <Row>
-          <Col>
-             <ViewAll/> 
+             <ViewAll/>  
              <ShareYourStoryButton/>
-          </Col>
-        </Row>
-      </section>
+    </section>
   )
 }
 

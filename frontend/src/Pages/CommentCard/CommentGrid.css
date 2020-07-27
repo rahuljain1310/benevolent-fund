@@ -1,28 +1,20 @@
 
 #sc-testimonials {
-    text-align: center;
+    text-align: justify;
+    border: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    border-color: orange;
 }
   
 #sc-testimonials h3{
     margin-bottom: 2em;
 } 
-
-.Heading{
-    border: solid;
-    border-width: 2px;
-    box-sizing: border-box;
-}
-
-
-.image{
-    width: 200px;
-    height: 130px;
-}
   
 .title{
     font-family: inherit;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: light;
     margin-left: 9px;
 }
   
@@ -30,15 +22,6 @@
     font-family:inherit;
     font-size: 13px;
     margin-left: 9px;
-}
-
-.card{
-    background-color:black;
-    border-radius: 8px;
-    border-width: thin;
-    border-color: black;
-    margin: 1px;
-    padding: 16px 32px;
 }
 
 .para{
@@ -54,7 +37,7 @@
 .ViewAll a {
     font-family: "DroidArabicKufi","Roboto","Helvetica", "Arial", sans-serif !important;
     background-color: white;
-    color: #e93973;
+    color:black;
     border-radius: 4px;
     padding: 10px;
     font-family: cursive;
@@ -70,7 +53,7 @@
     transition: .3s;
     color: white;
     text-decoration: none;
-    background-color: #e03646;
+    background-color:black;
 }
 
 .ViewAll a .icon-favourite:before{
@@ -85,11 +68,10 @@
 .ShareYourStoryButton a {
     font-family: "DroidArabicKufi","Roboto","Helvetica", "Arial", sans-serif !important;
     background-color: white;
-    color: #e93973;
+    color: black;
     border-radius: 4px;
     padding: 10px;
     font-family: cursive;
-    border-radius: 8px;
     border: 2px solid #fff;
     text-align: center;
     display: inline;
@@ -101,7 +83,7 @@
     transition: .3s;
     color: white;
     text-decoration: none;
-    background-color: #e03646;
+    background-color:black;
 }
 
 .ShareYourStoryButton a .icon-favourite:before{
@@ -112,3 +94,30 @@
 .padding-right-14{
     padding-right: 20px;
 }  
+
+.CommentCard{
+    border-radius: 16px;
+    border-width: thick;
+    color:black;
+ 
+}
+
+.CommentCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card{
+    color:darkcyan;
+    text-align: justify;
+}
+
+.buttons {
+    width: 960px;
+    margin: 0 auto;
+}
+    
+.action_btn {
+    width: 500px;
+    margin:01 auto;
+    text-align: center;
+}
