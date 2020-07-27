@@ -7,14 +7,14 @@ import {
 import './CommentGrid.css';
 
 
-function CommentCard({person}) {
-  return(
+function CommentCard({ person }) {
+  return (
     <Card className="CommentCard">
-      <img variant='top' src={person?.imgPath} alt="My profile picture" className="image"/>
-      <br/>
+      <img variant='top' src={person?.imgPath} alt="My profile picture" className="image" />
+      <br />
       <Card.Title className="title">
         <b>{person?.name}</b>
-        <br/>
+        <br />
         <span className="subtitle">{person?.year}</span>
       </Card.Title>
       <Card.Text className="para">{person?.description}</Card.Text>
@@ -22,26 +22,8 @@ function CommentCard({person}) {
   )
 }
 
-function ViewAllButton () {
-    return(
-      <span>
-        <a className="ViewAll" href="#" target="blank">View All</a>
-      </span>
-    )
-  }
-
-function ShareYourStoryButton () {
-  return(
-    <div >
-      <a class='ShareYourStory' href="#" target="blank">
-        Share YOUR Story
-      </a>
-    </div>
-  )
-}
-
 function CommentGrid() {
-  const people =[
+  const people = [
     {
       name: "Rahul Jain",
       year: "Third Year, IITD",
@@ -61,27 +43,19 @@ function CommentGrid() {
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     }
   ]
-  return(
+  return (
     <section id='sc-testimonials'>
-      <div className="heading"> What people say ...</div>
+      <h2> What people say ...</h2>
+      <hr/>
+      <Row>
+        {people.map((person, idx) => (
+        <Col lg='4'> <CommentCard person={person}/></Col>
+        ))}
+      </Row>
       <br/>
-      <Row>
-        { people.map((person,idx)=>(
-          <Col lg='4' sm='3'>
-            <CommentCard person={person}/>
-          </Col>
-          ))
-        }
-      </Row>
-      <br/><br/>
-      <Row>
-        <Col>
-          <ViewAllButton/> 
-        </Col>
-        <Col>
-          <ShareYourStoryButton/>
-        </Col>
-      </Row>
+      <a href="#" target="blank"> View All</a>
+      <br/> <br/>
+      <a href="#" target="blank"> Share Your Story </a>
     </section>
   )
 }

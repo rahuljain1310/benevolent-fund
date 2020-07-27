@@ -35,7 +35,6 @@
 }
 
 #subhead_b{
-  /* color: #2EC4B6; */
   color: #EF4F5E;
   font-size: 1.3em ;
   margin-left: 2px;
@@ -55,26 +54,17 @@
 }
 
 .list-head{
-  /* color: #2EC4B6; */
   color: #EF4F5E;
   font-size: 1.5em ;
-  /* margin-left: 2px; */
-  /* font-weight: 555; */
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   font-family: 'Grenze Gotisch', cursive;
   margin-top: 1px;
   position: fixed;
-  /* text-align: center; */
 }
 
 .card{
   border-color: red;
 }
-/* 
-.listclass{
-  scrollbar-color: red blue;
-  
-} */
+
 ::-webkit-scrollbar {
   height: 12px;
   width: 7px;
@@ -84,9 +74,14 @@
 ::-webkit-scrollbar-thumb {
   background: #9e1c66;
   -webkit-border-radius: 1ex;
-  /* -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75); */
 }
 
 ::-webkit-scrollbar-corner {
   background: #611717;
+}
+
+.aboutbeneficiaries h2 {
+  text-align: center;
+  color: green;
+  font-family: 'Grenze Gotisch', cursive;
 }

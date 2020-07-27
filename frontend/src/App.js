@@ -8,7 +8,6 @@ import Beneficiaries from './Pages/Beneficiary/Beneficiaries';
 import CommentGrid from './Pages/CommentCard/CommentGrid';
 import About from './Pages/About/About';
 import MediaCard from './Pages/Media/Media';
-import Starter from'./Pages/Starter/Starter';
 import './App.css';
 
 function MainPage () {
@@ -16,7 +15,6 @@ function MainPage () {
     <div className = "page-container">
       <div className = "content-wrap">
         <Header/>
-        <Starter />
         <About/>
         <Beneficiaries />
         <BulletinBoard />

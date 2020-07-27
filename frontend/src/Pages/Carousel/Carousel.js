@@ -2,11 +2,10 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import  './Carousel.css';
 
-import imageSrc1 from '../../Assets/rickshawpuller.jpg';
 import imageSrc2 from '../../Assets/nature1.jpg';
 import imageSrc3 from '../../Assets/nature2.jpg';
 import imageSrc4 from '../../Assets/iitd5.jpg';
-import imageSrc5 from '../../Assets/iitd3.jpg';
+
 function ImageCarousel () {
   return(
     <Carousel>
