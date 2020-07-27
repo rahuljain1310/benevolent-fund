@@ -4,20 +4,19 @@ import {
   Col,
 } from 'react-bootstrap'
 import './About.css'
-import ImageCarousal from '../Carousel/Carousel'
+
+import ImageCarousal from '../Carousel/Carousel';
+import imageSrc5 from '../../Assets/iitd5.jpg';
 
 function CarousalText() {
   return (
     <div className="aboutcard">
-      <div className="aboutheading">
-        About
-      </div>
+      <div className="aboutheading"> About </div>
       <hr/>
       <p className="aboutcontent" >
         The IIT Delhi <b> Benevolent Fund</b> is an arrangement initiated by the institution to financially 
         support workers around the campus - in our hostel shops, in our night mess and laundry services- who are
         not employed under contract.
-       <br/><br/>
         With the campus being shut during this unprecendented pandemic, they are stuggling to make their ends meet 
         since they are left without any reliable and stable means of income. 
         <br/><br/>
@@ -31,14 +30,18 @@ function CarousalText() {
   )
 }
 
-function About () {
+function About() {
   return (
-    <section id="sc-about">
-      <Row>
-        <Col md={6} className='iitd-carousal'> <ImageCarousal/> </Col>
-        <Col md={6}> <CarousalText/>  </Col>
-      </Row>    
-    </section>
+    <div id="sc-about">
+      <Row style={{ margin: '0px' }}>
+        <Col lg={6} md={5} sm={0}></Col>
+        <Col lg={6} md={7} sm={12}>
+          <section style={{ backgroundColor: 'white', marginTop: '100px'}}>
+            <CarousalText />
+          </section>
+        </Col>
+      </Row>
+    </div>
   )
 }
 
