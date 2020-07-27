@@ -11,9 +11,9 @@ import './Beneficiaries.css';
 function BeneficiariesText() {
   return (
     <div className="aboutbeneficiaries">
-     <h2 style={{ textAlign: 'center', color: 'green', fontWeight: 'lighter' }}> ~Know About Beneficiaries~</h2>
-     <hr style={{backgroundColor:'orange'}} />
-    <Card style={{ width: '100%', borderColor:'white' }}>
+     <h2 style={{ textAlign: 'center', color: 'green', fontWeight: 'lighter' }}> Know About Beneficiaries</h2>
+     {/* <hr style={{backgroundColor:'orange'}} /> */}
+    <Card style={{ width: '100%', borderTopColor:'orange' }}>
         {/* <h2 style={{ textAlign: 'center', color: 'green', fontWeight: 'lighter' }}>Know About Beneficiaries</h2>
         <hr style={{backgroundColor:'orange'}} /> */}
       <Card.Body>
