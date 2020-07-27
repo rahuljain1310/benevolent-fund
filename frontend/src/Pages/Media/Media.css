@@ -1,11 +1,12 @@
-#sc-media hr {
-  background-color: orange;
-  width: 100%;
-}
-
 #sc-media .date {
   color: purple;
   margin-bottom: 4px;
+}
+
+#sc-media h2 {
+  text-align: center;
+  color: green;
+  font-family: 'Grenze Gotisch', cursive;
 }
 
 #sc-media .newsIcon {
