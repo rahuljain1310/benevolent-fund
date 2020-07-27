@@ -2,7 +2,6 @@ import React, {useEffect} from 'react';
 import {
   Row,
   Col,
-  Navbar
 } from 'react-bootstrap';
 import iitdLogo from '../Assets/iitdLogo.jpg';
 import {SmallContributeButton} from '../Pages/ContributeButton/ContributeButton';
@@ -33,6 +32,7 @@ function Header () {
           <a className="Links" href = "#sc-bulletin">Contributors</a>
           <a className="Links" href = "#sc-beneficiary" >Beneficiaries</a>
           <a className="Links" href = "#sc-media" >News</a>
+          <a className="Links" href = "#sc-testimonies">Testimonies</a>
           <a className="Links" href = "#sc-comments">Comments</a>
           <SmallContributeButton/>
         </nav>

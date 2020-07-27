@@ -13,7 +13,7 @@ function Footer () {
       <hr />
       <p className = "Quoterow">
         <em>
-          "Our physical duty is to advance toward freedom: physical mental and sipritual- and help others to do so." 
+          "Our physical duty is to advance toward freedom : physical mental and sipritual and help others to do so." 
           <br/> - Swami Vivekanand
         </em>
       </p>
@@ -26,19 +26,22 @@ function Footer () {
           <Col md={4} sm={6}>
             <h4>Links</h4>
             <ul class="list-unstyled">
-              <li> &#8594; <a href="#">Home</a></li>
-              <li> &#8594; <a href="#about-section">About</a></li>
-              <li> &#8594; <a href="#timeline-section">Education</a></li>
-              <li> &#8594; <a href="#projects-section">Projects</a></li>
-              <li> &#8594; <a href="#contact-section">Contact</a></li>
+              <li> &#8594; <a href="#">About</a></li>
+              <li> &#8594; <a href="#about-section">Contributors</a></li>
+              <li> &#8594; <a href="#timeline-section">Beneficiaries</a></li>
+              <li> &#8594; <a href="#projects-section">News</a></li>
+              <li> &#8594; <a href="#contact-section">Testimonies</a></li>
+              <li> &#8594; <a href="#contact-section">Comments</a></li>
             </ul>
           </Col>
           <Col md={4}>
-            <h4>Have a Questions?</h4>
+            <h4>Have a Question ?</h4>
             <ul class="list-unstyled">
-              <li> &#8594; <span>SC-02 Vindhyachal Hostel, IIT Delhi</span> </li>
-              <li> &#8594; <span>+91-8770915084</span> </li>
-              <li> &#8594; <span>Rahul.Jain.ee117@ee.iitd.ac.in</span> </li>
+              <li><span>Divyanshu Saxena</span> </li>
+              <li><span>8826080933 | cs1160316@iitd.ac.in</span> </li>
+              <br/>
+              <li><span>Rahul Jain</span> </li>
+              <li><span>8770915084 | ee1170476@iitd.ac.in</span> </li>
             </ul>
           </Col>
         </Row>

@@ -1,15 +1,19 @@
-
 #sc-testimonials {
+<<<<<<< HEAD
     text-align: justify;
     border: solid;
     border-width: 2px;
     box-sizing: border-box;
     border-color: orange;
+=======
+  text-align: center;
+>>>>>>> 8128b92a1a609be27e038fb9316b21fd65de9ad7
 }
-  
+
 #sc-testimonials h3{
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 } 
+<<<<<<< HEAD
   
 .title{
     font-family: inherit;
@@ -28,9 +32,63 @@
     font-family:cursive;
     font-size: 13px;
     margin: 9px;
+=======
+
+.ShareYourStory{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #E71D36;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  display: inline;
+  text-decoration: none;
+  font-size: 1.1em;
+  margin-left: 50px;
 }
-  
+
+.ShareYourStory:hover{
+  transition: .5s;
+  color:white;
+  text-decoration: none;
+  background-color: #ED5A6B;
+}
+
+.CommentCard{
+  padding: 8px 16px;
+  border-radius: 16px;
+  border-color:black;
+  min-width: 300px;
+  margin: 2%;
+  border-width: thin;
+}
+
+.ShareYourStoryButton a {
+  color: #e93973;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 2%;  
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-family: cursive;
+  font-size: 1.2em;
+  border: 2px solid #fff;
+}
+
+.ShareYourStoryButton a:hover {
+  transition: .3s;
+  border: 2px solid #e93973;
+  color: #e93973;
+  text-decoration: none;
+>>>>>>> 8128b92a1a609be27e038fb9316b21fd65de9ad7
+}
+
 .ViewAll {
+<<<<<<< HEAD
     font-size: 1.3em;
 }
   
@@ -45,26 +103,52 @@
     border: 2px solid #fff;
     text-align: center;
     display: inline;
+=======
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #E71D36;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.1em;
+>>>>>>> 8128b92a1a609be27e038fb9316b21fd65de9ad7
     text-decoration: none;
-    display: inline-block;
+    margin-left: 380px ;
 }
 
+<<<<<<< HEAD
 .ViewAll a:hover {
     transition: .3s;
     color: white;
     text-decoration: none;
     background-color:black;
+=======
+.ViewAll:hover{
+  transition: .5s;
+  color:white;
+  text-decoration: none;
+  background-color: #ED5A6B;
+>>>>>>> 8128b92a1a609be27e038fb9316b21fd65de9ad7
 }
 
-.ViewAll a .icon-favourite:before{
-    content: "\e87d";
-    color: black;
+
+.image{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 75px;
 }
 
-.ShareYourStoryButton {
+.title{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.3em;
+  text-align: center;
+  color: #2EC4B6;
 }
 
+<<<<<<< HEAD
 .ShareYourStoryButton a {
     font-family: "DroidArabicKufi","Roboto","Helvetica", "Arial", sans-serif !important;
     background-color: white;
@@ -84,12 +168,33 @@
     color: white;
     text-decoration: none;
     background-color:black;
+=======
+.subtitle{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+  color: #7A7A7A
 }
 
-.ShareYourStoryButton a .icon-favourite:before{
-  content: "\e87d";
-  color: black;
+.para{
+  /* font-family:cursive; */
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+  font-style: italic;
+  margin: 9px;
+>>>>>>> 8128b92a1a609be27e038fb9316b21fd65de9ad7
 }
+
+.heading{
+  font-weight: bold;
+  color: #FF9F1C;
+  font-size: 2.2em;
+  text-align: center;
+  font-stretch: wider;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-family: 'Grenze Gotisch', cursive;
+}
+<<<<<<< HEAD
   
 .padding-right-14{
     padding-right: 20px;
@@ -121,3 +226,5 @@
     margin:01 auto;
     text-align: center;
 }
+=======
+>>>>>>> 8128b92a1a609be27e038fb9316b21fd65de9ad7
