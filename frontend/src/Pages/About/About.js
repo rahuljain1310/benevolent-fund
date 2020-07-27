@@ -19,7 +19,7 @@ function CarousalText() {
         not employed under contract.
        <br/><br/>
         With the campus being shut during this unprecendented pandemic, they are stuggling to make their ends meet 
-        since,they are left without any reliable and stable means of income. 
+        since they are left without any reliable and stable means of income. 
         <br/><br/>
         These workers made our lives easier everyday and now we need to make theirs. 
         It is upon us,the <b>Student Community</b> to support them now,
