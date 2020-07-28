@@ -2,6 +2,7 @@
     text-align: center;
     color:#EF4F5E;
     font-weight: bold;
+    font-size: 2.6em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -13,12 +14,10 @@
     width:100%;
 }
 
-.stats .header {
-    color: black;
+.stats h2 {
     text-align: center;
-    font-size: 1.3em;
-    font-weight: normal;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: green;
+    font-family: 'Grenze Gotisch', cursive;
 }
 
 .stats .card {
@@ -27,6 +26,7 @@
     margin: 'auto';
     margin-top: 15px;
 }
+
 
 .contributor-list .designation {
     color: green;
@@ -38,10 +38,17 @@
 .count-stats {
     font-weight: bolder;
     text-align: center;
-    font-size: 2.8em;
 }
 
 .count-stats .number {
-    font-size: 1.3em;
+    font-size: 3.2em;
+}
+
+.table-head {
+  color: #EF4F5E;
+  font-size: 1.5em ;
+  font-family: 'Grenze Gotisch', cursive;
+  margin-top: 1px;
+  position: fixed;
 }
 

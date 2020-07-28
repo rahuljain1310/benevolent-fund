@@ -35,7 +35,6 @@ function BeneficiariesText() {
 }
 
 function BeneficiariesList() {
-
   const beneficiary = [
     ["Mukesh", "Karakoram shop"],
     ["Aashish", "Vindy Washerman"],
@@ -52,73 +51,42 @@ function BeneficiariesList() {
     ["Om", "Shivalik gardner"],
     ["Vinay", "Himadri shop"],
   ]
+  const beneficiarySmall = beneficiary.slice(0,6)
 
-  const beneficiary1 = [
-    ["Mukesh", "Karakoram shop"],
-    ["Aashish", "Vindy Washerman"],
-    ["Om", "Shivalik gardner"],
-    ["Vinay", "Himadri shop"],
-    ["Mukesh", "Karakoram shop"],
-    ["Aashish", "Vindy Washerman"],
-    ["Vinay", "Himadri shop"],
-   
-  ]
-
-
-  const handelClick = () => setList(
+  const [viewAll, setViewAll] = useState(true)
+  const [beneficiaryDisplay, setDisplay] = useState(beneficiary) 
+  const handleClick = () => {
+    setViewAll(true)
+    setDisplay(beneficiary)
+  }
+  
+  return (
     <div style={{ overflowY: 'scroll', height: '100%', marginTop: '0px' }} className="listclass">
       <ListGroup style={{ height: '1rem' }}>
         <ListGroup>
-          <ListGroup.Item className="list-head">
-            List of beneficiaries
-</ListGroup.Item>
+          <ListGroup.Item className="list-head"> List of beneficiaries </ListGroup.Item>
         </ListGroup>
-        {beneficiary.map((person, idx) =>
-          <ListGroup horizontal key={idx} style={{ height: '4rem' }}>
-            <ListGroup.Item style={{ width: '100%', backgroundColor: 'white' }}>
-              {person[0]} <br /> <span style={{ color: "#9e1c66", fontSize: "0.9em" }}>{person[1]}</span>
-            </ListGroup.Item>
-          </ListGroup>
-        )}
-      </ListGroup>
-    </div>)
-
-  const [list, setList] = useState(
-    <div style={{ height: '100%', marginTop: '10px' }}>
-      <ListGroup style={{ height: '1rem' }}>
-        <ListGroup>
-          <ListGroup.Item className="list-head">
-            List of beneficiaries
-</ListGroup.Item>
-        </ListGroup>
-
-        {beneficiary1.map((person, idx) =>
+        {beneficiaryDisplay.map((person, idx) =>
           <ListGroup horizontal key={idx} style={{ height: '4rem', width: '100%' }}>
             <ListGroup.Item style={{ width: '100%', backgroundColor: 'white' }}>
-              {person[0]} <br /> <span style={{ color: "#9e1c66", fontSize: "0.9em" }}>{person[1]}</span>
+              {person[0]}, <span className='designation'>{person[1]}</span>
             </ListGroup.Item>
           </ListGroup>
         )}
-        <ListGroup>
-          <Button onClick={handelClick} style={{}}>View All</Button>
-        </ListGroup>
+        {viewAll || <Button onClick={handleClick}> View All </Button>}
       </ListGroup>
-
-    </div>
-  )
-  return (
-    <div style={{ height: '100%' }}>{list}</div>
+      </div>
   )
 }
 
 function Beneficiaries() {
   return (
-      <section id="sc-beneficiary">
-        <Row style={{ height: 'auto' }}>
-          <Col sm={8}> <BeneficiariesText /> </Col>
-          <Col sm={4}> <BeneficiariesList /> </Col>
-        </Row>
-      </section>
+    <section id="sc-beneficiary">
+      <Row style={{ height: 'auto' }}>
+        <Col sm={8}> <BeneficiariesText /> </Col>
+        <Col sm={4}> <BeneficiariesList /> </Col>
+      </Row>
+    </section>
   )
 }
 
