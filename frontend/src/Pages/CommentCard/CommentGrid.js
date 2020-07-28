@@ -25,10 +25,10 @@ function CommentCard({ person }) {
 function CommentGrid() {
   const people = [
     {
-      name: "Rahul Jain",
-      year: "Third Year, IITD",
-      imgPath: require('../../Assets/rahul.jpeg'),
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      name: "Divyanshu Saxena",
+      year: "Final Year Undergraduate",
+      imgPath: require('../../Assets/divyanshu.jpeg'),
+      description: "While conversing with a friend, I realized that we have “normalized” our lives so easily in the past four months that we fail to understand, for many of these workers, nothing has been “normal”. The workers whom I had personally interacted with was very thankful to the campus fraternity, for their support and contribution as he was able to sustain the amount for tuition fees for his kids, whose schools were still ongoing in online format but the most striking feature after all these conversations was that some of these workers were also considerate enough to “refuse the help” as they believed there would be others who would need it more than them!"
     },
     {
       name: "Om Agrawal",
@@ -48,9 +48,12 @@ function CommentGrid() {
       <h2> What people say ...</h2>
       <hr/>
       <Row>
-        {people.map((person, idx) => (
-        <Col lg='4'> <CommentCard person={person}/></Col>
-        ))}
+        { people.map((person,idx)=>(
+          <Col lg='3' sm='6' style={{display: 'table-cell'}}>
+            <CommentCard person={person}/>
+          </Col>
+          ))
+        }
       </Row>
       <br/>
       <a href="#" target="blank"> View All</a>
