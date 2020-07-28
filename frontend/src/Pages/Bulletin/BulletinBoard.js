@@ -21,9 +21,11 @@ function ChartFigure() {
 	return (
 		<Chart
 			data={dataChart}
+			width={'400px'}
+			height={'250px'}
 			chartType="PieChart"
 			loader={'Loading Chart ...'}
-			options={{ title: 'Contribution distribution' }}
+			// options={{ title: 'Contribution distribution' }}
 			rootProps={{ 'data-testid': '1' }}
 		/>
 	)
@@ -109,7 +111,6 @@ function CountStats({ number, text }) {
 			<span className='number'>
 				<CountUp delay={2} end={number} formattingFn={formatFnc}/>
 			</span> <br/>
-			{/* <span className='text'>{" "+text+" "}</span> */}
 		</div>
 	)
 }
@@ -124,18 +125,18 @@ function ContributionStats() {
 				<Col ><CountStats number={totalAmount} text={'Contribution'}  /></Col>
 			</Row>
 			<hr />
+			<br />
 			<Row>
-				<Col sm={6}>
+				<Col sm={6} style={{alignItems:'left'}}>
 					<h5 style={{textAlign:'center'}}>Daily Progress Curve</h5>
 					<GraphChart />
-					{/* <ChartFigure /> */}
 				</Col>
 				<Col>
+					<h5 style={{textAlign:'center'}}>Contribution Distribution</h5>
 					<ChartFigure style={{marginTop:'50px'}} />
 				</Col>
 			</Row>
 			<hr/>
-			{/* <ChartFigure className="chartclass" style={{ minHeight: '300px', position: 'static' }} /> */}
 			<BigContributeButton />
 
 		 </div>

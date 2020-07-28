@@ -147,6 +147,10 @@ function BeneficiariesList() {
     ["Aashish", "Vindy Washerman"],
     ["Om", "Shivalik gardner"],
     ["Vinay", "Himadri shop"],
+    ["Mukesh", "Karakoram shop"],
+    ["Aashish", "Vindy Washerman"],
+    ["Vinay", "Himadri shop"],
+   
   ]
 
 
@@ -206,5 +210,6 @@ function Beneficiaries() {
     </section>
   )
 }
+
 
 export default Beneficiaries;
