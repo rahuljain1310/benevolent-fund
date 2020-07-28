@@ -5,15 +5,11 @@
   background-size: cover;
   height: 100vh;
 }
-/* 
-@media(max-width: 600px) {
-  #sc-about .iitd-carousal {
-    display: none;
-  }
-} */
 
 .aboutcard {
   margin: 0px 2%;
+  background-color: white;
+  margin-top: 100px;
 }
 
 .aboutheading {
@@ -28,7 +24,24 @@
 .aboutcontent {
   text-align: justify;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
+
+/* @media (max-width: 1000px)  {
+  #sc-about {
+    font-size: 95%;
+  }
+} */
+
+@media(max-width: 580px){
+  .aboutcard {
+    margin: 0%;
+    margin-top: 60px;
+  }
+  .aboutcontent {
+    font-size: 1em;
+  }
+}
+
 
 

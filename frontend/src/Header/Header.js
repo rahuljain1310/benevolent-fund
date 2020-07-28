@@ -19,15 +19,17 @@ function Header () {
   return (
   <header>
     <Row>
-      <Col md={6}>
-        <img src={iitdLogo} alt="IIT-D Logo" id="header-image"/>
-        <div id="head">IIT DELHI BENEVOLENT FUND</div>
-        <div id="subhead">
-          Helping others is the way we help ourselves!
+      <Col lg={6} md={8} sm={10}>
+        <div className='logo-section'>
+          <img src={iitdLogo} alt="IIT-D Logo" id="header-image"/>
+          <div id="head">IIT DELHI BENEVOLENT FUND</div>
+          <div id="subhead">
+            Helping others is the way we help ourselves!
+          </div>
         </div>
       </Col>
-      <Col md={6}>
-        <nav className="color">
+      <Col lg={6} md={4} sm={2}>
+        <nav className="color" style={{textAlign: 'right'}}>
           <a className="Links" href = "#sc-about">About</a>
           <a className="Links" href = "#sc-bulletin">Contributors</a>
           <a className="Links" href = "#sc-beneficiary" >Beneficiaries</a>

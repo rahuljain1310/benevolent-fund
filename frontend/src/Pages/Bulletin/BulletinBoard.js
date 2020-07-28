@@ -90,7 +90,7 @@ function ContributorList({ list }) {
 					{list.map((person, idx) => (
 						<ListGroup horizontal key={idx} style={{ height: '4rem' }}>
 							<ListGroup.Item style={{ width: '70%', fontWeight: '600' }}>
-								{person[0]}, <span className='designation'>Undergraduate</span>
+								{person[0]} <br /> <span className='designation'>Undergraduate</span>
 							</ListGroup.Item>
 							<ListGroup.Item style={{ width: '35%' }}>
 								<span style={{ fontSize: "1.2em", fontWeight: '600' }}>
@@ -164,8 +164,8 @@ function BulletinBoard() {
 		<section id='sc-bulletin'>
 
 			<Row >
-				<Col md={8}> <ContributionStats /> </Col>
-				<Col md={4}> <ContributorList list={contributors} /> </Col>
+				<Col lg={8} md={6}> <ContributionStats /> </Col>
+				<Col lg={4} md={6}> <ContributorList list={contributors} /> </Col>
 			</Row>
 		</section>
 	)

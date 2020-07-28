@@ -61,8 +61,8 @@ function BeneficiariesList() {
   }
   
   return (
-    <div style={{ overflowY: 'scroll', height: '100%', marginTop: '0px' }} className="listclass">
-      <ListGroup style={{ height: '1rem' }}>
+    <div style={{ overflowY: 'scroll', height: '100%', margin: '10px 0px' }} className="listclass">
+      <ListGroup style={{ height: '500px' }}>
         <ListGroup>
           <ListGroup.Item className="list-head"> List of beneficiaries </ListGroup.Item>
         </ListGroup>
