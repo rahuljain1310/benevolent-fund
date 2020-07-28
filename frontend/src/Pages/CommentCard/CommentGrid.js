@@ -34,7 +34,7 @@ function CommentGrid() {
       name: "Aadarsh Kumar",
       year: "Fourth Year, IITD",
       imgPath: require('../../Assets/aadarsh.jpeg'),
-      description: "I talked to a rickshaw puller, “They are so happy that words can't measure their emotions. Every amount received was not merely material cash but it brought in with it a lot of emotion.” It's time! when IITians shouldn't be seen as mere self-centered and career-oriented chaps, We are here to serve humanity. Amounts don’t matter, it's the heart behind that amount which beats and speaks volumes. Let us pledge to not let anyone be vulnerable at least on our own campus and stand shoulder to shoulder with the administration to improve the efficacy.We must be thankful to the administration for bestowing us with this opportunity to serve society."
+      description: "I talked to a rickshaw puller, “They are so happy that words can't measure their emotions. Every amount received was not merely material cash but it brought in with it a lot of emotions.” It's time! when IITians shouldn't be seen as self-centered & career-oriented chaps, We are here to serve humanity. Amounts don’t matter, it's the heart behind that amount which beats and speaks volumes. Let us pledge to not let anyone be vulnerable at least on our campus and stand shoulder to shoulder with the administration to improve the efficacy.We must be grateful for bestowing us with this opportunity to serve society."
     },
     {
       name: "Nishant Kumar",
@@ -55,19 +55,6 @@ function CommentGrid() {
           ))
         }
       </Row>
-      <br/><br/>
-      <Row>
-        <Col>
-          <ViewAllButton/> 
-        </Col>
-        <Col>
-          <ShareYourStoryButton/>
-        </Col>
-      </Row>
-      <br/>
-      <a href="#" target="blank"> View All</a>
-      <br/> <br/>
-      <a href="#" target="blank"> Share Your Story </a>
     </section>
   )
 }
