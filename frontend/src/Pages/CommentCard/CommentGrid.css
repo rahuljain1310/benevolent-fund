@@ -1,5 +1,5 @@
 #sc-testimonials {
-  text-align: center;
+  text-align: justify;
 }
 
 #sc-testimonials h2{
@@ -40,10 +40,10 @@
 }
 
 .image{
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   margin: auto;
-  border-radius: 75px;
+  border-radius: 100px;
 }
 
 .title{
@@ -63,7 +63,7 @@
 
 .para{
   font-family: 'Roboto', sans-serif;
-  font-size: 1.1em;
+  font-size: 1em;
   font-style: italic;
   margin: 9px;
 }
