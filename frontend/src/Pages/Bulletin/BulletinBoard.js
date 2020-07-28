@@ -34,8 +34,8 @@ function GraphChart(){
 	
 	return(
 		<Chart
-			width={'600px'}
-			height={'400px'}
+			width={'400px'}
+			height={'250px'}
 			chartType="LineChart"
 			loader={<div>Loading Chart</div>}
 			data={[
@@ -119,16 +119,26 @@ function ContributionStats() {
 	const totalAmount = 587554;
 	return (
 		<div className='stats'>
-			<div id="chart">
-			<CountStats number={contributorsCount} text={'Contributors'} />
-			<CountStats number={totalAmount} text={'Contribution'}  />
-			</div>
-			<GraphChart />
+			<Row>
+				<Col sm={4}><CountStats number={contributorsCount} text={'Contributors'} /></Col>
+				<Col ><CountStats number={totalAmount} text={'Contribution'}  /></Col>
+			</Row>
+			<hr />
+			<Row>
+				<Col sm={6}>
+					<h5 style={{textAlign:'center'}}>Daily Progress Curve</h5>
+					<GraphChart />
+					{/* <ChartFigure /> */}
+				</Col>
+				<Col>
+					<ChartFigure style={{marginTop:'50px'}} />
+				</Col>
+			</Row>
 			<hr/>
 			{/* <ChartFigure className="chartclass" style={{ minHeight: '300px', position: 'static' }} /> */}
 			<BigContributeButton />
 
-		</div>
+		 </div>
 	)
 }
 
