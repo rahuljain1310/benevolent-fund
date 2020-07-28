@@ -10,7 +10,6 @@ import "./Footer.css"
 function Footer () {
   return(
     <footer>
-      <hr />
       <p className = "Quoterow">
         <em>
           "Our physical duty is to advance toward freedom : physical mental and sipritual and help others to do so." 

@@ -2,15 +2,15 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import  './Carousel.css';
 
-import imageSrc1 from '../../Assets/rickshawpuller.jpg';
 import imageSrc2 from '../../Assets/nature1.jpg';
 import imageSrc3 from '../../Assets/nature2.jpg';
+import imageSrc4 from '../../Assets/iitd5.jpg';
 
 function ImageCarousel () {
   return(
     <Carousel>
       <Carousel.Item className="carouselItemClass">
-        <img className="carouselmgClass" src={imageSrc1} alt="poster"/>
+        <img className="carouselmgClass" src={imageSrc4} alt="poster" style={{height:'600px'}}/>
         <Carousel.Caption>
           <h2>IIT DELHI</h2>
         </Carousel.Caption>

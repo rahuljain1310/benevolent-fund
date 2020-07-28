@@ -19,3 +19,9 @@ section {
   display: flex;
   flex-direction: column;
 }
+
+hr {
+  border: 0 !important;
+  height: 2px !important;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 165, 0, 1), rgba(255, 255, 255, 0)) !important;
+}

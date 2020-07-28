@@ -10,7 +10,7 @@ import './header.css';
 function Header () {
 
   useEffect (() => {
-    var shiftWindow = function() { window.scrollBy(0, -120) };
+    var shiftWindow = function() { window.scrollBy(0, -40) };
     if (window.location.hash) shiftWindow();
     window.addEventListener("hashchange", shiftWindow);
     return () => window.removeEventListener("hashchange", shiftWindow)
@@ -32,7 +32,7 @@ function Header () {
           <a className="Links" href = "#sc-bulletin">Contributors</a>
           <a className="Links" href = "#sc-beneficiary" >Beneficiaries</a>
           <a className="Links" href = "#sc-media" >News</a>
-          <a className="Links" href = "#sc-testimonies">Testimonies</a>
+          <a className="Links" href = "#sc-testimonials">Testimonies</a>
           <a className="Links" href = "#sc-comments">Comments</a>
           <SmallContributeButton/>
         </nav>

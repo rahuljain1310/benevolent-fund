@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CountUp from 'react-countup';
 import Chart from "react-google-charts";
-import {BigContributeButton} from '../ContributeButton/ContributeButton'
+import { BigContributeButton } from '../ContributeButton/ContributeButton'
 import {
 	Row,
 	Col,
@@ -11,7 +11,7 @@ import {
 } from 'react-bootstrap';
 import './BulletinBoard.css';
 
-function ChartFigure () {
+function ChartFigure() {
 	const dataChart = [
 		['Total amount', '% contribution'],
 		['Undergraduate', 25],
@@ -23,18 +23,17 @@ function ChartFigure () {
 			data={dataChart}
 			chartType="PieChart"
 			loader={'Loading Chart ...'}
-			options={{title: 'Contribution distribution'}}
+			options={{ title: 'Contribution distribution' }}
 			rootProps={{ 'data-testid': '1' }}
 		/>
 	)
 }
 
-function ContributorList ({ list }) {
+function ContributorList({ list }) {
 	return (
 		<div className='contributor-list'>
-			{/* <div className="table-head" >CONTRIBUTORS</div> */}
 			<br />
-			<div style={{ overflowY: 'scroll', height: '100%'}}>
+			<div style={{ overflowY: 'scroll', height: '100%' }}>
 				<ListGroup style={{ height: '500px' }}>
 					<ListGroup>
 						<ListGroup.Item as='h5' className='table-head'>
@@ -44,10 +43,10 @@ function ContributorList ({ list }) {
 					{list.map((person, idx) => (
 						<ListGroup horizontal key={idx} style={{ height: '4rem' }}>
 							<ListGroup.Item style={{ width: '75%' }}>
-								{person[0]} <br/> <span className='designation'>Undergraduate</span>
+								{person[0]} <br /> <span className='designation'>Undergraduate</span>
 							</ListGroup.Item>
-							<ListGroup.Item style={{width: '25%'}}>
-								<span style={{fontSize: "1em"}}>{person[1]}</span>
+							<ListGroup.Item style={{ width: '25%' }}>
+								<span style={{ fontSize: "1em" }}>{person[1]}</span>
 							</ListGroup.Item>
 						</ListGroup>
 					))}
@@ -57,37 +56,40 @@ function ContributorList ({ list }) {
 	)
 }
 
-function ContributionStats() {
+function CountStats({ number, text }) {
 
-	const [contributorsCount, setContributorCount] = useState(554);
-	const [totalAmount, setTotalAmount] = useState(587554);
+	const formatter = Intl.NumberFormat('en-IN', {
+		style: 'currency',
+		currency: 'INR',
+	})
+
+	const formatFnc = text === 'Contribution' ? n => formatter.format(n) : n => n
 
 	return (
-		<div className='stats'>
-			<CardGroup>
-				<Card className='card'>
-					<Card.Header className="header"> Total Contributors </Card.Header>
-					<Card.Body>
-						<div className="text"> <CountUp end={contributorsCount} /> </div>
-					</Card.Body>
-				</Card>
-				<Card className='card'>
-					<Card.Header className="header"> Total Contribution </Card.Header>
-					<Card.Body>
-						<div className="text"> <CountUp end={totalAmount} /> </div>
-					</Card.Body>
-				</Card>
-			</CardGroup>
-			<br/>
-			<hr />
-			<br/>
-			<ChartFigure className="chartclass" style={{ minHeight: '300px', position: 'static' }} />
-			<BigContributeButton/>
+		<div className='count-stats'>
+			<span className='number'>
+				<CountUp delay={2} end={number} formattingFn={formatFnc}/>
+			</span> <br/>
+			<span className='text'>{" "+text+" "}</span>
 		</div>
 	)
 }
 
-function BulletinBoard () {
+function ContributionStats() {
+	const contributorsCount = 554;
+	const totalAmount = 587554;
+	return (
+		<div className='stats'>
+			<CountStats number={contributorsCount} text={'Contributors'} />
+			<CountStats number={totalAmount} text={'Contribution'} />
+			<hr/>
+			{/* <ChartFigure className="chartclass" style={{ minHeight: '300px', position: 'static' }} /> */}
+			<BigContributeButton />
+		</div>
+	)
+}
+
+function BulletinBoard() {
 
 	const contributors = [
 		["Mukesh", 500],
