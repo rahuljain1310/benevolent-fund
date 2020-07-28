@@ -16,112 +16,23 @@ function BeneficiariesText() {
       <div>
         <Card.Title>About Beneficiaries</Card.Title>
         <Card.Text>
-          In lieu of the current events of the closing down of IIT Delhi due to COVID-19, we all wish to keep ourselves safe and healthy. Being concerned about personal safety is a good thing, but at the same time, we should not forget the community that drove us while we were in IIT Delhi. These campus workers which helped us to sustain, in one way or another, in IIT Delhi, include Rickshaw Pullers, Sweepers, Washerman, Gardners, Presswalas, Night Mess Workers, Tea stall workers, Cycle repair and many more.
+          Stuck at home, our responsibility to look after ourselves can easily overshadow our responsibility  in  our community. We must remember our role is not limited to us. These benefeciaries are those campus workers who did not back away from their roles, when we needed them. The
+          Rickshaw Pullers, Sweepers, Gardners, Laundry Workers, Night Mess Workers, Tea stall workers, Cycle repairmen - anyone who made our campus invaluable.
         </Card.Text>
         <Card.Title>Why do they need us?</Card.Title>
         <Card.Text>
-          We were dependent on, one or many of, these workers in many ways while we were at the campus. We must-have interacted with many of them for some kind of our work or assistance. With the advent of the current circumstances of COVID-19, all of these campus workers have lost their sources of income, thus making the situation uneasy for them. These are harsh circumstances, most of them don't have any work to do, their savings are exhausted, many have to pay their rents, bills, many require medical assistance, their children are unable to get good education and resources, and some even have nothing to eat. These people are hit hard by this pandemic.
-        </Card.Text>
+          We all know that the campus has been closed. Since the main source of income for these workers was providing various services around the campus,most of them are now unemployed, left with
+          negligible savings and bills to pay. They are struggling to provide food to their families, give any kind of education to their childer and recieve proper medical assistance.
+              </Card.Text>
         <Card.Title>Let's help our community!</Card.Title>
         <Card.Text>
-          Without these workers, our life hadn't been so smooth and our college hadn't been so well maintained. So now, it is on us, the students' community, to assist our campus community in their times of crisis. Let us contribute to this noble cause. We will look forward to hearing from you.
-        </Card.Text>
-      </div>
+          Let's be honest, we wouldn't have survived campus without these workers. So, now we must come together and contribute.
+              </Card.Text>
+          Your small contribution can have an unfathomable impact.We look forward to hearing from you.
+          </div>
     </div>
   )
 }
-
-// function HandelOnClick(list){
-//   return(
-//     <div style={{overflowY: 'scroll',height: '100%', marginTop: '15px'}}>
-//       <ListGroup style={{height: '1rem'}}>
-//         <ListGroup>
-//           <ListGroup.Item className="list-head">
-//             List of beneficiaries
-//           </ListGroup.Item>
-//         </ListGroup>
-//           {list.map((person, idx) =>
-//             <ListGroup horizontal key={idx} style={{ height: '4rem' }}>
-//               <ListGroup.Item style={{ width: '100%', backgroundColor:'white' }}>
-//                 {person[0]} <br/> <span style={{ color: "gray", fontSize: "0.9em" }}>{person[1]}</span>
-//               </ListGroup.Item>
-//             </ListGroup>
-//           )}
-//       </ListGroup>
-//       </div>
-//   )
-// }
-
-// function BeneficiariesList({ list }) {
-
-// HandelOnClick(){
-//   return(
-//     <div style={{overflowY: 'scroll',height: '100%', marginTop: '15px'}}>
-//     <ListGroup style={{height: '1rem'}}>
-//       <ListGroup>
-//         <ListGroup.Item className="list-head">
-//           List of beneficiaries
-//         </ListGroup.Item>
-//       </ListGroup>
-//         {list.map((person, idx) =>
-//           <ListGroup horizontal key={idx} style={{ height: '4rem' }}>
-//             <ListGroup.Item style={{ width: '100%', backgroundColor:'white' }}>
-//               {person[0]} <br/> <span style={{ color: "gray", fontSize: "0.9em" }}>{person[1]}</span>
-//             </ListGroup.Item>
-//           </ListGroup>
-//         )}
-//     </ListGroup>
-//     </div>
-//   )
-// }
-
-//   const show1 = (
-//     <div style={{height: '100%', marginTop: '15px'}}>
-//     <ListGroup style={{height: '1rem'}}>
-//       <ListGroup>
-//         <ListGroup.Item className="list-head">
-//           List of beneficiaries
-//         </ListGroup.Item>
-//       </ListGroup>
-//         {list.map((person, idx) =>
-//           <ListGroup horizontal key={idx} style={{ height: '4rem' }}>
-//             <ListGroup.Item style={{ width: '100%', backgroundColor:'white' }}>
-//               {person[0]} <br/> <span style={{ color: "gray", fontSize: "0.9em" }}>{person[1]}</span>
-//             </ListGroup.Item>
-//           </ListGroup>
-//         )}
-//     </ListGroup>
-//     </div>
-//   )
-
-//   const show2 = (
-//     <div style={{overflowY: 'scroll',height: '100%', marginTop: '15px'}}>
-//       <ListGroup style={{height: '1rem'}}>
-//         <ListGroup>
-//           <ListGroup.Item className="list-head">
-//             List of beneficiaries
-//           </ListGroup.Item>
-//         </ListGroup>
-//           {list.map((person, idx) =>
-//             <ListGroup horizontal key={idx} style={{ height: '4rem' }}>
-//               <ListGroup.Item style={{ width: '100%', backgroundColor:'white' }}>
-//                 {person[0]} <br/> <span style={{ color: "gray", fontSize: "0.9em" }}>{person[1]}</span>
-//               </ListGroup.Item>
-//             </ListGroup>
-//           )}
-//       </ListGroup>
-//       </div>
-//   )
-
-//   return (
-//     <div>
-//       {show1}
-//       <br />
-//       <button >View All</button>
-//     </div>
-
-//   )
-// }
 
 function BeneficiariesList() {
 
@@ -160,7 +71,7 @@ function BeneficiariesList() {
         <ListGroup>
           <ListGroup.Item className="list-head">
             List of beneficiaries
-        </ListGroup.Item>
+</ListGroup.Item>
         </ListGroup>
         {beneficiary.map((person, idx) =>
           <ListGroup horizontal key={idx} style={{ height: '4rem' }}>
@@ -178,7 +89,7 @@ function BeneficiariesList() {
         <ListGroup>
           <ListGroup.Item className="list-head">
             List of beneficiaries
-        </ListGroup.Item>
+</ListGroup.Item>
         </ListGroup>
 
         {beneficiary1.map((person, idx) =>
@@ -202,12 +113,12 @@ function BeneficiariesList() {
 
 function Beneficiaries() {
   return (
-    <section id="sc-beneficiary">
-      <Row style={{ height: 'auto' }}>
-        <Col sm={8}> <BeneficiariesText /> </Col>
-        <Col sm={4}> <BeneficiariesList /> </Col>
-      </Row>
-    </section>
+      <section id="sc-beneficiary">
+        <Row style={{ height: 'auto' }}>
+          <Col sm={8}> <BeneficiariesText /> </Col>
+          <Col sm={4}> <BeneficiariesList /> </Col>
+        </Row>
+      </section>
   )
 }
 
