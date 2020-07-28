@@ -11,6 +11,13 @@ import {
 } from 'react-bootstrap';
 import './BulletinBoard.css';
 
+const formatter = Intl.NumberFormat('en-IN', {
+	style: 'currency',
+	currency: 'INR',
+	decimal: 0,
+})
+
+
 function ChartFigure() {
 	const dataChart = [
 		['Total amount', '% contribution'],
@@ -81,11 +88,13 @@ function ContributorList({ list }) {
 					</ListGroup>
 					{list.map((person, idx) => (
 						<ListGroup horizontal key={idx} style={{ height: '4rem' }}>
-							<ListGroup.Item style={{ width: '75%' }}>
-								{person[0]} <br /> <span className='designation'>Undergraduate</span>
+							<ListGroup.Item style={{ width: '70%', fontWeight:'600'}}>
+								{person[0]} <br/> <span className='designation'>Undergraduate</span>
 							</ListGroup.Item>
-							<ListGroup.Item style={{ width: '25%' }}>
-								<span style={{ fontSize: "1em" }}>{person[1]}</span>
+							<ListGroup.Item style={{ width: '35%' }}>
+								<span style={{ fontSize: "1.2em", fontWeight:'600'}}>
+									{formatter.format(person[1]).slice(0,-3)}
+								</span>
 							</ListGroup.Item>
 						</ListGroup>
 					))}
@@ -97,20 +106,14 @@ function ContributorList({ list }) {
 
 function CountStats({ number, text }) {
 
-	const formatter = Intl.NumberFormat('en-IN', {
-		style: 'currency',
-		currency: 'INR',
-	})
-
-	const formatFnc = text === 'Contribution' ? n => formatter.format(n) : n => n
-
+	const formatFnc = text === 'Contribution' ? n => formatter.format(n).slice(0,-3) : n => n
 	return (
 		<div className='count-stats'>
-			<span className='text'>{" "+text+" "}</span>
-			<br />
+			{/* <br /> */}
 			<span className='number'>
 				<CountUp delay={2} end={number} formattingFn={formatFnc}/>
 			</span> <br/>
+			<span className='text'>{" "+text+" "}</span>
 		</div>
 	)
 }
@@ -124,7 +127,7 @@ function ContributionStats() {
 				<Col sm={4}><CountStats number={contributorsCount} text={'Contributors'} /></Col>
 				<Col ><CountStats number={totalAmount} text={'Contribution'}  /></Col>
 			</Row>
-			<hr />
+			{/* <hr /> */}
 			<br />
 			<Row>
 				<Col sm={6} style={{alignItems:'left'}}>

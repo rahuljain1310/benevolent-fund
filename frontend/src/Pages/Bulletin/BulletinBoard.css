@@ -29,8 +29,10 @@
 }
 
 .contributor-list .designation {
-    color: #9e1c66;
+    color: green;
+    /* font-family: 'Dancing Script', cursive; */
     font-size: 0.8em;
+    font-family: 'Raleway', sans-serif;
 }
 
 .count-stats {

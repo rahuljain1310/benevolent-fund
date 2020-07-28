@@ -1,6 +1,8 @@
 #sc-media .date {
-  color: purple;
+  color: green;
+  font-family: 'Dancing Script', cursive;
   margin-bottom: 4px;
+  font-size: 1.2em;
 }
 
 #sc-media h2 {
@@ -13,4 +15,9 @@
   width: 30px;
   height: 30px;
   margin: 0px 8px 8px 0px;
+}
+
+#sc-media p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
