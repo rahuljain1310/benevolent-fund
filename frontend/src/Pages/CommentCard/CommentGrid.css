@@ -31,10 +31,11 @@
 }
 
 .CommentCard{
-  padding: 16px 16px;
-  margin: 2%;
+  padding: 16px 8px;
+  margin: 2% 0;
   border-radius: 24px;
   min-width: 250px;
+  height: 100%;
   /* border-color:black; */
   /* border-width: thin; */
 }
@@ -42,7 +43,7 @@
 .image{
   width: 180px;
   height: 180px;
-  margin: auto;
+  margin: 8px auto;
   border-radius: 100px;
 }
 
@@ -55,15 +56,19 @@
 }
 
 .subtitle{
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.9em;
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: cursive; */
+  font-family: 'Dancing Script', cursive;
+  /* font-size: 0.8em; */
+  /* font-style: italic; */
   text-align: center;
   color: green;
 }
 
 .para{
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Raleway', sans-serif;
   font-size: 1em;
-  font-style: italic;
   margin: 9px;
+  font-weight: 600;
 }
