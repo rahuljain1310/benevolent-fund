@@ -29,6 +29,43 @@ function ChartFigure() {
 	)
 }
 
+function GraphChart(){
+
+	
+	return(
+		<Chart
+			width={'600px'}
+			height={'400px'}
+			chartType="LineChart"
+			loader={<div>Loading Chart</div>}
+			data={[
+				['x', 'Amount in Rupees'],
+				[0, 0],
+				[1, 10],
+				[2, 23],
+				[3, 17],
+				[4, 18],
+				[5, 9],
+				[6, 11],
+				[7, 27],
+				[8, 33],
+				[9, 40],
+				[10, 32],
+				[11, 35],
+			  ]}
+			options={{
+				hAxis: {
+				title: 'Time',
+				},
+				vAxis: {
+				title: 'Contribution',
+				},
+			}}
+		rootProps={{ 'data-testid': '1' }}
+		/>
+	)
+}
+
 function ContributorList({ list }) {
 	return (
 		<div className='contributor-list'>
@@ -67,10 +104,12 @@ function CountStats({ number, text }) {
 
 	return (
 		<div className='count-stats'>
+			<span className='text'>{" "+text+" "}</span>
+			<br />
 			<span className='number'>
 				<CountUp delay={2} end={number} formattingFn={formatFnc}/>
 			</span> <br/>
-			<span className='text'>{" "+text+" "}</span>
+			{/* <span className='text'>{" "+text+" "}</span> */}
 		</div>
 	)
 }
@@ -80,11 +119,15 @@ function ContributionStats() {
 	const totalAmount = 587554;
 	return (
 		<div className='stats'>
+			<div id="chart">
 			<CountStats number={contributorsCount} text={'Contributors'} />
-			<CountStats number={totalAmount} text={'Contribution'} />
+			<CountStats number={totalAmount} text={'Contribution'}  />
+			</div>
+			<GraphChart />
 			<hr/>
 			{/* <ChartFigure className="chartclass" style={{ minHeight: '300px', position: 'static' }} /> */}
 			<BigContributeButton />
+
 		</div>
 	)
 }
