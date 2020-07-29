@@ -4,7 +4,7 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import BulletinBoard from './Pages/Bulletin/BulletinBoard';
 import DisqusComments from './Pages/Comments/Comments';
-import Beneficiaries from './Pages/Beneficiary/Beneficiaries';
+import {Beneficiaries, BeneficiaryDetails} from './Pages/Beneficiary/Beneficiaries';
 import CommentGrid from './Pages/CommentCard/CommentGrid';
 import About from './Pages/About/About';
 import MediaCard from './Pages/Media/Media';
@@ -26,10 +26,10 @@ function MainPage () {
   )
 }
 
-function TestimonialPage () {
+function BeneficiariesPage () {
   return (
     <div>
-      <CommentGrid/>
+      <BeneficiaryDetails/>
     </div>
   )
 }
@@ -40,7 +40,7 @@ function App() {
       <Header />
       <Router>
         <Switch>
-          <Route exact path='/testimonial/:id' component={TestimonialPage}/>
+          <Route exact path='/beneficiaries' component={BeneficiariesPage}/>
           <Route path='*' component={MainPage}/>
         </Switch>
       </Router>

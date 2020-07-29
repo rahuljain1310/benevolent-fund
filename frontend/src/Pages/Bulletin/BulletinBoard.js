@@ -81,13 +81,13 @@ function ContributorList({ list }) {
 		<div className='contributor-list'>
 			<br />
 			<div style={{ overflowY: 'scroll', height: '100%' }}>
-				<ListGroup style={{ height: '500px' }}>
+				<ListGroup style={{ height: '400px' }}>
 					<ListGroup>
 						<ListGroup.Item as='h5' className='table-head'>
-							Recent Contributions
+							Top Contributions
 						</ListGroup.Item>
 					</ListGroup>
-					{list.map((person, idx) => (
+					{list.sort((a,b) => b[1] - a[1]).slice(0,10).map((person, idx) => (
 						<ListGroup horizontal key={idx} style={{ height: '4rem' }}>
 							<ListGroup.Item style={{ width: '70%', fontWeight: '600' }}>
 								{person[0]} <br /> <span className='designation'>Undergraduate</span>
@@ -120,8 +120,8 @@ function CountStats({ number, text }) {
 
 function ContributionStats() {
 
-	const contributorsCount = 554;
-	const totalAmount = 587554;
+	const contributorsCount = 0;
+	const totalAmount = 0;
 	const beneficiaryCount = 102;
 	
 	return (
