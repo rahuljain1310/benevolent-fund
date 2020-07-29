@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   Card,
   Row,
@@ -10,14 +10,12 @@ import './CommentGrid.css';
 function CommentCard({ person }) {
   return (
     <Card className="CommentCard">
-      <img variant='top' src={person?.imgPath} alt="My profile picture" className="image" />
-      <br />
-      <Card.Title className="title">
-        <b>{person?.name}</b>
-        <br />
+      <div className='shadow-hover'>
+        <img variant='top' src={person?.imgPath} alt="My profile picture" className="image" /> <br />
+        <span className='title'><b>{person?.name}</b><br/> </span>
         <span className="subtitle">{person?.year}</span>
-      </Card.Title>
-      <Card.Text className="para">{person?.description}</Card.Text>
+        <p className="para">{person?.description}</p>
+      </div>
     </Card>
   )
 }
@@ -49,18 +47,29 @@ function CommentGrid() {
       description: "I interacted with Gopal Tiwari Ji, a helper on our campus. Currently, he is residing in Katwaria Sarai along with his family (3 children and wife). After talking with them, I found that they don’t even have sufficient food since he was unemployed since the beginning of the pandemic. He said that any monetary support will definitely work otherwise whatever destiny gives, he will accept. “To see good times one has to suffer, go through bad times”, he mentioned.He was basically very optimistic that soon things will be fine.In the end, he thanked all the people behind this initiative!"
     }
   ]
+
+  const [viewAll, setViewAll] = useState(false)
+  const [viewCommentGrid, setCommentGrid] = useState(people.slice(0,3))
+  const handleViewAll = () => {
+    setCommentGrid(people)
+    setViewAll(true)
+  }
+
   return (
     <section id='sc-testimonials'>
       <h2> What people say ...</h2>
       <hr/>
       <Row>
-        { people.map((person,idx)=>(
-          <Col lg='3' sm='6' style={{display: 'table-cell'}}>
+        { viewCommentGrid.map((person,idx)=>(
+          <Col lg='4' sm='6' style={{display: 'table-cell', marginBottom: '10px'}}>
             <CommentCard person={person}/>
           </Col>
           ))
         }
       </Row>
+      <div style={{textAlign: 'center'}}>
+        {viewAll || <button onClick={handleViewAll}>View All</button>}
+      </div>
     </section>
   )
 }
