@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   Card,
   Row,
@@ -12,7 +12,7 @@ function CommentCard({ person }) {
     <div className="CommentCard">
       <div className='shadow-hover'>
         <img variant='top' src={person?.imgPath} alt="My profile picture" className="image" /> <br />
-        <span className='title'><b>{person?.name}</b><br/> </span>
+        <span className='title'><b>{person?.name}</b><br /> </span>
         <span className="subtitle">{person?.year}</span>
         <p className="para">{person?.description}</p>
       </div>
@@ -72,27 +72,35 @@ function CommentGrid() {
     }
   ]
 
-  const [viewAll, setViewAll] = useState(false)
-  const [viewCommentGrid, setCommentGrid] = useState(people.slice(0,3))
-  const handleViewAll = () => {
-    setCommentGrid(people)
-    setViewAll(true)
+  let [viewAll, setViewAll] = useState(false)
+  let [buttonText, setButtonText] = useState('View All')
+  let [viewCommentGrid, setCommentGrid] = useState(people.slice(0, 3))
+  const toggleViewAll = () => {
+    if (!viewAll) {
+      setCommentGrid(people)
+      setViewAll(true)
+      setButtonText('Collapse')
+    } else {
+      setCommentGrid(people.slice(0, 3))
+      setViewAll(false)
+      setButtonText('View All')
+    }
   }
 
   return (
     <section id='sc-testimonials'>
       <h2> What people say ...</h2>
-      <hr/>
+      <hr />
       <Row>
-        { viewCommentGrid.map((person,idx)=>(
-          <Col lg='4' sm='6' style={{display: 'table-cell', marginBottom: '10px'}}>
-            <CommentCard person={person}/>
+        {viewCommentGrid.map((person, idx) => (
+          <Col lg='4' sm='6' style={{ display: 'table-cell', marginBottom: '10px' }}>
+            <CommentCard person={person} />
           </Col>
-          ))
+        ))
         }
       </Row>
-      <div style={{textAlign: 'center'}}>
-        {viewAll || <button onClick={handleViewAll}>View All</button>}
+      <div style={{ textAlign: 'center' }}>
+        {<button onClick={toggleViewAll}>{buttonText}</button>}
       </div>
     </section>
   )
