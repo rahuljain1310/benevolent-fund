@@ -30,12 +30,12 @@ function Header () {
       </Col>
       <Col lg={6} md={4} sm={2}>
         <nav className="color" style={{textAlign: 'right'}}>
-          <a className="Links" href = "#sc-about">About</a>
-          <a className="Links" href = "#sc-bulletin">Contributors</a>
-          <a className="Links" href = "#sc-beneficiary" >Beneficiaries</a>
-          <a className="Links" href = "#sc-media" >News</a>
-          <a className="Links" href = "#sc-testimonials">Testimonies</a>
-          <a className="Links" href = "#sc-comments">Comments</a>
+          <a className="Links" href = "/#sc-about">About</a>
+          <a className="Links" href = "/#sc-bulletin">Contributors</a>
+          <a className="Links" href = "/#sc-beneficiary" >Beneficiaries</a>
+          <a className="Links" href = "/#sc-media" >News</a>
+          <a className="Links" href = "/#sc-testimonials">Testimonies</a>
+          <a className="Links" href = "/#sc-comments">Comments</a>
           <SmallContributeButton/>
         </nav>
       </Col>

@@ -1,56 +1,11 @@
-.beneficiary-list {
-  overflow-y: scroll;
-  height:  30em;
+.aboutbeneficiaries h2 {
+  text-align: center;
+  color: green;
+  font-family: 'Grenze Gotisch', cursive;
 }
 
-.list-div {
-  margin: auto;
-  padding: 12px 0px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  text-align: left;
-}
-
-.list-div ul {
-  padding: 12px;
-}
-
-.list-div li {
-  list-style-type: none;
-  font-size: 1.2em;
-  font-style: italic;
-  color: "black";
-  padding: 8px;
-  margin: 2px;
-  border-radius: 4px;
-  transition: transform .50s ease-in;
-}
-
-#header_b{
-  font-weight: bold;
-  color: #FF9F1C;
-  font-size: 1.9em;
-  font-stretch: ultra-expanded;
-  font-family:   'Gill Sans','Gill Sans MT',Calibri, 'Trebuchet MS', sans-serif ;
-}
-
-#subhead_b{
-  color: #EF4F5E;
-  font-size: 1.3em ;
-  margin-left: 2px;
-  font-weight: 555;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-#content{
-  color: black;
-  font-size: 1.1em;
-  margin-left: 2px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.card_b{
-  margin-top: 15px;
+.details  {
+  text-align: center;
 }
 
 .list-head{
@@ -58,32 +13,6 @@
   font-size: 1.5em ;
   font-family: 'Grenze Gotisch', cursive;
   margin-top: 1px;
-  position: fixed;
-}
-
-.card{
-  border-color: red;
-}
-
-::-webkit-scrollbar {
-  height: 12px;
-  width: 7px;
-  background:whitesmoke;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #9e1c66;
-  -webkit-border-radius: 1ex;
-}
-
-::-webkit-scrollbar-corner {
-  background: #611717;
-}
-
-.aboutbeneficiaries h2 {
-  text-align: center;
-  color: green;
-  font-family: 'Grenze Gotisch', cursive;
 }
 
 .listclass .designation{
@@ -92,3 +21,18 @@
   font-size: 0.8em;
   font-family: 'Raleway', sans-serif;
 }
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  height: 12px;
+  width: 7px;
+  background:whitesmoke;
+}
+::-webkit-scrollbar-thumb {
+  background: #9e1c66;
+  -webkit-border-radius: 1ex;
+}
+::-webkit-scrollbar-corner {
+  background: #611717;
+}
+

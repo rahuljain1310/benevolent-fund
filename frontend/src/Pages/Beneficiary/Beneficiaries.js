@@ -8,6 +8,9 @@ import {
 } from 'react-bootstrap';
 import './Beneficiaries.css';
 
+// const beneficiaryData = React.lazy(() => import('./Data'))
+import beneficiaryData from './BeneficiaryData'
+
 function BeneficiariesText() {
   return (
     <div className="aboutbeneficiaries">
@@ -34,7 +37,62 @@ function BeneficiariesText() {
   )
 }
 
-function BeneficiariesList() {
+function BeneficiariesList({ beneficiary, complete, title }) {
+  const beneficiarySmall = beneficiary.slice(0, 6)
+  const [viewAll, setViewAll] = useState(complete)
+  const [beneficiaryDisplay, setDisplay] = useState(complete ? beneficiary : beneficiarySmall)
+  const handleClick = () => {
+    setViewAll(true)
+    setDisplay(beneficiary)
+  }
+  return (
+    <div style={{ overflowY: 'scroll', height: '100%', margin: '10px 0px' }} className="listclass">
+      <ListGroup style={{ height: '500px' }}>
+        <ListGroup>
+          <ListGroup.Item className="list-head"> {title} </ListGroup.Item>
+        </ListGroup>
+        {beneficiaryDisplay.map((person, idx) =>
+          <ListGroup horizontal key={idx} style={{ height: '3.5rem', width: '100%' }}>
+            <ListGroup.Item style={{ width: '100%'}}>
+              {person[0]}, <span className='designation'>{person[1]}</span>
+            </ListGroup.Item>
+          </ListGroup>
+        )}
+        {viewAll || <Button onClick={handleClick}> View All </Button>}
+      </ListGroup>
+    </div>
+  )
+}
+
+function BeneficiaryDetails() {
+  return (
+    <section>
+      <div style={{margin: '60px 0px' }} className="details">
+        <div className="list-head" style={{fontSize: '1.8em', marginBottom: '15px'}}> List of Beneficiaries </div>
+        <ListGroup>
+          <ListGroup horizontal style={{width: '100%' }}>
+              <ListGroup.Item className="list-head" style={{width: '25%', color: 'green'}}> Name </ListGroup.Item>
+              <ListGroup.Item className="list-head" style={{width: '25%', color: 'green'}}> Place </ListGroup.Item>
+              <ListGroup.Item className="list-head" style={{width: '25%', color: 'green'}}> Profession </ListGroup.Item>
+              <ListGroup.Item className="list-head" style={{width: '25%', color: 'green'}}> Contact </ListGroup.Item>
+            </ListGroup>
+          {beneficiaryData && beneficiaryData.map((person, idx) => 
+            <ListGroup horizontal key={idx} style={{width: '100%' }}>
+              <ListGroup.Item style={{width: '25%'}}> {person.name} </ListGroup.Item>
+              <ListGroup.Item style={{width: '25%'}}> {person.place} </ListGroup.Item>
+              <ListGroup.Item style={{width: '25%'}}> {person.profession} </ListGroup.Item>
+              <ListGroup.Item style={{width: '25%'}}> {person.contact} </ListGroup.Item>
+            </ListGroup>
+          )}
+        </ListGroup>
+      </div>
+    </section>
+  )
+
+}
+
+function Beneficiaries() {
+
   const beneficiary = [
     ["Mukesh", "Karakoram shop"],
     ["Aashish", "Vindy Washerman"],
@@ -51,44 +109,19 @@ function BeneficiariesList() {
     ["Om", "Shivalik gardner"],
     ["Vinay", "Himadri shop"],
   ]
-  const beneficiarySmall = beneficiary.slice(0,6)
 
-  const [viewAll, setViewAll] = useState(true)
-  const [beneficiaryDisplay, setDisplay] = useState(beneficiary) 
-  const handleClick = () => {
-    setViewAll(true)
-    setDisplay(beneficiary)
-  }
-  
-  return (
-    <div style={{ overflowY: 'scroll', height: '100%', margin: '10px 0px' }} className="listclass">
-      <ListGroup style={{ height: '500px' }}>
-        <ListGroup>
-          <ListGroup.Item className="list-head"> List of beneficiaries </ListGroup.Item>
-        </ListGroup>
-        {beneficiaryDisplay.map((person, idx) =>
-          <ListGroup horizontal key={idx} style={{ height: '4rem', width: '100%' }}>
-            <ListGroup.Item style={{ width: '100%', backgroundColor: 'white' }}>
-              {person[0]}, <span className='designation'>{person[1]}</span>
-            </ListGroup.Item>
-          </ListGroup>
-        )}
-        {viewAll || <Button onClick={handleClick}> View All </Button>}
-      </ListGroup>
-      </div>
-  )
-}
-
-function Beneficiaries() {
   return (
     <section id="sc-beneficiary">
       <Row style={{ height: 'auto' }}>
         <Col sm={8}> <BeneficiariesText /> </Col>
-        <Col sm={4}> <BeneficiariesList /> </Col>
+        <Col sm={4}> <BeneficiariesList beneficiary={beneficiary} title={'List of Beneficiaries'} complete={false} /> </Col>
       </Row>
     </section>
   )
 }
 
 
-export default Beneficiaries;
+export {
+  Beneficiaries,
+  BeneficiaryDetails,
+} 
