@@ -4,7 +4,9 @@ import {
   Col,
   Card,
   ListGroup,
-  Button
+  Button,
+  Table,
+
 } from 'react-bootstrap';
 import './Beneficiaries.css';
 
@@ -20,7 +22,7 @@ function BeneficiariesText() {
         <Card.Title>About Beneficiaries</Card.Title>
         <Card.Text>
           Stuck at home, our responsibility to look after ourselves can easily overshadow our responsibility  in  our community. We must remember our role is not limited to us. These benefeciaries are those campus workers who did not back away from their roles, when we needed them. The
-          Rickshaw Pullers, Sweepers, Gardners, Laundry Workers, Night Mess Workers, Tea stall workers, Cycle repairmen - anyone who made our campus invaluable.
+          Rickshaw Pullers, Sweepers, Gardners, Laundry Workers, Night Mess Workers, Tea stall workers, Cycle repairmen - anyone who made our campus invaluable. <a href='/beneficiaries'>Know More</a>
         </Card.Text>
         <Card.Title>Why do they need us?</Card.Title>
         <Card.Text>
@@ -30,9 +32,11 @@ function BeneficiariesText() {
         <Card.Title>Let's help our community!</Card.Title>
         <Card.Text>
           Let's be honest, we wouldn't have survived campus without these workers. So, now we must come together and contribute.
-              </Card.Text>
+        </Card.Text>
+        <i>
           Your small contribution can have an unfathomable impact.We look forward to hearing from you.
-          </div>
+        </i>
+      </div>
     </div>
   )
 }
@@ -53,7 +57,7 @@ function BeneficiariesList({ beneficiary, complete, title }) {
         </ListGroup>
         {beneficiaryDisplay.map((person, idx) =>
           <ListGroup horizontal key={idx} style={{ height: '3.5rem', width: '100%' }}>
-            <ListGroup.Item style={{ width: '100%'}}>
+            <ListGroup.Item style={{ width: '100%' }}>
               {person[0]}, <span className='designation'>{person[1]}</span>
             </ListGroup.Item>
           </ListGroup>
@@ -67,24 +71,26 @@ function BeneficiariesList({ beneficiary, complete, title }) {
 function BeneficiaryDetails() {
   return (
     <section>
-      <div style={{margin: '60px 0px' }} className="details">
-        <div className="list-head" style={{fontSize: '1.8em', marginBottom: '15px'}}> List of Beneficiaries </div>
-        <ListGroup>
-          <ListGroup horizontal style={{width: '100%' }}>
-              <ListGroup.Item className="list-head" style={{width: '25%', color: 'green'}}> Name </ListGroup.Item>
-              <ListGroup.Item className="list-head" style={{width: '25%', color: 'green'}}> Place </ListGroup.Item>
-              <ListGroup.Item className="list-head" style={{width: '25%', color: 'green'}}> Profession </ListGroup.Item>
-              <ListGroup.Item className="list-head" style={{width: '25%', color: 'green'}}> Contact </ListGroup.Item>
-            </ListGroup>
-          {beneficiaryData && beneficiaryData.map((person, idx) => 
-            <ListGroup horizontal key={idx} style={{width: '100%' }}>
-              <ListGroup.Item style={{width: '25%'}}> {person.name} </ListGroup.Item>
-              <ListGroup.Item style={{width: '25%'}}> {person.place} </ListGroup.Item>
-              <ListGroup.Item style={{width: '25%'}}> {person.profession} </ListGroup.Item>
-              <ListGroup.Item style={{width: '25%'}}> {person.contact} </ListGroup.Item>
-            </ListGroup>
-          )}
-        </ListGroup>
+      <div style={{ margin: '60px 0px' }} className="details">
+        <div className="list-head" style={{ fontSize: '1.8em', marginBottom: '15px' }}> List of Beneficiaries </div>
+        <Table striped bordered hover responsive>
+          <thead horizontal style={{ width: '100%' }}>
+            <th style={{ width: '25%' }}> Name </th>
+            <th style={{ width: '25%' }}> Place </th>
+            <th style={{ width: '25%' }}> Profession </th>
+            <th style={{ width: '25%' }}> Contact </th>
+          </thead>
+          <tbody>
+            {beneficiaryData && beneficiaryData.map((person, idx) =>
+              <tr horizontal key={idx} style={{ width: '100%' }}>
+                <td style={{ width: '25%' }}> {person.name} </td>
+                <td style={{ width: '25%' }}> {person.place} </td>
+                <td style={{ width: '25%' }}> {person.profession} </td>
+                <td style={{ width: '25%' }}> {person.contact} </td>
+              </tr>
+            )}
+          </tbody>
+        </Table>
       </div>
     </section>
   )
@@ -114,7 +120,7 @@ function Beneficiaries() {
     <section id="sc-beneficiary">
       <Row style={{ height: 'auto' }}>
         <Col sm={8}> <BeneficiariesText /> </Col>
-        <Col sm={4}> <BeneficiariesList beneficiary={beneficiary} title={'List of Beneficiaries'} complete={false} /> </Col>
+        <Col sm={4}> <BeneficiariesList beneficiary={beneficiary} title={'List of Beneficiaries'} complete={true} /> </Col>
       </Row>
     </section>
   )
