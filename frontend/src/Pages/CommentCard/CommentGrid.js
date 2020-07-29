@@ -53,6 +53,24 @@ function CommentGrid() {
       year: "First Year, IITD",
       imgPath: require('../../Assets/om.jpeg'),
       description: "I talked to Kamal Ji, a Satpura Night Mess worker. His family consists of 5 members including him. He was given one installment of 12k one and a half months earlier, It was very much helpful.But now again, he was in need of money for the operation of his Mausiji, which needs to be done asap. He said that he can manage the situation for at max the next few days. After transferring the second installment, he thanked a lot to the whole team and appreciated the whole Benevolent fund initiative."
+    },
+    {
+      name: "Raghav Modi",
+      year: "Second Year, IITD",
+      imgPath: require('../../Assets/raghav.jpeg'),
+      description: "I called Ashok Kumar Ji, a Nilgiri night mess worker. He is currently residing in his village with family. He was really upset as he could not go home when the lockdown was announced. He was unable to pay rents and has a 6-month-old baby, and was really worried about his health in Delhi.On receiving the money, he was able to pay his rents and make arrangements for moving back to the village. With the second installment, he was also able to buy seeds and sow rice in his small piece of land.He still needs money but will be able to manage even with a lesser amount. He even suggested us to help others who needed more before helping them."
+    },
+    {
+      name: "Udita Wadhwa",
+      year: "First Year, IITD",
+      imgPath: require('../../Assets/udita.png'),
+      description: "I talked to Anshul Ji, a Laundryman at Aravali hostel. I found out that he would soon be out of ration and other resources, thus in a serious need of financial assistance. When being informed about the benevolent fund campaign, he was very happy and grateful to the whole community. He appreciated that the “Student Community” is helping him whom he had served at some time.I also called Omkar Ji, a night mess worker at Aravali Night Mess. He is currently residing with his whole big family in the village and doing farming. He said that he would highly grateful if some financial help can be provided from IIT Community, especially “Students”."
+    },
+    {
+      name: "Vishwajeet Agarwal",
+      year: "Third Year, IITD",
+      imgPath: require('../../Assets/vishwajeet.png'),
+      description: "Keshav Nepali Ji who works in Aravali Night mess was the one whom I had talked to. He went to his hometown in Nepal shortly after and is currently unemployed. He is facing a severe financial crisis so much that he didn’t even recharge his phone for long. He is in dire need of money and his expressions were lit when told about the money, he can receive through Benevolent fund. He has not received his funds as of yet, due to the inability of funds transfer to an international account from IIT-D administration. I am in contact with him to see if he can give his relatives bank account."
     }
   ]
   return (
