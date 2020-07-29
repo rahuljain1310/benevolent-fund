@@ -35,14 +35,15 @@
   text-align: center;
   padding: 8px;
   margin: 2% 0;
-  border-radius: 24px;
+  border-color: #ffa500;
+  border-width: 2px;
   min-width: 250px;
   height: 100%;
 }
 
 .image{
-  width: 180px;
-  height: 180px;
+  width: 100px;
+  height: 100px;
   margin: 8px auto;
   border-radius: 100px;
 }
@@ -67,4 +68,26 @@
   margin: 9px;
   text-align: justify;
   font-weight: 600;
+  height: 160px;
+}
+
+@media (max-width: 1300px) and (min-width: 960px)  {
+  .para {
+    height: 200px;
+  }
+}
+
+.modal-button {
+  font-size: 14px !important;
+}
+
+.modal-popup {
+  max-height: 60vh;
+  overflow-y: scroll;
+}
+
+.popup-content {
+  /* Generated css class by reactjs-popup component */
+  width: 80% !important;
+  max-width: 760px !important;
 }
