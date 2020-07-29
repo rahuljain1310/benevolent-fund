@@ -11,28 +11,26 @@ import './CommentGrid.css';
 
 function CommentCard({ person }) {
   return (
-    <Card>
-      <div className="CommentCard">
-        <div className='shadow-hover'>
-          <img variant='top' src={person?.imgPath} alt="My profile picture" className="image" /> <br />
-          <span className='title'><b>{person?.name}</b><br /> </span>
-          <span className="subtitle">{person?.year}</span>
-          <p className="para">{person?.short}</p>
+    <Card className="CommentCard">
+        <img variant='top' src={person?.imgPath} alt="My profile picture" className="image" /> <br />
+        <span className='title'><b>{person?.name}</b><br /> </span>
+        <span className="subtitle">{person?.year}</span>
+        <p className="para">
+          {person?.short}
+        </p>
           <Popup
-            trigger={<button className="modal-button"> View Complete </button>}
+            trigger={<span className="modal-button"> View Complete </span>}
             modal
             closeOnDocumentClick
           >
             <div className="modal-popup">
-              <div className="title"> {person?.name} </div>
+              <span className='title'><b>{person?.name}</b><br /> </span>
               <hr />
               <div className="para">
                 {person?.description}
               </div>
             </div>
           </Popup>
-        </div>
-      </div>
     </Card>
   )
 }
@@ -118,7 +116,7 @@ function CommentGrid() {
       <hr />
       <Row>
         {viewCommentGrid.map((person, idx) => (
-          <Col lg='4' sm='6' style={{ display: 'table-cell', marginBottom: '10px' }}>
+          <Col lg='4' sm='6' style={{ display: 'table-cell', marginBottom: '20px' }}>
             <CommentCard person={person} />
           </Col>
         ))
