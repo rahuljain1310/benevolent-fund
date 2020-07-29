@@ -26,7 +26,7 @@ function CommentGrid() {
   const people = [
     {
       name: "Divyanshu Saxena",
-      year: "Fourth Year, IITD",
+      year: "Final Year Undergraduate",
       imgPath: require('../../Assets/divyanshu.jpeg'),
       description: "While conversing with a friend, I realized that we have “normalized” our lives so easily in the past four months that we fail to understand, for many of these workers, nothing has been “normal”. The workers whom I had personally interacted with was very thankful to the campus fraternity, for their support and contribution as he was able to sustain the amount for tuition fees for his kids, whose schools were still ongoing in online format but the most striking feature after all these conversations was that some of these workers were also considerate enough to “refuse the help” as they believed there would be others who would need it more than them!"
     },
@@ -61,7 +61,7 @@ function CommentGrid() {
       <hr/>
       <Row>
         { people.map((person,idx)=>(
-          <Col lg='6' sm='5'>
+          <Col lg='3' sm='6' style={{display: 'table-cell'}}>
             <CommentCard person={person}/>
           </Col>
           ))

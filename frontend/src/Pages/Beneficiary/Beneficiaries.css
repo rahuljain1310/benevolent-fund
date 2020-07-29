@@ -85,3 +85,10 @@
   color: green;
   font-family: 'Grenze Gotisch', cursive;
 }
+
+.listclass .designation{
+  color: green;
+  font-weight: bolder;
+  font-size: 0.8em;
+  font-family: 'Raleway', sans-serif;
+}

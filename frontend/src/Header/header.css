@@ -9,23 +9,23 @@ header {
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
+
 .color{
-  /* background-color: #b8ffce; */
   padding: 8px;
   margin-top: 12px;
   border: 1px 0px solid black;
+  float: right;
 }
 
 .Links{
   font-family: inherit;
   text-align: center;
   color: black;
+  margin: 10px;
+  font-size: 15px;
   text-decoration: none;
 }
 
-.Links:active{
-  color: #E71D36;
-}
 
 .Links:hover{
   text-decoration: none;
@@ -34,45 +34,19 @@ header {
 }
 
 #header-image{
+  float: left;
   width: 50px;
   height: 50px;
+  margin: 7px 12px 0px 12px;
 }
 
-@media(min-width: 601px){
-  .color{
-    float: right;
-    margin-right: 5%;
-  }
-  #head{
-    font-size: 22px;
-    font-weight: bold;
-  }
-  #subhead{
-    font-size: 15px;
-  }
-  .Links{
-    font-size: 15px;
-    margin: 15px;
-  }
+#head {
+  font-weight: bold;
+  font-size: 1.3em;
 }
 
-@media(max-width: 600px){
-  .color{
-    width: 370px;
-    margin: auto;
-  }
-  #head{
-      font-size: 18px;
-      font-weight: bold;
-      margin-top: 15px;
-  }
-  #subhead{
-    font-size: 10px;
-  }
-  .Links{
-    font-size: 12px;
-    margin: 10px;
-  }
+#subhead {
+  font-size: 18px;
 }
 
 #head, #subhead{
@@ -81,9 +55,27 @@ header {
   color: "black";
   font-family:Segoe UI, Tahoma, Geneva, 'Verdana', sans-serif;
 }
-#header-image{
-  float: left;
-  margin-left: 15px;
-  margin-top: 7px;
-  margin-right: 15px;
+
+@media(max-width: 980px){
+  .Links{
+    display: none;
+  }
+}
+
+@media(max-width: 580px){
+  .color{
+    width: 370px;
+    display: none;
+  }
+  #header-image {
+    width: 3em;
+    height: 3em;
+    margin: 0px 8px;
+  }
+  #head {
+    font-size: 1.2em;
+  }
+  #subhead {
+    font-size: 0.9em;
+  }
 }

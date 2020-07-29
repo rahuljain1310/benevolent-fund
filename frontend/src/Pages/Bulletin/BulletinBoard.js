@@ -5,11 +5,16 @@ import { BigContributeButton } from '../ContributeButton/ContributeButton'
 import {
 	Row,
 	Col,
-	Card,
 	ListGroup,
-	CardGroup,
 } from 'react-bootstrap';
 import './BulletinBoard.css';
+
+const formatter = Intl.NumberFormat('en-IN', {
+	style: 'currency',
+	currency: 'INR',
+	decimal: 0,
+})
+
 
 function ChartFigure() {
 	const dataChart = [
@@ -19,13 +24,55 @@ function ChartFigure() {
 		['Phd', 20],
 	]
 	return (
-		<Chart
-			data={dataChart}
-			chartType="PieChart"
-			loader={'Loading Chart ...'}
-			options={{ title: 'Contribution distribution' }}
-			rootProps={{ 'data-testid': '1' }}
-		/>
+		<div style={{textAlign: 'center'}}>
+			<Chart
+				data={dataChart}
+				width={'400px'}
+				height={'250px'}
+				chartType="PieChart"
+				loader={'Loading Chart ...'}
+				rootProps={{ 'data-testid': '1' }}
+			/>
+			<span className='text'>Distribution</span>
+		</div>
+	)
+}
+
+function GraphChart() {
+	return (
+		<div style={{textAlign: 'center'}}>
+			<Chart
+				width={'400px'}
+				height={'250px'}
+				chartType="LineChart"
+				loader={<div>Loading Chart</div>}
+				data={[
+					['x', 'Amount in Rupees'],
+					[0, 0],
+					[1, 10],
+					[2, 23],
+					[3, 17],
+					[4, 18],
+					[5, 9],
+					[6, 11],
+					[7, 27],
+					[8, 33],
+					[9, 40],
+					[10, 32],
+					[11, 35],
+				]}
+				options={{
+					hAxis: {
+						title: 'Time',
+					},
+					vAxis: {
+						title: 'Contribution',
+					},
+				}}
+				rootProps={{ 'data-testid': '1' }}
+			/>
+			<span className='text'>Daily Record</span>
+		</div>
 	)
 }
 
@@ -42,11 +89,13 @@ function ContributorList({ list }) {
 					</ListGroup>
 					{list.map((person, idx) => (
 						<ListGroup horizontal key={idx} style={{ height: '4rem' }}>
-							<ListGroup.Item style={{ width: '75%' }}>
+							<ListGroup.Item style={{ width: '70%', fontWeight: '600' }}>
 								{person[0]} <br /> <span className='designation'>Undergraduate</span>
 							</ListGroup.Item>
-							<ListGroup.Item style={{ width: '25%' }}>
-								<span style={{ fontSize: "1em" }}>{person[1]}</span>
+							<ListGroup.Item style={{ width: '35%' }}>
+								<span style={{ fontSize: "1.2em", fontWeight: '600' }}>
+									{formatter.format(person[1]).slice(0, -3)}
+								</span>
 							</ListGroup.Item>
 						</ListGroup>
 					))}
@@ -57,33 +106,39 @@ function ContributorList({ list }) {
 }
 
 function CountStats({ number, text }) {
-
-	const formatter = Intl.NumberFormat('en-IN', {
-		style: 'currency',
-		currency: 'INR',
-	})
-
-	const formatFnc = text === 'Contribution' ? n => formatter.format(n) : n => n
-
+	const formatFnc = text === 'Total Collections' ? n => formatter.format(n).slice(0, -3) : n => n
 	return (
 		<div className='count-stats'>
+			{/* <br /> */}
 			<span className='number'>
-				<CountUp delay={2} end={number} formattingFn={formatFnc}/>
-			</span> <br/>
-			<span className='text'>{" "+text+" "}</span>
+				<CountUp delay={2} end={number} formattingFn={formatFnc} />
+			</span> <br />
+			<span className='text'>{" " + text + " "}</span>
 		</div>
 	)
 }
 
 function ContributionStats() {
+
 	const contributorsCount = 554;
 	const totalAmount = 587554;
+	const beneficiaryCount = 102;
+	
 	return (
 		<div className='stats'>
-			<CountStats number={contributorsCount} text={'Contributors'} />
-			<CountStats number={totalAmount} text={'Contribution'} />
+			{/* <h2> Bulletin Board</h2> */}
+      {/* <hr /> */}
+			<Row>
+				<Col sm={12} style={{minWidth: '100px'}}><CountStats number={totalAmount} text={'Total Collections'} /></Col>
+				<Col sm={12} style={{minWidth: '100px'}}><CountStats number={contributorsCount} text={'Contributors'} /></Col>
+				{/* <Col sm={6} style={{minWidth: '100px'}}><CountStats number={beneficiaryCount} text={'Beneficiaries'} /></Col> */}
+			</Row>
+			{/* <Row>
+				<Col> <GraphChart/> </Col>
+				<Col> <ChartFigure/> </Col>
+			</Row> */}
+			<br/>
 			<hr/>
-			{/* <ChartFigure className="chartclass" style={{ minHeight: '300px', position: 'static' }} /> */}
 			<BigContributeButton />
 		</div>
 	)
@@ -107,9 +162,10 @@ function BulletinBoard() {
 
 	return (
 		<section id='sc-bulletin'>
+
 			<Row >
-				<Col md={8}> <ContributionStats /> </Col>
-				<Col md={4}> <ContributorList list={contributors} /> </Col>
+				<Col lg={8} md={6}> <ContributionStats /> </Col>
+				<Col lg={4} md={6}> <ContributorList list={contributors} /> </Col>
 			</Row>
 		</section>
 	)
