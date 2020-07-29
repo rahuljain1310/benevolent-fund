@@ -47,6 +47,12 @@ function CommentGrid() {
       year: "Second Year, IITD",
       imgPath: require('../../Assets/bhanu.png'),
       description: "I interacted with Gopal Tiwari Ji, a helper on our campus. Currently, he is residing in Katwaria Sarai along with his family (3 children and wife). After talking with them, I found that they don’t even have sufficient food since he was unemployed since the beginning of the pandemic. He said that any monetary support will definitely work otherwise whatever destiny gives, he will accept. “To see good times one has to suffer, go through bad times”, he mentioned.He was basically very optimistic that soon things will be fine.In the end, he thanked all the people behind this initiative!"
+    },
+    {
+      name: "Om Agrawal",
+      year: "First Year, IITD",
+      imgPath: require('../../Assets/om.jpeg'),
+      description: "I talked to Kamal Ji, a Satpura Night Mess worker. His family consists of 5 members including him. He was given one installment of 12k one and a half months earlier, It was very much helpful.But now again, he was in need of money for the operation of his Mausiji, which needs to be done asap. He said that he can manage the situation for at max the next few days. After transferring the second installment, he thanked a lot to the whole team and appreciated the whole Benevolent fund initiative."
     }
   ]
   return (
