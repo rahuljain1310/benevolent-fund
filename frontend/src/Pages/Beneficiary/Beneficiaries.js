@@ -21,17 +21,17 @@ function BeneficiariesText() {
       <div>
         <Card.Title>About Beneficiaries</Card.Title>
         <Card.Text>
-          Stuck at home, our responsibility to look after ourselves can easily overshadow our responsibility  in  our community. We must remember our role is not limited to us. These benefeciaries are those campus workers who did not back away from their roles, when we needed them. The
-          Rickshaw Pullers, Sweepers, Gardners, Laundry Workers, Night Mess Workers, Tea stall workers, Cycle repairmen - anyone who made our campus invaluable. <br/><a href='/beneficiaries'>See all beneficiary details here.</a>
+        Stuck at home, our responsibility to look after ourselves can easily overshadow our responsibility in our community. We must remember our purpose is not limited to us.
+        These beneficiaries are those campus workers who did not back away from their roles when needed. The Rickshaw Pullers, Sweepers, Gardners, Laundry Workers, Night Mess Workers, Tea stall workers, Cycle repairers - anyone who made our campus invaluable. <br/><a href='/beneficiaries'>See all beneficiary details here.</a>
         </Card.Text>
         <Card.Title>Why do they need us?</Card.Title>
         <Card.Text>
-          With the campus closed, the main source of income for these workers has taken a hit and most of them are now unemployed, left with
-          negligible savings to provide food for their families, continue education of their children and recieve proper medical assistance.
+        With the campus closed, the primary source of income for these workers has taken a hit. Most of them are now unemployed, left
+         with negligible savings to provide food for their families, continue the education of their children, and receive proper medical assistance.
         </Card.Text>
         <Card.Title>Let's help our community!</Card.Title>
         <Card.Text>
-          Let's be honest, we wouldn't have survived campus without these workers. So, now we must come together and contribute.
+          Let's be honest: we wouldn't have survived campus without these workers. So, now we must come together and contribute.
         </Card.Text>
       </div>
     </div>
@@ -57,13 +57,13 @@ function HowToContribute() {
           <li>
             <Card.Title />
             <Card.Text>
-              Many students might have received/would be receiving <b>their first salary as a working professional or an intern</b>. If we think that the problems these workers are facing, are more pressing than our current needs - can we commit a percentage of our first salary towards a larger cause which shall help so many workers on campus?
+              Many students might have received/would be receiving <b>their first salary as a working professional or an intern</b>.  If we think that the problems these workers are facing are more pressing than our current needs - can we commit a percentage of our first salary towards a more significant cause, which shall help so many workers on campus?
             </Card.Text>
           </li>
           <li>
             <Card.Title />
             <Card.Text>
-              In these unprecedented circumstances, most of these workers have been forced out if livelihood. Can we atleast <b>show support by talking to them</b> and see if there's some way we can help them (helping them find employment, providing financial assistance, connecting them with NGOs, are a few things that we can do)
+              In these unprecedented circumstances, most of these workers have been forced out of a livelihood. Can we atleast <b>show support by talking to them</b> and see if there's some way we can help them (helping them find employment, providing financial assistance, connecting them with NGOs, are a few things that we can do)
             </Card.Text>
           </li>
         </ol>

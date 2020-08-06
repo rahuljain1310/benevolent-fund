@@ -27,6 +27,12 @@
   font-size: 1.1em;
 }
 
+.aboutcard iframe {
+  width: 100%;
+  /* max-width: 560px; */
+  margin: auto;
+}
+
 /* @media (max-width: 1000px)  {
   #sc-about {
     font-size: 95%;
