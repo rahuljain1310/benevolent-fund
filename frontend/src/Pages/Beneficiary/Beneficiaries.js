@@ -22,20 +22,51 @@ function BeneficiariesText() {
         <Card.Title>About Beneficiaries</Card.Title>
         <Card.Text>
           Stuck at home, our responsibility to look after ourselves can easily overshadow our responsibility  in  our community. We must remember our role is not limited to us. These benefeciaries are those campus workers who did not back away from their roles, when we needed them. The
-          Rickshaw Pullers, Sweepers, Gardners, Laundry Workers, Night Mess Workers, Tea stall workers, Cycle repairmen - anyone who made our campus invaluable. <a href='/beneficiaries'>Know More</a>
+          Rickshaw Pullers, Sweepers, Gardners, Laundry Workers, Night Mess Workers, Tea stall workers, Cycle repairmen - anyone who made our campus invaluable. <br/><a href='/beneficiaries'>See all beneficiary details here.</a>
         </Card.Text>
         <Card.Title>Why do they need us?</Card.Title>
         <Card.Text>
-          We all know that the campus has been closed. Since the main source of income for these workers was providing various services around the campus,most of them are now unemployed, left with
-          negligible savings and bills to pay. They are struggling to provide food to their families, give any kind of education to their childer and recieve proper medical assistance.
-              </Card.Text>
+          With the campus closed, the main source of income for these workers has taken a hit and most of them are now unemployed, left with
+          negligible savings to provide food for their families, continue education of their children and recieve proper medical assistance.
+        </Card.Text>
         <Card.Title>Let's help our community!</Card.Title>
         <Card.Text>
           Let's be honest, we wouldn't have survived campus without these workers. So, now we must come together and contribute.
         </Card.Text>
+      </div>
+    </div>
+  )
+}
+
+function HowToContribute() {
+  return (
+    <div className="aboutbeneficiaries">
+      <h2 style={{ textAlign: 'center', color: 'green', fontWeight: 'lighter' }}> How Can I Contribute?</h2>
+      <hr />
+      <div>
         <i>
           Your small contribution can have an unfathomable impact.We look forward to hearing from you.
         </i>
+        <ol>
+          <li>
+            <Card.Title />
+            <Card.Text>
+              Estimate how much you might have paid to these workers combined <b>if the campus had not entered shutdown</b>. Can we contribute a fraction of that amount?
+            </Card.Text>
+          </li>
+          <li>
+            <Card.Title />
+            <Card.Text>
+              Many students might have received/would be receiving <b>their first salary as a working professional or an intern</b>. If we think that the problems these workers are facing, are more pressing than our current needs - can we commit a percentage of our first salary towards a larger cause which shall help so many workers on campus?
+            </Card.Text>
+          </li>
+          <li>
+            <Card.Title />
+            <Card.Text>
+              In these unprecedented circumstances, most of these workers have been forced out if livelihood. Can we atleast <b>show support by talking to them</b> and see if there's some way we can help them (helping them find employment, providing financial assistance, connecting them with NGOs, are a few things that we can do)
+            </Card.Text>
+          </li>
+        </ol>
       </div>
     </div>
   )
@@ -118,9 +149,9 @@ function Beneficiaries() {
 
   return (
     <section id="sc-beneficiary">
-      <Row style={{ height: 'auto' }}>
-        <Col sm={8}> <BeneficiariesText /> </Col>
-        <Col sm={4}> <BeneficiariesList beneficiary={beneficiary} title={'List of Beneficiaries'} complete={true} /> </Col>
+      <Row style={{ height: 'auto', margin: 'auto' }}>
+        <Col sm={6}> <BeneficiariesText /> </Col>
+        <Col sm={6}> <HowToContribute /> </Col>
       </Row>
     </section>
   )
