@@ -35,12 +35,11 @@
   text-align: center;
   padding: 8px;
   border-color: #ffa500;
-  border-width: 2px;
+  border-width: 1px;
   min-width: 250px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: gray;
 }
 
 .image{
