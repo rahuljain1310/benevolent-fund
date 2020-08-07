@@ -9,7 +9,7 @@ const data = [
       "contact": " (+977) 9810981608",
       "name": "Keshab Nepali",
       "place": " Aravali",
-      "profession": " night mess owner"
+      "profession": " Night mess worker"
   },
   {
       "contact": " 9012510241",

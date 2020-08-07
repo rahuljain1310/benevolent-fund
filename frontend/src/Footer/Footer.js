@@ -25,12 +25,12 @@ function Footer () {
           <Col md={4} sm={6}>
             <h4>Links</h4>
             <ul class="list-unstyled">
-              <li> &#8594; <a href="#">About</a></li>
-              <li> &#8594; <a href="#about-section">Contributors</a></li>
-              <li> &#8594; <a href="#timeline-section">Beneficiaries</a></li>
-              <li> &#8594; <a href="#projects-section">News</a></li>
-              <li> &#8594; <a href="#contact-section">Testimonies</a></li>
-              <li> &#8594; <a href="#contact-section">Comments</a></li>
+              <li> &#8594; <a href="/#sc-about">About</a></li>
+              <li> &#8594; <a href="`/#sc-bulletin">Contributors</a></li>
+              <li> &#8594; <a href="`/#sc-beneficiary">Beneficiaries</a></li>
+              <li> &#8594; <a href="`/#sc-media">News</a></li>
+              <li> &#8594; <a href="/#sc-testimonials">Testimonies</a></li>
+              <li> &#8594; <a href="/#sc-comments">Comments</a></li>
             </ul>
           </Col>
           <Col md={4}>
