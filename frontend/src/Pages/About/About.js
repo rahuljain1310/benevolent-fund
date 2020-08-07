@@ -4,9 +4,7 @@ import {
   Col,
 } from 'react-bootstrap'
 import './About.css'
-
-import ImageCarousal from '../Carousel/Carousel';
-import imageSrc5 from '../../Assets/iitd5.jpg';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function CarousalText() {
   return (
@@ -19,7 +17,7 @@ function CarousalText() {
           as they are left without any reliable and stable means of income.
           These workers made our lives easier everyday and now we need to make theirs.
           <br /><br />
-          Let's take a moment and think about what can <b>we</b> do for <b>our workers</b>! <a href="/#sc-bulletin">Contribute now</a>.
+          Let's take a moment and think about what can <b>we</b> do for <b>our workers</b>! <Link to="/#sc-bulletin">Contribute now</Link>.
           <br />
       </p>
       <iframe src="https://www.youtube.com/embed/iobyvY_iFDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

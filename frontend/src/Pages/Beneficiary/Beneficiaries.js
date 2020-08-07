@@ -8,6 +8,7 @@ import {
   Table,
 
 } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Beneficiaries.css';
 
 // const beneficiaryData = React.lazy(() => import('./Data'))
@@ -21,7 +22,7 @@ function BeneficiariesText() {
       <div>
         <Card.Title>About Beneficiaries</Card.Title>
         <Card.Text>
-        These beneficiaries are those campus workers who did not back away from their roles when needed. The Rickshaw Pullers, Hostel Shop Workers, Laundry Workers, Night Mess Workers, Tea stall workers, Cycle repairers - anyone who made our campus invaluable. <br/><a href='/beneficiaries'>See all beneficiary details here.</a>
+        These beneficiaries are those campus workers who did not back away from their roles when needed. The Rickshaw Pullers, Hostel Shop Workers, Laundry Workers, Night Mess Workers, Tea stall workers, Cycle repairers - anyone who made our campus invaluable. <br/><Link to='/beneficiaries'>See all beneficiary details here.</Link>
         </Card.Text>
         <Card.Title>Why do they need us?</Card.Title>
         <Card.Text>
