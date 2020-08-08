@@ -4,7 +4,7 @@ import Disqus from "disqus-react"
 function DisqusComments () {
   const disqusShortname = "benevolent-fund"
   const disqusConfig = {
-    url: "http://localhost:3000",
+    url: "http://benevolent.iitd.ac.in",
     identifier: "1",
     title: "Students for IITD Community"
   }

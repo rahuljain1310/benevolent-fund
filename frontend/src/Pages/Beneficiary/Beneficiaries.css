@@ -4,6 +4,11 @@
   font-family: 'Grenze Gotisch', cursive;
 }
 
+.aboutbeneficiaries {
+  text-align: justify;
+  margin-bottom: 2em;
+}
+
 .details  {
   text-align: center;
   word-wrap: break-word;

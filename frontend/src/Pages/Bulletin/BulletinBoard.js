@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CountUp from 'react-countup';
 import Chart from "react-google-charts";
 import { BigContributeButton } from '../ContributeButton/ContributeButton'
@@ -14,7 +14,6 @@ const formatter = Intl.NumberFormat('en-IN', {
 	currency: 'INR',
 	decimal: 0,
 })
-
 
 function ChartFigure() {
 	const dataChart = [
@@ -87,14 +86,16 @@ function ContributorList({ list }) {
 							Top Contributions
 						</ListGroup.Item>
 					</ListGroup>
-					{list.sort((a,b) => b[1] - a[1]).slice(0,10).map((person, idx) => (
+					{list.sort((a,b) => b['amount'] - a['amount']).slice(0,10).map((person, idx) => (
 						<ListGroup horizontal key={idx} style={{ height: '4rem' }}>
 							<ListGroup.Item style={{ width: '70%', fontWeight: '600' }}>
-								{person[0]} <br /> <span className='designation'>Undergraduate</span>
+								{person['name'].split('@')[0]} <br /> <span className='designation'>
+									{person['profession']}
+								</span>
 							</ListGroup.Item>
 							<ListGroup.Item style={{ width: '35%' }}>
 								<span style={{ fontSize: "1.2em", fontWeight: '600' }}>
-									{formatter.format(person[1]).slice(0, -3)}
+									{formatter.format(person['amount']).slice(0, -3)}
 								</span>
 							</ListGroup.Item>
 						</ListGroup>
@@ -109,7 +110,6 @@ function CountStats({ number, text }) {
 	const formatFnc = text === 'Total Collections' ? n => formatter.format(n).slice(0, -3) : n => n
 	return (
 		<div className='count-stats'>
-			{/* <br /> */}
 			<span className='number'>
 				<CountUp delay={2} end={number} formattingFn={formatFnc} />
 			</span> <br />
@@ -118,10 +118,8 @@ function CountStats({ number, text }) {
 	)
 }
 
-function ContributionStats() {
+function ContributionStats({totalAmount, contributorsCount}) {
 
-	const contributorsCount = 0;
-	const totalAmount = 0;
 	const beneficiaryCount = 102;
 	
 	return (
@@ -146,26 +144,27 @@ function ContributionStats() {
 
 function BulletinBoard() {
 
-	const contributors = [
-		["Mukesh", 500],
-		["Aashish", 100],
-		["Om", 1000],
-		["Vinay", 5000],
-		["Vasant", 50],
-		["Rahul", 55],
-		["Pankaj", 250],
-		["Om", 1000],
-		["Vinay", 5000],
-		["Vasant", 50],
-		["Rahul", 55]
-	]
+	const [totalAmount, setTotalAmount] = useState(0)
+	const [contributorsCount, setContributorsCount] = useState(0)
+	const [contributors, setContributors] = useState([]) 
+
+	useEffect(() => {
+		fetch('http://source.localhost/benevolent-fund/php/contributors.php')
+		.then(response => response.json())
+		.then(data => {
+			console.log(data)
+			setContributorsCount(data['contributor_count'])
+			setTotalAmount(data['amount'])
+			setContributors(data['contributors'])
+		});
+	}, []);
 
 	return (
 		<section id='sc-bulletin'>
-
 			<Row >
-				<Col lg={8} md={6}> <ContributionStats /> </Col>
-				<Col lg={4} md={6}> <ContributorList list={contributors} /> </Col>
+				<Col lg={6} md={6}> <ContributionStats totalAmount={totalAmount} contributorsCount={contributorsCount} /> </Col>
+				<Col lg={1} md={0}></Col>
+				<Col lg={5} md={6}> <ContributorList list={contributors} /> </Col>
 			</Row>
 		</section>
 	)

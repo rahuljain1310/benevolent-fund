@@ -26,7 +26,7 @@ class BigContributeButton extends Component {
       //   </span>
       // </div>
       <div className="RazorpayButton">
-        <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_FNOaLa79UH4Lo7/view" data-text="Contribute Now" data-color="#e03646" data-size="large"></div>
+        <div className="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_FNOaLa79UH4Lo7/view" data-text="Contribute Now" data-color="#e03646" data-size="large"></div>
       </div>
     )
   }

@@ -5,9 +5,6 @@ import {
 } from 'react-bootstrap'
 import './About.css'
 
-import ImageCarousal from '../Carousel/Carousel';
-import imageSrc5 from '../../Assets/iitd5.jpg';
-
 function CarousalText() {
   return (
     <section className="aboutcard">
