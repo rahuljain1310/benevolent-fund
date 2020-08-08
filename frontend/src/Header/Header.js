@@ -4,6 +4,7 @@ import {
   Col,
 } from 'react-bootstrap';
 import iitdLogo from '../Assets/iitdLogo.jpg';
+import { HashLink as Link } from 'react-router-hash-link';
 import {SmallContributeButton} from '../Pages/ContributeButton/ContributeButton';
 import './header.css';
 
@@ -30,12 +31,12 @@ function Header () {
       </Col>
       <Col lg={6} md={4} sm={2}>
         <nav className="color" style={{textAlign: 'right'}}>
-          <a className="Links" href = "/#sc-about">About</a>
-          <a className="Links" href = "/#sc-bulletin">Contributors</a>
-          <a className="Links" href = "/#sc-beneficiary" >Beneficiaries</a>
-          <a className="Links" href = "/#sc-media" >News</a>
-          <a className="Links" href = "/#sc-testimonials">Testimonies</a>
-          <a className="Links" href = "/#sc-comments">Comments</a>
+          <Link className="Links" to = "/#sc-about">About</Link>
+          <Link className="Links" to = "/#sc-beneficiary" >Beneficiaries</Link>
+          <Link className="Links" to = "/#sc-bulletin">Contributors</Link>
+          <Link className="Links" to = "/#sc-media" >News</Link>
+          <Link className="Links" to = "/#sc-testimonials">Testimonies</Link>
+          <Link className="Links" to = "/#sc-comments">Comments</Link>
           <SmallContributeButton/>
         </nav>
       </Col>

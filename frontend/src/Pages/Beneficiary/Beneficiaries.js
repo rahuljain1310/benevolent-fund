@@ -8,6 +8,7 @@ import {
   Table,
 
 } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Beneficiaries.css';
 
 // const beneficiaryData = React.lazy(() => import('./Data'))
@@ -21,18 +22,18 @@ function BeneficiariesText() {
       <div>
         <Card.Title>About Beneficiaries</Card.Title>
         <Card.Text>
-          Stuck at home, our responsibility to look after ourselves can easily overshadow our responsibility  in  our community. We must remember our role is not limited to us. These benefeciaries are those campus workers who did not back away from their roles, when we needed them. The
-          Rickshaw Pullers, Sweepers, Gardners, Laundry Workers, Night Mess Workers, Tea stall workers, Cycle repairmen - anyone who made our campus invaluable. <br/><a href='/beneficiaries'>See all beneficiary details here.</a>
+        These beneficiaries are those campus workers who did not back away from their roles when needed. The Rickshaw Pullers, Hostel Shop Workers, Laundry Workers, Night Mess Workers, Tea stall workers, Cycle repairers - anyone who made our campus invaluable. <br/><Link to='/beneficiaries'>See all beneficiary details here.</Link>
         </Card.Text>
         <Card.Title>Why do they need us?</Card.Title>
         <Card.Text>
-          With the campus closed, the main source of income for these workers has taken a hit and most of them are now unemployed, left with
-          negligible savings to provide food for their families, continue education of their children and recieve proper medical assistance.
+        These workers are not employed by IIT under contract and hence, the administration cannot provide them with any salary. Their primary source of income came from providing services to the campus community 
+        but with the campus closed, most of them are now unemployed, left with negligible savings to provide food for their families, continue the education of their children, and receive proper medical assistance.
         </Card.Text>
         <Card.Title>Let's help our community!</Card.Title>
         <Card.Text>
-          Let's be honest, we wouldn't have survived campus without these workers. So, now we must come together and contribute.
+          Let's be honest: we wouldn't have survived campus without these workers. So, now we must come together and contribute.
         </Card.Text>
+        <br />
       </div>
     </div>
   )
@@ -45,25 +46,31 @@ function HowToContribute() {
       <hr />
       <div>
         <i>
-          Your small contribution can have an unfathomable impact.We look forward to hearing from you.
+          Your small contribution can have an unfathomable impact. We look forward to hearing from you.
         </i>
         <ol>
           <li>
             <Card.Title />
             <Card.Text>
-              Estimate how much you might have paid to these workers combined <b>if the campus had not entered shutdown</b>. Can we contribute a fraction of that amount?
+              <b>Had the campus not been shut</b>, estimate the amount of money you would have spent on that parantha or omelette from night mess, rickshaws to reach class on time. See if you can contribute a fraction of that amount for those who made it all possible?
             </Card.Text>
           </li>
           <li>
             <Card.Title />
             <Card.Text>
-              Many students might have received/would be receiving <b>their first salary as a working professional or an intern</b>. If we think that the problems these workers are facing, are more pressing than our current needs - can we commit a percentage of our first salary towards a larger cause which shall help so many workers on campus?
+              Some of you might have received/would be receiving <b>your first salary as a working professional or an intern</b>.  Give a thought on whether the problems these workers are facing, are more pressing than our current needs - if yes, please contribute a percentage of your first salary towards a more significant cause.
             </Card.Text>
           </li>
           <li>
             <Card.Title />
             <Card.Text>
-              In these unprecedented circumstances, most of these workers have been forced out if livelihood. Can we atleast <b>show support by talking to them</b> and see if there's some way we can help them (helping them find employment, providing financial assistance, connecting them with NGOs, are a few things that we can do)
+              <b>If you have just graduated</b>, you might be getting back your <b>security deposits</b>. Can you commit a percentage of this deposit for the security of our campus workers?
+            </Card.Text>
+          </li>
+          <li>
+            <Card.Title />
+            <Card.Text>
+              Think about the money you would have spent on clothing, outings by this time. Our lives might have become devoid of these joys, but luckily for most of us, this lockdown has not stolen our livelihood away. <b>Contribute to those who were not so lucky.</b>
             </Card.Text>
           </li>
         </ol>

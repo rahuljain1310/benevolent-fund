@@ -1,5 +1,5 @@
-import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import React, { useEffect } from 'react';
+import {MemoryRouter as Router, Route, Switch, useLocation} from "react-router-dom";
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import BulletinBoard from './Pages/Bulletin/BulletinBoard';
@@ -14,15 +14,13 @@ function MainPage () {
   return (
     <div className = "page-container">
       <div className = "content-wrap">
-        <Header/>
         <About/>
         <Beneficiaries />
         <BulletinBoard />
         <MediaCard />
         <CommentGrid/>
-        <DisqusComments/>
-        </div>
       </div>
+    </div>
   )
 }
 
@@ -34,17 +32,29 @@ function BeneficiariesPage () {
   )
 }
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <div className="page-container">
-      <Header />
       <Router>
+        <Header />
+        <ScrollToTop/>
         <Switch>
-          <Route exact path='/beneficiaries' component={BeneficiariesPage}/>
-          <Route path='*' component={MainPage}/>
+          <Route path='/beneficiaries' component={BeneficiariesPage}/>
+          <Route path='/' component={MainPage}/>
         </Switch>
+        <DisqusComments/>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   )
 }

@@ -79,3 +79,21 @@ header {
     font-size: 0.9em;
   }
 }
+
+@media(max-width: 340px){
+  .color{
+    width: 370px;
+    display: none;
+  }
+  #header-image {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0px 8px;
+  }
+  #head {
+    font-size: 1em;
+  }
+  #subhead {
+    font-size: 0.8em;
+  }
+}
