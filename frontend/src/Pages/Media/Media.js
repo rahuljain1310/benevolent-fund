@@ -16,10 +16,10 @@ function MediaCard() {
 			<h2 style={{ textAlign: 'center', color: 'green', fontWeight: 'lighter' }}>IITD Benevolent Fund in News</h2>
 			<hr/>
 			<Row>
-				<Col sm={6} style={{ padding: '10px' }} >
-					<img alt='img-iitd' src={rickshaw} style={{ width: '100%', maxHeight: '360px' }} />
+				<Col className='media-img' sm={6} style={{ padding: '10px', textAlign: 'center'}} >
+					<img alt='img-iitd' src={rickshaw} style={{ width: '90%', height: '90%' }} />
 				</Col>
-				<Col sm={6} >
+				<Col style={{verticalAlign: 'middle'}}>
 					{/* First Article */}
 					<img alt='media_icon' className='newsIcon' src={ndtv} />
 					<span className='date'>31st March 2020</span>

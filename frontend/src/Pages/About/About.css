@@ -3,7 +3,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 110vh;
 }
 
 .aboutcard {
@@ -17,22 +17,26 @@
   font-size: 2em;
   font-stretch: wider;
   text-align: center;
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   font-family: 'Grenze Gotisch';
 }
 
 .aboutcontent {
   text-align: justify;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.1em;
+  font-size: 1em;
+}
+
+.aboutcard .youtube-video {
+  /* width: 400px; */
+  max-width: 80%;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 12px;
 }
 
 .aboutcard iframe {
   width: 100%;
-  height: 30vh;
-  max-height: 315px;
-  /* max-width: 560px; */
-  margin: auto;
+  height: 100%;
 }
 
 /* @media (max-width: 1000px)  {

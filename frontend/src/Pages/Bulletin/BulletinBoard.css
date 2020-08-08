@@ -32,6 +32,7 @@
     color: green;
     /* font-family: 'Dancing Script', cursive; */
     font-size: 0.8em;
+    white-space: nowrap;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -41,7 +42,7 @@
 }
 
 .count-stats .number {
-    font-size: 3.2em;
+    font-size: 3em;
 }
 
 .table-head {

@@ -9,7 +9,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 function CarousalText() {
   return (
     <section className="aboutcard">
-      {/* <div className="aboutheading"> About </div> */}
+      <div className="aboutheading"> About </div>
       <hr />
       <p className="aboutcontent" >
         The IIT Delhi <b> Benevolent Fund</b> is an institutional setup to financially support the <b>non-contractual workers</b> around the campus.
@@ -20,7 +20,9 @@ function CarousalText() {
           Let's take a moment and think about what can <b>we</b> do for <b>our workers</b>! <Link to="/#sc-bulletin">Contribute now</Link>.
           <br />
       </p>
-      <iframe src="https://www.youtube.com/embed/iobyvY_iFDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div className='youtube-video'>
+        <iframe src="https://www.youtube.com/embed/iobyvY_iFDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </section>
   )
 }
