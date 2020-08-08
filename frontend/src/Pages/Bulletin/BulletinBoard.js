@@ -149,7 +149,7 @@ function BulletinBoard() {
 	const [contributors, setContributors] = useState([]) 
 
 	useEffect(() => {
-		fetch('http://source.localhost/benevolent-fund/php/contributors.php')
+		fetch('/php/contributors.php')
 		.then(response => response.json())
 		.then(data => {
 			console.log(data)
