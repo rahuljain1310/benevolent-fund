@@ -36,7 +36,7 @@ function Footer () {
           </Col>
           <Col md={4}>
             <h4>Have a Question ?</h4>
-            <ul class="list-unstyled">
+            <ul className="list-unstyled">
               <li><span>Divyanshu Saxena</span> </li>
               <li><span>8826080933 | cs1160316@iitd.ac.in</span> </li>
               <br/>

@@ -3,7 +3,6 @@ import {
   Card,
   Row,
   Col,
-  Container,
 } from 'react-bootstrap';
 import Popup from "reactjs-popup";
 import './CommentGrid.css';
@@ -12,7 +11,7 @@ import './CommentGrid.css';
 function CommentCard({ person }) {
   return (
     <Card className="CommentCard">
-        <img variant='top' src={person?.imgPath} alt="My profile picture" className="image" /> <br />
+        <img variant='top' src={person?.imgPath} alt="My profile" className="image" /> <br />
         <span className='title'><b>{person?.name}</b><br /> </span>
         <span className="subtitle">{person?.year}</span>
         <p className="para">
@@ -116,7 +115,7 @@ function CommentGrid() {
       <hr />
       <Row>
         {viewCommentGrid.map((person, idx) => (
-          <Col lg='4' sm='6' style={{ display: 'table-cell', marginBottom: '20px' }}>
+          <Col lg='4' sm='6' key={idx} style={{ display: 'table-cell', marginBottom: '20px' }}>
             <CommentCard person={person} />
           </Col>
         ))
