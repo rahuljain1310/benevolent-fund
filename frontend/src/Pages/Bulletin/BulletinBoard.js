@@ -149,7 +149,7 @@ function BulletinBoard() {
 	const [contributors, setContributors] = useState([]) 
 
 	useEffect(() => {
-		fetch('/php/contributors.php')
+		fetch('https://desolate-wave-47944.herokuapp.com/')
 		.then(response => response.json())
 		.then(data => {
 			console.log(data)
