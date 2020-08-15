@@ -86,14 +86,15 @@ function ContributorList({ list }) {
 							Top Contributions
 						</ListGroup.Item>
 					</ListGroup>
-					{list.sort((a,b) => b['amount'] - a['amount']).slice(0,10).map((person, idx) => (
+					{list.sort((a,b) => b['amount'] - a['amount']).map((person, idx) => (
 						<ListGroup horizontal key={idx} style={{ height: '4rem' }}>
-							<ListGroup.Item style={{ width: '70%', fontWeight: '600' }}>
-								{person['name'].split('@')[0]} <br /> <span className='designation'>
-									{person['profession']}
+							<ListGroup.Item style={{ width: '70%', fontWeight: '600', padding: '8px 12px'}}>
+								{person['name'] || 'Anonymous'} <br />
+								<span className='designation'>
+									{person['profession'].split(' ').slice(0,2).join(' ')}
 								</span>
 							</ListGroup.Item>
-							<ListGroup.Item style={{ width: '35%' }}>
+							<ListGroup.Item style={{ width: '35%',padding: '8px 12px' }}>
 								<span style={{ fontSize: "1.2em", fontWeight: '600' }}>
 									{formatter.format(person['amount']).slice(0, -3)}
 								</span>
@@ -110,10 +111,11 @@ function CountStats({ number, text }) {
 	const formatFnc = text === 'Total Collections' ? n => formatter.format(n).slice(0, -3) : n => n
 	return (
 		<div className='count-stats'>
+			<span className='text'>{" " + text + " "}</span>
+			<br/>
 			<span className='number'>
 				<CountUp delay={2} end={number} formattingFn={formatFnc} />
-			</span> <br />
-			<span className='text'>{" " + text + " "}</span>
+			</span>
 		</div>
 	)
 }
@@ -127,9 +129,9 @@ function ContributionStats({totalAmount, contributorsCount}) {
 			{/* <h2> Bulletin Board</h2> */}
       {/* <hr /> */}
 			<Row>
-				<Col sm={12} style={{minWidth: '100px'}}><CountStats number={totalAmount} text={'Total Collections'} /></Col>
-				<Col sm={12} style={{minWidth: '100px'}}><CountStats number={contributorsCount} text={'Contributors'} /></Col>
-				{/* <Col sm={6} style={{minWidth: '100px'}}><CountStats number={beneficiaryCount} text={'Beneficiaries'} /></Col> */}
+				<Col sm={12} style={{minWidth: '260px'}}><CountStats number={totalAmount} text={'Total Collections'} /></Col>
+				<Col sm={12} style={{minWidth: '260px'}}><CountStats number={contributorsCount} text={'Contributors'} /></Col>
+				{/* <Col sm={6} style={{minWidth: '260px'}}><CountStats number={beneficiaryCount} text={'Beneficiaries'} /></Col> */}
 			</Row>
 			{/* <Row>
 				<Col> <GraphChart/> </Col>
@@ -149,7 +151,7 @@ function BulletinBoard() {
 	const [contributors, setContributors] = useState([]) 
 
 	useEffect(() => {
-		fetch('/php/contributors.php')
+		fetch('https://desolate-wave-47944.herokuapp.com/')
 		.then(response => response.json())
 		.then(data => {
 			console.log(data)
@@ -162,8 +164,7 @@ function BulletinBoard() {
 	return (
 		<section id='sc-bulletin'>
 			<Row >
-				<Col lg={6} md={6}> <ContributionStats totalAmount={totalAmount} contributorsCount={contributorsCount} /> </Col>
-				<Col lg={1} md={0}></Col>
+				<Col lg={7} md={6}> <ContributionStats totalAmount={totalAmount} contributorsCount={contributorsCount} /> </Col>
 				<Col lg={5} md={6}> <ContributorList list={contributors} /> </Col>
 			</Row>
 		</section>
