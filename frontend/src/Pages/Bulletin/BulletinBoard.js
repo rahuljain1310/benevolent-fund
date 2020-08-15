@@ -86,10 +86,10 @@ function ContributorList({ list }) {
 							Top Contributions
 						</ListGroup.Item>
 					</ListGroup>
-					{list.sort((a,b) => b['amount'] - a['amount']).slice(0,10).map((person, idx) => (
+					{list.sort((a,b) => b['amount'] - a['amount']).map((person, idx) => (
 						<ListGroup horizontal key={idx} style={{ height: '4rem' }}>
 							<ListGroup.Item style={{ width: '70%', fontWeight: '600', padding: '8px 12px'}}>
-								{person['name'].split('@')[0]} <br />
+								{person['name'] || 'Anonymous'} <br />
 								<span className='designation'>
 									{person['profession'].split(' ').slice(0,2).join(' ')}
 								</span>
@@ -130,8 +130,8 @@ function ContributionStats({totalAmount, contributorsCount}) {
       {/* <hr /> */}
 			<Row>
 				<Col sm={12} style={{minWidth: '260px'}}><CountStats number={totalAmount} text={'Total Collections'} /></Col>
-				<Col sm={6} style={{minWidth: '260px'}}><CountStats number={contributorsCount} text={'Contributors'} /></Col>
-				<Col sm={6} style={{minWidth: '260px'}}><CountStats number={beneficiaryCount} text={'Beneficiaries'} /></Col>
+				<Col sm={12} style={{minWidth: '260px'}}><CountStats number={contributorsCount} text={'Contributors'} /></Col>
+				{/* <Col sm={6} style={{minWidth: '260px'}}><CountStats number={beneficiaryCount} text={'Beneficiaries'} /></Col> */}
 			</Row>
 			{/* <Row>
 				<Col> <GraphChart/> </Col>
