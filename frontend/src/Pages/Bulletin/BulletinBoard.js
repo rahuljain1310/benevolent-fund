@@ -6,6 +6,7 @@ import {
 	Row,
 	Col,
 	ListGroup,
+	Container,
 } from 'react-bootstrap';
 import './BulletinBoard.css';
 
@@ -78,30 +79,30 @@ function GraphChart() {
 function ContributorList({ list }) {
 	return (
 		<div className='contributor-list'>
-			<br />
-			<div style={{ overflowY: 'scroll', height: '100%' }}>
-				<ListGroup style={{ height: '400px' }}>
-					<ListGroup>
-						<ListGroup.Item as='h5' className='table-head'>
-							Top Contributions
-						</ListGroup.Item>
-					</ListGroup>
+			<div className='contributor-list-scroll'>
+				<div style={{ height: '400px' }}>
+					<div className='table-head'>
+						Top Contributions
+					</div>
+					<hr />
 					{list.sort((a,b) => b['amount'] - a['amount']).map((person, idx) => (
-						<ListGroup horizontal key={idx} style={{ height: '4rem' }}>
-							<ListGroup.Item style={{ width: '70%', fontWeight: '600', padding: '8px 12px'}}>
-								{person['name'] || 'Anonymous'} <br />
-								<span className='designation'>
-									{person['profession'].split(' ').slice(0,2).join(' ')}
-								</span>
-							</ListGroup.Item>
-							<ListGroup.Item style={{ width: '35%',padding: '8px 12px' }}>
-								<span style={{ fontSize: "1.2em", fontWeight: '600' }}>
-									{formatter.format(person['amount']).slice(0, -3)}
-								</span>
-							</ListGroup.Item>
-						</ListGroup>
+						<Container>
+							<Row className='contributor-row'>
+								<Col xs={8}>
+									{person['name'] || 'Anonymous'} <br />
+									<span className='designation'>
+										{person['profession'].split(' ').slice(0,2).join(' ')}
+									</span>
+								</Col>
+								<Col xs={4}>
+									<span style={{ fontSize: "1.2em", fontWeight: '600' }}>
+										{formatter.format(person['amount']).slice(0, -3)}
+									</span>
+								</Col>
+							</Row>
+						</Container>
 					))}
-				</ListGroup>
+				</div>
 			</div>
 		</div>
 	)
