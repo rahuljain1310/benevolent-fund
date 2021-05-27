@@ -10,9 +10,9 @@
 
 section {
   padding: 2% 4%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 8px;
-  margin: 16px 5%;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+  border-radius: 4px;
+  margin: 12px 8%;
 }
 
 .page-container{

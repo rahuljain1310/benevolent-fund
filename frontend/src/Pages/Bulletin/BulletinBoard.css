@@ -30,7 +30,7 @@
 
 .contributor-list .designation {
     color: green;
-    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Dancing Script', cursive;
     font-size: 0.8em;
     white-space: nowrap;
     font-family: 'Raleway', sans-serif;
@@ -53,3 +53,12 @@
   position: fixed;
 }
 
+
+#sc-bulletin h2{
+    font-size: 2.2em;
+    text-align: center;
+    font-stretch: wider;
+    color: green;
+    text-shadow: 1em;
+    font-family: 'Grenze Gotisch', cursive;
+  }

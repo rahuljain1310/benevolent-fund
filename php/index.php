@@ -30,7 +30,7 @@
   $page = 0;
   
   while (!$complete) {
-    $options = array('count' => $page_size, 'skip' => $page * $page_size);
+    $options = array('count' => $page_size, 'skip' => $page * $page_size, 'from' => 1622111001293);
     $payments = $api->payment->all($options)->items;
     $successful_payments = array_filter($payments, 'filter_captured_payments');
     $successful_payments_merge = array_merge($successful_payments_merge, $successful_payments);

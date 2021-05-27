@@ -18,7 +18,7 @@ function BeneficiariesText() {
   return (
     <div className="aboutbeneficiaries">
       <h2 style={{ textAlign: 'center', color: 'green', fontWeight: 'lighter' }}> Know About Beneficiaries</h2>
-      <hr />
+      {/* <hr /> */} <br/>
       <div>
         <Card.Title>About Beneficiaries</Card.Title>
         <Card.Text>
@@ -43,7 +43,7 @@ function HowToContribute() {
   return (
     <div className="aboutbeneficiaries">
       <h2 style={{ textAlign: 'center', color: 'green', fontWeight: 'lighter' }}> How Can I Contribute?</h2>
-      <hr />
+      {/* <hr /> */} <br/>
       <div>
         <i>
           Your small contribution can have an unfathomable impact. We look forward to hearing from you.

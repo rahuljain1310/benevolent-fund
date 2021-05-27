@@ -44,6 +44,10 @@
   padding-right: 20px;
 }
 
+.SmallContributeButton {
+  margin: auto;
+}
+
 .SmallContributeButton a {
   font-family: "DroidArabicKufi","Roboto","Helvetica", "Arial", sans-serif !important;
   background-color: #ef4f5e;
@@ -74,7 +78,7 @@
   text-decoration: none;
   background-color: #EF4F5E;
   text-align: center;
-  padding: 10px;
+  padding: 4px;
   font-family: 'aileronbold';
   font-size: 20px;
   color: white;

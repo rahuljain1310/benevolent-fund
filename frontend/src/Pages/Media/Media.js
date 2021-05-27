@@ -14,7 +14,8 @@ function MediaCard() {
 	return (
 		<section id="sc-media">
 			<h2 style={{ textAlign: 'center', color: 'green', fontWeight: 'lighter' }}>IITD Benevolent Fund in News</h2>
-			<hr/>
+			{/* <hr/> */}
+			<br/>
 			<Row>
 				<Col className='media-img' sm={6} style={{ padding: '10px', textAlign: 'center'}} >
 					<img alt='img-iitd' src={rickshaw} style={{ width: '90%', height: '90%' }} />

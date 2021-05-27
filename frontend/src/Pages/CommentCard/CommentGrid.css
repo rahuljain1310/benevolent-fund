@@ -8,6 +8,7 @@
   text-align: center;
   font-stretch: wider;
   color: green;
+  text-shadow: 1em;
   font-family: 'Grenze Gotisch', cursive;
 }
 
@@ -34,8 +35,9 @@
 .CommentCard {
   text-align: center;
   padding: 8px;
-  border-color: #ffa500;
-  border-width: 1px;
+  /* border-color: #ffa500; */
+  /* border-width: 1px; */
+  border: none;
   min-width: 250px;
   height: 100%;
   display: flex;

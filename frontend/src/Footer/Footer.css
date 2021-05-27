@@ -1,8 +1,8 @@
-footer{
+.sc-footer{
     color:white;
     background-color: #000;
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     padding: 16px;
 }
 
@@ -23,13 +23,13 @@ footer{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-footer li {
+.sc-footer li {
     line-height: 1.5em;
     color: white;
     margin-left: 16px;
 }
 
-footer a {
+.sc-footer a {
     text-decoration: none !important;
     color: white;
 }

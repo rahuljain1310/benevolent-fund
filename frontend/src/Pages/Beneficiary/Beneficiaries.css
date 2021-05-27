@@ -6,7 +6,14 @@
 
 .aboutbeneficiaries {
   text-align: justify;
+  padding: 0px 24px;
   /* margin-bottom: 2em; */
+}
+
+@media (max-width: 580px) {
+  .aboutbeneficiaries {
+    padding: 0px;
+  }
 }
 
 .details  {

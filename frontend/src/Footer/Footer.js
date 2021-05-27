@@ -10,7 +10,7 @@ import "./Footer.css"
 
 function Footer () {
   return(
-    <footer>
+    <section className='sc-footer'>
       <p className = "Quoterow">
         <em>
           "Our physical duty is to advance toward freedom : physical mental and sipritual and help others to do so." 
@@ -37,11 +37,11 @@ function Footer () {
           <Col md={4}>
             <h4>Have a Question ?</h4>
             <ul className="list-unstyled">
-              <li><span>Divyanshu Saxena</span> </li>
-              <li><span>8826080933 | cs1160316@iitd.ac.in</span> </li>
+              <li><span>Mohit Anand</span> </li>
+              <li><span>95997 05921 | anandmohit.iitd@gmail.com</span> </li>
               <br/>
-              <li><span>Rahul Jain</span> </li>
-              <li><span>8770915084 | ee1170476@iitd.ac.in</span> </li>
+              <li><span>Raghav Modi</span> </li>
+              <li><span>95694 61066 | me2180708@iitd.ac.in</span> </li>
             </ul>
           </Col>
         </Row>
@@ -53,7 +53,7 @@ function Footer () {
           </Col>
         </Row>
       </Container>
-    </footer>
+    </section>
   )
 }
 

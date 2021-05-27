@@ -4,13 +4,13 @@ import {
   Col,
 } from 'react-bootstrap'
 import './About.css'
+import {BigContributeButton, SmallContributeButton} from '../ContributeButton/ContributeButton';
 import { HashLink as Link } from 'react-router-hash-link';
 
 function CarousalText() {
   return (
     <section className="aboutcard">
       <div className="aboutheading"> About </div>
-      <hr />
       <p className="aboutcontent" >
         The IIT Delhi <b> Benevolent Fund</b> is an institutional setup to financially support the <b>non-contractual workers</b> around the campus.
           With the campus being shut due to this unprecendented pandemic, they are now stuggling to make their ends meet
@@ -23,18 +23,21 @@ function CarousalText() {
       <div className='youtube-video'>
         <iframe src="https://www.youtube.com/embed/iobyvY_iFDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
+      <div className='contribute-button'>
+        <BigContributeButton/>
+      </div>
     </section>
   )
 }
 
 function About() {
   return (
-    <div id="sc-about">
+    <section id="sc-about">
       <Row style={{ margin: '0px' }}>
-        <Col lg={7} md={3} sm={0}></Col>
-        <Col lg={5} md={9} sm={12}> <CarousalText /> </Col>
+        <Col lg={6} md={3} sm={0}></Col>
+        <Col lg={6} md={9} sm={12}> <CarousalText /> </Col>
       </Row>
-    </div>
+    </section>
   )
 }
 

@@ -20,11 +20,6 @@ class BigContributeButton extends Component {
 
   render () {
     return(
-      // <div class='BigContributeButton'>
-      //   <span>
-      //     &hearts; Contribute
-      //   </span>
-      // </div>
       <div className="RazorpayButton">
         <div
           class="razorpay-embed-btn"

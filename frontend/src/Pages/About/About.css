@@ -3,13 +3,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 110vh;
+  height: 100vh;
 }
 
 .aboutcard {
   margin: 0px 2%;
   background-color: white;
-  margin-top: 100px;
+  margin-top: 75px;
 }
 
 .aboutheading {
@@ -39,11 +39,9 @@
   height: 100%;
 }
 
-/* @media (max-width: 1000px)  {
-  #sc-about {
-    font-size: 95%;
-  }
-} */
+.aboutcard .contribute-button{
+  display: none; 
+}
 
 @media(max-width: 580px){
   .aboutcard {
@@ -53,7 +51,12 @@
   .aboutcontent {
     font-size: 1em;
   }
+  .aboutcard .youtube-video {
+    display: none;
+  }
+  .aboutcard .contribute-button {
+    display: flex;
+    height: 80px;
+    margin: auto;
+  }
 }
-
-
-
